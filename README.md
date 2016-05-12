@@ -4,7 +4,7 @@ aubreylib
 About
 -----
 
-A helper library for [aubrey](https://github.com/aubrey)
+A helper library for [aubrey](https://github.com/unt-libraries/aubrey)
 
 Requirements
 ------------
