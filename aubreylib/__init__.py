@@ -1,4 +1,4 @@
-#Resource Representation reference dictionary (METS USE)
+# Resource Representation reference dictionary (METS USE)
 USE = {
     'high_res': 1,
     'thumbnail': 2,
@@ -9,10 +9,10 @@ USE = {
     'translation': 7,
     'zoom': 8,
     'cdx': 9,
-    'square':10,
+    'square': 10,
 }
 
-#View method for mimetypes
+# View method for mimetypes
 VIEW_TYPE_MIMETYPES = {
     'image/png': 'image',
     'image/jpeg': 'image',
@@ -35,8 +35,10 @@ VIEW_TYPE_MIMETYPES = {
 
 EMAIL_REGEX = r'[\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4}'
 
-#Metadata location tuple. Used to specify potential source systems for metadata files.
+# Metadata location tuple. Used to specify potential source systems
+# for metadata files.
 METADATA_LOCATIONS = ()
 
-#Static file location tuple. Used to specify potential source systems for static files.
+# Static file location tuple. Used to specify potential source
+# systems for static files.
 STATIC_FILE_LOCATIONS = ()
