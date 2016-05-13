@@ -4,7 +4,7 @@ aubreylib
 About
 -----
 
-A helper library for [aubrey](https://github.com/unt-libraries/aubrey)
+A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digital object access system.
 
 Requirements
 ------------
@@ -31,7 +31,7 @@ $ pip install git+git://github.com/unt-libraries/aubreylib
 License
 -------
 
-See LICENSE
+See LICENSE.
 
 Contributors
 ------------
