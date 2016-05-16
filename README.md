@@ -36,6 +36,7 @@ See LICENSE.
 Contributors
 ------------
 
+* Brandon Fredericks
 * [Lauren Ko](https://github.com/ldko)
 * [Mark Phillips](https://github.com/vphill)
 * [Manuel Gottardi](https://github.com/somexpert)
