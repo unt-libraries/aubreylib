@@ -13,5 +13,6 @@ setup(
         'lxml>=3.3.3',
         'pyuntl>=1.0.0',
         'pypairtree>=1.0.0',
+        'mock>=2.0.0'
     ],
 )
