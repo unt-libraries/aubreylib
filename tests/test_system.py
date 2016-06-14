@@ -107,3 +107,104 @@ class TestGetCompleteFilePath():
                                                      'http://unt.edu/disk2/')
         expected_path = 'http://unt.edu/disk2/me/ta/pt/hx/metapthx/web/4.jpg'
         assert complete_path == expected_path
+
+
+class TestOpenSystemFile():
+
+    @mock.patch('urllib2.urlopen')
+    def test_open_system_file_http(self, mocked_urlopen):
+        """Test return value comes from urlopen call."""
+        mocked_urlopen.return_value = expected = 'file'
+        file_obj = system.open_system_file('http://example.com/pth/f.jpg')
+        assert file_obj == expected
+
+    @mock.patch('urllib2.urlopen')
+    @mock.patch('aubreylib.system.get_other_system')
+    def test_open_system_file_http_other_system(self,
+                                                mocked_other_system,
+                                                mocked_urlopen):
+        """Test return value comes from get_other_system call."""
+        mocked_urlopen.side_effect = Exception()
+        mocked_other_system.return_value = expected = 'file'
+        file_obj = system.open_system_file('http://example.com/pth/f.jpg')
+        assert file_obj == expected
+
+    @mock.patch('__builtin__.open')
+    def test_open_system_file_local(self, mocked_open):
+        """Test return value comes from local location."""
+        mocked_open.return_value = expected = 'file'
+        file_obj = system.open_system_file('/pth/f.jpg')
+        assert file_obj == expected
+
+
+class TestOpenArgsSystemFile():
+
+    @mock.patch('urllib2.urlopen')
+    def test_open_args_system_file_returns_file(self, mocked_urlopen):
+        """Test a valid URL results in a returned object."""
+        mocked_urlopen.return_value = expected = 'file'
+        url_with_args = 'http://example.com/pth/f.jpg?start=123'
+        file_obj = system.open_args_system_file(url_with_args)
+        assert file_obj == expected
+        mocked_urlopen.assert_called_once_with(url_with_args)
+
+    def test_open_args_system_file_raises_exception(self):
+        """Test an invalid URL raises exception."""
+        with pytest.raises(system.SystemMethodsException):
+            system.open_args_system_file('/bad/url')
+
+
+class TestCreateValidUrl():
+
+    def test_create_valid_url_encodes_url(self):
+        """Test url is encoded when not split improperly."""
+        url = system.create_valid_url('http://ex.com/path,/sdf')
+        assert url == 'http://ex.com/path%2C/sdf'
+
+    def test_create_valid_url_fixes_and_encodes_url(self):
+        """Test url is put back together correctly and percent
+        encoded after urlsplit improperly identifies a fragment.
+        """
+        url = system.create_valid_url('http://ex.com/path#01/seg')
+        assert url == 'http://ex.com/path%2301/seg'
+
+
+class TestOpenFileRange():
+
+    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib2.Request')
+    def test_open_file_range(self, MockedRequest, _):
+        """Test the HTTP request is made with supplied range."""
+        url = 'http://example.com/path'
+        system.open_file_range(url, (0, 10))
+        MockedRequest.assert_called_once_with(url,
+                                              None,
+                                              {'Range': "bytes=0-10"})
+
+    def test_open_file_range_with_non_url(self):
+        """Test result with file_name that is not a URL."""
+        file_obj = system.open_file_range('/this/is/local', (0, 10))
+        assert file_obj is None
+
+
+class TestGetOtherSystem():
+
+    @mock.patch('aubreylib.METADATA_LOCATIONS', ('http://url.com/disk2',))
+    @mock.patch('aubreylib.STATIC_FILE_LOCATIONS', ('http://url2.com/disk2',))
+    @mock.patch('urllib2.urlopen')
+    def test_get_other_system_finds_no_file(self, mocked_urlopen):
+        """Test not finding file raises exception."""
+        mocked_urlopen.side_effect = Exception()
+        with pytest.raises(system.SystemMethodsException):
+            system.get_other_system('http://example.com/disk1/noexist')
+        assert mocked_urlopen.call_count == 2
+
+    @mock.patch('aubreylib.METADATA_LOCATIONS', ('http://url.com/disk2',))
+    @mock.patch('aubreylib.STATIC_FILE_LOCATIONS', ('http://url2.com/disk2',))
+    @mock.patch('urllib2.urlopen')
+    def test_get_other_system_finds_file(self, mocked_urlopen):
+        """Test file is returned using tuple-supplied locations."""
+        mocked_urlopen.return_value =  expected = 'file'
+        file_obj = system.get_other_system('http://example.com/disk1/noexist')
+        assert file_obj == expected
+        mocked_urlopen.assert_called_once_with('http://url.com/disk1/noexist')
