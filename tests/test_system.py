@@ -59,12 +59,10 @@ class TestGetFileSystem():
                     'http://unt.edu/disk2/')
         assert (path, location) == expected
 
-    @mock.patch('os.path.exists')
     @mock.patch('httplib.HTTP')
-    def test_file_system_with_empty_path(self, MockedHTTP, mocked_exists):
+    def test_file_system_with_empty_path(self, MockedHTTP):
         """Test http:// location with an '' (empty) `path`."""
         MockedHTTP.return_value.getreply.return_value = (200, '', '')
-        mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 '',
                                                 ('http://unt.edu',))
@@ -79,7 +77,7 @@ class TestGetFileSystem():
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 'web/4.jpg',
-                                                ('http://unt.edu',))
+                                                self.location_tuple)
         expected = (None, None)
         assert (path, location) == expected
 
@@ -179,7 +177,7 @@ class TestOpenFileRange():
         system.open_file_range(url, (0, 10))
         MockedRequest.assert_called_once_with(url,
                                               None,
-                                              {'Range': "bytes=0-10"})
+                                              {'Range': 'bytes=0-10'})
 
     def test_open_file_range_with_non_url(self):
         """Test result with file_name that is not a URL."""
