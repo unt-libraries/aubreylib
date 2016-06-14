@@ -7,3 +7,6 @@
 .cache/
 build/
 dist/
+
+.tox/*
+__pycache__/*

@@ -204,7 +204,7 @@ class TestGetOtherSystem():
     @mock.patch('urllib2.urlopen')
     def test_get_other_system_finds_file(self, mocked_urlopen):
         """Test file is returned using tuple-supplied locations."""
-        mocked_urlopen.return_value =  expected = 'file'
+        mocked_urlopen.return_value = expected = 'file'
         file_obj = system.get_other_system('http://example.com/disk1/noexist')
         assert file_obj == expected
         mocked_urlopen.assert_called_once_with('http://url.com/disk1/noexist')
