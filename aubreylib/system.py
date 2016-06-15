@@ -39,7 +39,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                 file_location = absolute_path
                 break
         # if the system is on another server
-        elif re.compile(r'^http://').search(file_system, 0) != None:
+        elif re.compile(r'^https?://').search(file_system, 0) != None:
             try:
                 # if the file name starts with file:// or /, change it
                 # to start with no beginning slashes
@@ -48,7 +48,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                 else:
                     http_file_path = file_path
                 # Separate the host and the path
-                host, system_path = urlparse.urlsplit(file_system)[1:3]
+                scheme, host, system_path = urlparse.urlsplit(file_system)[:3]
                 # Join the system and file path
                 raw_path = urlparse.urljoin(system_path, http_file_path[1:])
                 # Quote the url path (helps with spaces and special characters)
@@ -64,7 +64,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                     system_path = None
                 # if the file exists, return the necessary data
                 if errcode == 200:
-                    system_path = 'http://' + host + path
+                    system_path = '%s://%s%s' % (scheme, host, path)
                     file_location = file_system
                     break
                 else:
@@ -109,7 +109,7 @@ def open_system_file(file_name):
          over http depending on the file name
     """
     # open the file over http
-    if re.compile(r'^http://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) != None:
         valid_url = create_valid_url(file_name)
         try:
             return urllib2.urlopen(valid_url)
@@ -123,7 +123,7 @@ def open_system_file(file_name):
 def open_args_system_file(file_name):
     """Creates a valid url with arguments added (ex. ?start=123)"""
     # open the file over http
-    if re.compile(r'^http://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) != None:
         valid_url = create_valid_url(file_name)
         args = urlparse.urlsplit(file_name)[3]
         arg_url = "%s?%s" % (valid_url, args)
@@ -135,7 +135,7 @@ def open_args_system_file(file_name):
 def create_valid_url(file_name):
     """Creates a valid url from the given url"""
     # Separate the host and the path
-    host, raw_path = urlparse.urlsplit(file_name)[1:3]
+    scheme, host, raw_path = urlparse.urlsplit(file_name)[:3]
     # Make sure that the filename isn't being parsed improperly
     if urlparse.urlsplit(file_name)[4] == '':
         # quote the path to fix special characters
@@ -154,13 +154,13 @@ def create_valid_url(file_name):
         # Combine the broken path into one and quote it
         path = urllib.quote("%s%s%s" % (raw_path, bad_char, broken_path))
     # Join the system and file path
-    return "http://%s%s" % (host, path)
+    return "%s://%s%s" % (scheme, host, path)
 
 
 def open_file_range(file_name, range_tuple):
     """Open a url file, but only a certain range of bytes"""
     # open the file over http
-    if re.compile(r'^http://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) != None:
         headers = {'Range': "bytes=%s-%s" % range_tuple}
         valid_url = create_valid_url(file_name)
         req = urllib2.Request(valid_url, None, headers)
