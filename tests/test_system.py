@@ -135,7 +135,7 @@ class TestOpenSystemFile():
         'https://example.com/pth/f.jpg'
     ])
     @mock.patch('urllib2.urlopen')
-    def test_open_system_file_http(self, mocked_urlopen, url):
+    def test_open_system_file_via_url(self, mocked_urlopen, url):
         """Test return value comes from urlopen call."""
         mocked_urlopen.return_value = expected = 'file'
         file_obj = system.open_system_file(url)
@@ -188,7 +188,7 @@ class TestCreateValidUrl():
         url = system.create_valid_url('http://ex.com/path,/sdf')
         assert url == 'http://ex.com/path%2C/sdf'
 
-    @pytest.mark.parametrize('original,expected', [
+    @pytest.mark.parametrize('original, expected', [
         ('http://ex.com/path#01/seg', 'http://ex.com/path%2301/seg'),
         ('https://ex.com/path#01/seg', 'https://ex.com/path%2301/seg'),
     ])
