@@ -7,7 +7,9 @@ from aubreylib import system
 class TestGetFileSystem():
 
     location_tuple = ('file://disk2/',
-                      'http://unt.edu/disk2/')
+                      'http://unt.edu/disk2/',
+                      'http://unt.edu',
+                      'https://unt.edu/disk3/')
 
     @mock.patch('os.path.exists')
     def test_file_local_to_server(self, mocked_exists):
@@ -46,6 +48,21 @@ class TestGetFileSystem():
 
     @mock.patch('os.path.exists')
     @mock.patch('httplib.HTTP')
+    def test_file_at_https_url(self, MockedHTTP, mocked_exists):
+        """Locate a file on another server via https URL."""
+        # Respond with Success for location_tuple https URL only.
+        http_responses = [(404, '', ''), (404, '', ''), (200, '', '')]
+        MockedHTTP.return_value.getreply.side_effect = http_responses
+        mocked_exists.return_value = False
+        path, location = system.get_file_system('metapthx',
+                                                '/me/ta/pt/hx/metapthx/web/4.jpg',
+                                                self.location_tuple)
+        expected = ('https://unt.edu/disk3/me/ta/pt/hx/metapthx/web/4.jpg',
+                    'https://unt.edu/disk3/')
+        assert (path, location) == expected
+
+    @mock.patch('os.path.exists')
+    @mock.patch('httplib.HTTP')
     def test_file_at_http_with_file_in_path(self, MockedHTTP, mocked_exists):
         """Locate a file on another server via http URL when file path
         starts with 'file://'.
@@ -59,13 +76,17 @@ class TestGetFileSystem():
                     'http://unt.edu/disk2/')
         assert (path, location) == expected
 
+    @mock.patch('os.path.exists')
     @mock.patch('httplib.HTTP')
-    def test_file_system_with_empty_path(self, MockedHTTP):
+    def test_file_system_with_empty_path(self, MockedHTTP, mocked_exists):
         """Test http:// location with an '' (empty) `path`."""
-        MockedHTTP.return_value.getreply.return_value = (200, '', '')
+        # Respond with Not Found for the first location_tuple URL tried,
+        # so the URL with no path will be tried.
+        MockedHTTP.return_value.getreply.return_value = (404, '', '')
+        mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 '',
-                                                ('http://unt.edu',))
+                                                self.location_tuple)
         expected = (None, None)
         assert (path, location) == expected
 
@@ -109,11 +130,15 @@ class TestGetCompleteFilePath():
 
 class TestOpenSystemFile():
 
+    @pytest.mark.parametrize('url', [
+        'http://example.com/pth/f.jpg',
+        'https://example.com/pth/f.jpg'
+    ])
     @mock.patch('urllib2.urlopen')
-    def test_open_system_file_http(self, mocked_urlopen):
+    def test_open_system_file_via_url(self, mocked_urlopen, url):
         """Test return value comes from urlopen call."""
         mocked_urlopen.return_value = expected = 'file'
-        file_obj = system.open_system_file('http://example.com/pth/f.jpg')
+        file_obj = system.open_system_file(url)
         assert file_obj == expected
 
     @mock.patch('urllib2.urlopen')
@@ -137,14 +162,18 @@ class TestOpenSystemFile():
 
 class TestOpenArgsSystemFile():
 
+    @pytest.mark.parametrize('url', [
+        'http://example.com/pth/f.jpg?start=123',
+        'https://example.com/pth/f.jpg?start=123'
+    ])
     @mock.patch('urllib2.urlopen')
-    def test_open_args_system_file_returns_file(self, mocked_urlopen):
+    def test_open_args_system_file_returns_file(self, mocked_urlopen, url):
         """Test a valid URL results in a returned object."""
         mocked_urlopen.return_value = expected = 'file'
-        url_with_args = 'http://example.com/pth/f.jpg?start=123'
-        file_obj = system.open_args_system_file(url_with_args)
+        file_obj = system.open_args_system_file(url)
         assert file_obj == expected
-        mocked_urlopen.assert_called_once_with(url_with_args)
+        # Verify urlopen argument had query string.
+        mocked_urlopen.assert_called_once_with(url)
 
     def test_open_args_system_file_raises_exception(self):
         """Test an invalid URL raises exception."""
@@ -159,21 +188,28 @@ class TestCreateValidUrl():
         url = system.create_valid_url('http://ex.com/path,/sdf')
         assert url == 'http://ex.com/path%2C/sdf'
 
-    def test_create_valid_url_fixes_and_encodes_url(self):
+    @pytest.mark.parametrize('original, expected', [
+        ('http://ex.com/path#01/seg', 'http://ex.com/path%2301/seg'),
+        ('https://ex.com/path#01/seg', 'https://ex.com/path%2301/seg'),
+    ])
+    def test_create_valid_url_fixes_and_encodes_url(self, original, expected):
         """Test url is put back together correctly and percent
         encoded after urlsplit improperly identifies a fragment.
         """
-        url = system.create_valid_url('http://ex.com/path#01/seg')
-        assert url == 'http://ex.com/path%2301/seg'
+        url = system.create_valid_url(original)
+        assert url == expected
 
 
 class TestOpenFileRange():
 
+    @pytest.mark.parametrize('url', [
+        'http://example.com/path',
+        'https://example.com/path'
+    ])
     @mock.patch('urllib2.urlopen')
     @mock.patch('urllib2.Request')
-    def test_open_file_range(self, MockedRequest, _):
+    def test_open_file_range(self, MockedRequest, _, url):
         """Test the HTTP request is made with supplied range."""
-        url = 'http://example.com/path'
         system.open_file_range(url, (0, 10))
         MockedRequest.assert_called_once_with(url,
                                               None,
