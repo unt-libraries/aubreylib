@@ -295,7 +295,6 @@ class ResourceObject(object):
             found_image = None
             # Get the first fileSet
             first_fileset = self.get_first_fileSet(structMap)
-        file_mimetype = None
         # if an image exists for the manifestation
         if found_image is not None:
             self.get_primary_fileSet(found_image, structMap)

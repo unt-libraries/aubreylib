@@ -9,7 +9,6 @@ env:
 matrix:
     allow_failures:
         - env: TOX_ENV=py34
-        - env: TOX_ENV=flake8
 install:
     - pip install tox
 script:
