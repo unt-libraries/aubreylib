@@ -25,7 +25,7 @@ def get_file_system(meta_id, file_path, location_tuple):
     # Loop through possible locations for files
     for file_system in location_tuple:
         # if the system is local to this server
-        if re.compile(r'^file://').search(file_system, 0) != None:
+        if re.compile(r'^file://').search(file_system, 0) is not None:
             absolute_path = file_system.replace('file:/', '')
             # if the file name starts with file://, change it to start
             # with just a /
@@ -39,7 +39,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                 file_location = absolute_path
                 break
         # if the system is on another server
-        elif re.compile(r'^https?://').search(file_system, 0) != None:
+        elif re.compile(r'^https?://').search(file_system, 0) is not None:
             try:
                 # if the file name starts with file:// or /, change it
                 # to start with no beginning slashes
@@ -81,10 +81,10 @@ def get_file_path(meta_id, file_name):
     meta_path = get_pair_path(meta_id)
     # Get only parts of the file_name we need
     stripped_regex = re.compile(r'^file:/?/(web/?.+)').search(file_name, 0)
-    if stripped_regex != None:
+    if stripped_regex is not None:
         stripped_filename = stripped_regex.group(1)
     else:
-        raise SystemMethodsException, "Can't recognize the file name: %s" % (file_name)
+        raise SystemMethodsException("Can't recognize the file name: %s" % (file_name))
     # join the base filename to the paired web path to create the file path
     file_path = os.path.join(meta_path, stripped_filename)
 
@@ -109,7 +109,7 @@ def open_system_file(file_name):
          over http depending on the file name
     """
     # open the file over http
-    if re.compile(r'^https?://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) is not None:
         valid_url = create_valid_url(file_name)
         try:
             return urllib2.urlopen(valid_url)
@@ -123,13 +123,13 @@ def open_system_file(file_name):
 def open_args_system_file(file_name):
     """Creates a valid url with arguments added (ex. ?start=123)"""
     # open the file over http
-    if re.compile(r'^https?://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) is not None:
         valid_url = create_valid_url(file_name)
         args = urlparse.urlsplit(file_name)[3]
         arg_url = "%s?%s" % (valid_url, args)
         return urllib2.urlopen(arg_url)
     else:
-        raise SystemMethodsException, "Invalid url: %s" % (file_name)
+        raise SystemMethodsException("Invalid url: %s" % (file_name))
 
 
 def create_valid_url(file_name):
@@ -147,7 +147,7 @@ def create_valid_url(file_name):
         # Create the bad character locating regex
         bad_regex = re.compile(raw_path+r'([\W]+)'+broken_path+r'$')
         # If the bad character(s) are found
-        if bad_regex.search(file_name, 0) != None:
+        if bad_regex.search(file_name, 0) is not None:
             bad_char = bad_regex.search(file_name, 0).group(1)
         else:
             bad_char = ''
@@ -160,15 +160,14 @@ def create_valid_url(file_name):
 def open_file_range(file_name, range_tuple):
     """Open a url file, but only a certain range of bytes"""
     # open the file over http
-    if re.compile(r'^https?://').search(file_name, 0) != None:
+    if re.compile(r'^https?://').search(file_name, 0) is not None:
         headers = {'Range': "bytes=%s-%s" % range_tuple}
         valid_url = create_valid_url(file_name)
         req = urllib2.Request(valid_url, None, headers)
         try:
             return urllib2.urlopen(req)
         except:
-            raise SystemMethodsException, "Specified Range (%s,%s) not valid." \
-                % range_tuple
+            raise SystemMethodsException("Specified Range (%s,%s) not valid." % range_tuple)
     # open it over the file system
     else:
         return None
@@ -201,4 +200,4 @@ def get_other_system(failed_url):
             return urllib2.urlopen(new_url)
         except:
             pass
-    raise SystemMethodsException, "Can't locate file: %s" % (failed_url)
+    raise SystemMethodsException("Can't locate file: %s" % (failed_url))
