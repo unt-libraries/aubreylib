@@ -7,7 +7,7 @@ Change Log
 
 * Added support for https-schemed URLs (see [related issue](https://github.com/unt-libraries/aubreylib/issues/4)).
 * Updated minimum required version of pyuntl to 1.0.1.
-* Fixed style issues (including comparison to None problems).
+* Fixed style issues (related to [this issue](https://github.com/unt-libraries/aubreylib/issues/3)).
 * Added more tests.
 
 
