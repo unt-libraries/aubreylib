@@ -196,7 +196,7 @@ def get_other_system(failed_url):
         replacement_host = urlparse.urlsplit(metadata_location)[1]
         new_url = failed_url.replace(host, replacement_host)
         try:
-            return urllib2.urlopen(new_url)
+            return urllib2.urlopen(new_url, timeout=3)
         except:
             pass
     raise SystemMethodsException("Can't locate file: %s" % (failed_url))
