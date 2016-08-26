@@ -1,5 +1,4 @@
 import urlparse
-import httplib
 import os
 import re
 import urllib
@@ -54,16 +53,16 @@ def get_file_system(meta_id, file_path, location_tuple):
                 # Quote the url path (helps with spaces and special characters)
                 path = urllib.quote(raw_path)
                 if host != '' and path != '':
-                    # use httplib to see if the file exists on the server
-                    http = httplib.HTTP(host)
-                    http.putrequest("HEAD", path)
-                    http.putheader("Host", host)
-                    http.endheaders()
-                    errcode, errmsg, headers = http.getreply()
+                    # Check if file exists on the server
+                    url = '%s://%s%s' % (scheme, host, path)
+                    headers = {'Host': host}
+                    request = urllib2.Request(url, headers=headers)
+                    request.get_method = lambda: 'HEAD'
+                    status_code = urllib2.urlopen(request, timeout=3).getcode()
                 else:
                     system_path = None
                 # if the file exists, return the necessary data
-                if errcode == 200:
+                if status_code == 200:
                     system_path = '%s://%s%s' % (scheme, host, path)
                     file_location = file_system
                     break
