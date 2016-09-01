@@ -34,10 +34,10 @@ class TestGetFileSystem():
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('httplib.HTTP')
-    def test_file_at_http_url(self, MockedHTTP, mocked_exists):
+    @mock.patch('urllib2.urlopen')
+    def test_file_at_http_url(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via http URL."""
-        MockedHTTP.return_value.getreply.return_value = (200, '', '')
+        mocked_urlopen.return_value.getcode.return_value = 200
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 '/me/ta/pt/hx/metapthx/web/4.jpg',
@@ -47,12 +47,12 @@ class TestGetFileSystem():
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('httplib.HTTP')
-    def test_file_at_https_url(self, MockedHTTP, mocked_exists):
+    @mock.patch('urllib2.urlopen')
+    def test_file_at_https_url(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via https URL."""
         # Respond with Success for location_tuple https URL only.
-        http_responses = [(404, '', ''), (404, '', ''), (200, '', '')]
-        MockedHTTP.return_value.getreply.side_effect = http_responses
+        http_responses = [404, 404, 200]
+        mocked_urlopen.return_value.getcode.side_effect = http_responses
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 '/me/ta/pt/hx/metapthx/web/4.jpg',
@@ -62,12 +62,12 @@ class TestGetFileSystem():
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('httplib.HTTP')
-    def test_file_at_http_with_file_in_path(self, MockedHTTP, mocked_exists):
+    @mock.patch('urllib2.urlopen')
+    def test_file_at_http_with_file_in_path(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via http URL when file path
         starts with 'file://'.
         """
-        MockedHTTP.return_value.getreply.return_value = (200, '', '')
+        mocked_urlopen.return_value.getcode.return_value = 200
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 'file://web/4.jpg',
@@ -77,12 +77,12 @@ class TestGetFileSystem():
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('httplib.HTTP')
-    def test_file_system_with_empty_path(self, MockedHTTP, mocked_exists):
+    @mock.patch('urllib2.urlopen')
+    def test_file_system_with_empty_path(self, mocked_urlopen, mocked_exists):
         """Test http:// location with an '' (empty) `path`."""
         # Respond with Not Found for the first location_tuple URL tried,
         # so the URL with no path will be tried.
-        MockedHTTP.return_value.getreply.return_value = (404, '', '')
+        mocked_urlopen.return_value.getcode.return_value = 404
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 '',
@@ -91,10 +91,10 @@ class TestGetFileSystem():
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('httplib.HTTP')
-    def test_file_not_found(self, MockedHTTP, mocked_exists):
+    @mock.patch('urllib2.urlopen')
+    def test_file_not_found(self, mocked_urlopen, mocked_exists):
         """Test file not found on any given system."""
-        MockedHTTP.return_value.getreply.return_value = (404, '', '')
+        mocked_urlopen.return_value.getcode.return_value = 404
         mocked_exists.return_value = False
         path, location = system.get_file_system('metapthx',
                                                 'web/4.jpg',
@@ -241,4 +241,4 @@ class TestGetOtherSystem():
         mocked_urlopen.return_value = expected = 'file'
         file_obj = system.get_other_system('http://example.com/disk1/noexist')
         assert file_obj == expected
-        mocked_urlopen.assert_called_once_with('http://url.com/disk1/noexist')
+        mocked_urlopen.assert_called_once_with('http://url.com/disk1/noexist', timeout=3)
