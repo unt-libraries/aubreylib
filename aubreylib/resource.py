@@ -112,6 +112,21 @@ def get_author_citation_string(desc_MD):
     return author_citation_string
 
 
+def get_dimensions_filename(mets_file):
+    """Return the JSON dimensions file path if it exists."""
+    dimensions_file = mets_file.replace('.mets.xml', '.json')
+    if os.path.exists(dimensions_file):
+        return dimensions_file
+
+
+def get_dimensions_data(mets_file):
+    """Load data from dimensions file."""
+    dimensions_file = get_dimensions_filename(mets_file)
+    if dimensions_file is not None:
+        with open(dimensions_file) as dim_f:
+            return json.load(dim_f)
+
+
 class ResourceObject(object):
 
     def __init__(self, identifier, metadataLocations, staticFileLocations,
@@ -462,6 +477,7 @@ class ResourceObject(object):
         fileSet_view_type = ''
         zoom = False
         pdf = None
+        dimensions = get_dimensions_data(self.mets_filename)
         for ptr_file in list(file_group):
             file_dict = {}
             ignore_ptr_field = [
@@ -482,6 +498,11 @@ class ResourceObject(object):
             for flocat in list(ptr_file):
                 file_dict['flocat'] = flocat.get(self.xlink_namespace + 'href')
                 break
+            # Get the height/width
+            if dimensions is not None:
+                file_dimensions = dimensions.get(file_dict['flocat'])
+                if file_dimensions is not None:
+                    file_dict.update(file_dimensions)
             # if it is the main fileSet file
             if ptr_file.get('USE') == str(self.use['high_res']):
                 # Get the file pointer view type
