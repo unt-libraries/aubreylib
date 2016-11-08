@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" TYPE="access content package" OBJID="ark:/67531/metapth12434">
+  <metsHdr CREATEDATE="2009-06-17T23:48:57Z" LASTMODDATE="2009-06-17T23:48:57Z" ID="hdr_00001">
+    <agent TYPE="ORGANIZATION" ROLE="CREATOR">
+      <name>Digital Projects Unit : University of North Texas Libraries</name>
+    </agent>
+  </metsHdr>
+  <dmdSec ID="dmd_00001">
+    <mdRef xlink:href="file://metapth12434.untl.xml" OTHERMDTYPE="UNTL" LOCTYPE="URL" MDTYPE="OTHER"/>
+  </dmdSec>
+  <fileSec ID="sec_00001">
+    <fileGrp ID="fgrp_00001">
+      <file MIMETYPE="image/jpeg" USE="1" CHECKSUMTYPE="MD5" CREATED="2009-06-17T23:48:57Z" CHECKSUM="671c48ee5bd6ece28adf6c2aa72c6d40" OWNERID="urn:uuid:bf54d9e3-eeb2-48dc-a461-11725949b322" ID="file_00001" SIZE="444455">
+        <FLocat xlink:href="file://web/pf_b-229.jpg" LOCTYPE="URL"/>
+      </file>
+      <file MIMETYPE="image/jpeg" USE="2" CHECKSUMTYPE="MD5" CREATED="2009-06-17T23:48:57Z" CHECKSUM="95f0f6929a48dd8fcf7e6c889a1051da" OWNERID="urn:uuid:d2504527-9ee0-42e4-b8f7-60fe13109a76" ID="file_00002" SIZE="2595">
+        <FLocat xlink:href="file://web/thumbnail-pf_b-229.jpg" LOCTYPE="URL"/>
+      </file>
+      <file MIMETYPE="image/jpeg" USE="10" CHECKSUMTYPE="MD5" CREATED="2009-06-17T23:48:57Z" CHECKSUM="36b43e4c3fd56aae1c57264bbd09b285" OWNERID="urn:uuid:5c19f0b6-f62a-4d1a-b4b2-9f8e817bd629" ID="file_00003" SIZE="1791">
+        <FLocat xlink:href="file://web/square-pf_b-229.jpg" LOCTYPE="URL"/>
+      </file>
+      <file MIMETYPE="image/jpeg" USE="3" CHECKSUMTYPE="MD5" CREATED="2009-06-17T23:48:57Z" CHECKSUM="91d9c245ab0f8a632ed7ac7706968c7c" OWNERID="urn:uuid:54ef6e9f-3326-4499-a977-de88fa487c21" ID="file_00004" SIZE="96581">
+        <FLocat xlink:href="file://web/web-pf_b-229.jpg" LOCTYPE="URL"/>
+      </file>
+      <file MIMETYPE="text/plain" USE="4" CHECKSUMTYPE="MD5" CREATED="2009-06-17T23:48:57Z" CHECKSUM="b18b9f1e25f7ea249e00c610295d56c0" OWNERID="urn:uuid:dcd5294c-98c8-4b26-8d13-1d499b7cc560" ID="file_00005" SIZE="6712">
+        <FLocat xlink:href="file://web/pf_b-229.txt" LOCTYPE="URL"/>
+      </file>
+    </fileGrp>
+  </fileSec>
+  <structMap ID="smap_00001">
+    <div DMDID="dmd_00001" ID="obj_00001" TYPE="object">
+      <div ID="th_00001" TYPE="thumbnail">
+        <fptr FILEID="file_00002"/>
+      </div>
+      <div ID="sqr_00001" TYPE="square">
+        <fptr FILEID="file_00003"/>
+      </div>
+      <div ID="med_00001" TYPE="medium">
+        <fptr FILEID="file_00004"/>
+      </div>
+      <div ID="mn_00001" TYPE="manifestation" ORDER="1">
+        <div ID="fs_00001" TYPE="fileSet" ORDER="1">
+          <fptr FILEID="file_00001"/>
+          <fptr FILEID="file_00002"/>
+          <fptr FILEID="file_00003"/>
+          <fptr FILEID="file_00004"/>
+        </div>
+      </div>
+    </div>
+  </structMap>
+</mets>
