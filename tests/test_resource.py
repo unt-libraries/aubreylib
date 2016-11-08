@@ -91,7 +91,7 @@ class TestResourceObject:
 
         # Use the METs file from our test data to make resource object.
         current_directory = os.path.dirname(os.path.abspath(__file__))
-        mets_path = '{}/data/metapth12434.mets.xml'.format(current_directory)
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
 
         ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
                                      staticFileLocations=[],
