@@ -7,8 +7,7 @@ import json
 
 
 from lxml import etree
-from aubreylib.system import get_file_system, open_system_file,\
-    get_pair_path
+from aubreylib.system import get_file_system, open_system_file, get_pair_path
 from pyuntl.untldoc import untlxml2pydict, untldict2py
 from pyuntl.util import untldict_normalizer
 from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
@@ -112,19 +111,13 @@ def get_author_citation_string(desc_MD):
     return author_citation_string
 
 
-def get_dimensions_filename(mets_file):
+def get_dimensions_data(mets_file):
     """Return the JSON dimensions file path if it exists."""
     dimensions_file = mets_file.replace('.mets.xml', '.json')
-    if os.path.exists(dimensions_file):
-        return dimensions_file
-
-
-def get_dimensions_data(mets_file):
-    """Load data from dimensions file."""
-    dimensions_file = get_dimensions_filename(mets_file)
-    if dimensions_file is not None:
-        with open(dimensions_file) as dim_f:
-            return json.load(dim_f)
+    try:
+        return json.load(open_system_file(dimensions_file))
+    except:
+        return None
 
 
 class ResourceObject(object):

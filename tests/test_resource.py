@@ -42,23 +42,6 @@ class TestGetAuthorCitationString():
         assert citation_string == expected
 
 
-class TestGetDimensionsFilename:
-
-    @patch('os.path.exists')
-    def test_get_dimensions_filename_exists(self, mock_exists):
-        """Verify filename is returned when file exists."""
-        mock_exists.return_value = True
-        filename = resource.get_dimensions_filename('/some/path/meta1234.mets.xml')
-        assert filename == '/some/path/meta1234.json'
-
-    @patch('os.path.exists')
-    def test_get_dimensions_filename_absent(self, mock_exists):
-        """Verify None is returned when file does not exist."""
-        mock_exists.return_value = False
-        filename = resource.get_dimensions_filename('/some/path/meta1234.mets.xml')
-        assert filename is None
-
-
 class TestGetDimensionsData:
 
     @patch('os.path.exists')
