@@ -7,8 +7,7 @@ import json
 
 
 from lxml import etree
-from aubreylib.system import get_file_system, open_system_file,\
-    get_pair_path
+from aubreylib.system import get_file_system, open_system_file, get_pair_path
 from pyuntl.untldoc import untlxml2pydict, untldict2py
 from pyuntl.util import untldict_normalizer
 from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
@@ -110,6 +109,15 @@ def get_author_citation_string(desc_MD):
             author_citation_string = '; '.join(
                 names[:-1]) + ' & ' + names[-1]
     return author_citation_string
+
+
+def get_dimensions_data(mets_file):
+    """Return the JSON dimensions file path if it exists."""
+    dimensions_file = mets_file.replace('.mets.xml', '.json')
+    try:
+        return json.load(open_system_file(dimensions_file))
+    except:
+        return None
 
 
 class ResourceObject(object):
@@ -462,6 +470,7 @@ class ResourceObject(object):
         fileSet_view_type = ''
         zoom = False
         pdf = None
+        dimensions = get_dimensions_data(self.mets_filename)
         for ptr_file in list(file_group):
             file_dict = {}
             ignore_ptr_field = [
@@ -482,6 +491,11 @@ class ResourceObject(object):
             for flocat in list(ptr_file):
                 file_dict['flocat'] = flocat.get(self.xlink_namespace + 'href')
                 break
+            # Get the height/width
+            if dimensions is not None:
+                file_dimensions = dimensions.get(file_dict['flocat'])
+                if file_dimensions is not None:
+                    file_dict.update(file_dimensions)
             # if it is the main fileSet file
             if ptr_file.get('USE') == str(self.use['high_res']):
                 # Get the file pointer view type
