@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+1.1.0
+-----
+
+* Added supplying of dimensions to ResourceObject instances when available.
+* Added prevention of system hanging on HEAD and GET requests when target server is down.
+* Corrected Python version in requirements.
+
 
 1.0.1
 -----
