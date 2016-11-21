@@ -152,6 +152,8 @@ class ResourceObject(object):
                 self.pair_path,
                 metadataLocations
             )
+        # Get dimensions data
+        self.dimensions = get_dimensions_data(self.mets_filename)
         # If a getCopy url was given
         if getCopy_url:
             self.getCopy_data = get_getCopy_data(getCopy_url, self.meta_id)
@@ -470,7 +472,6 @@ class ResourceObject(object):
         fileSet_view_type = ''
         zoom = False
         pdf = None
-        dimensions = get_dimensions_data(self.mets_filename)
         for ptr_file in list(file_group):
             file_dict = {}
             ignore_ptr_field = [
@@ -492,8 +493,8 @@ class ResourceObject(object):
                 file_dict['flocat'] = flocat.get(self.xlink_namespace + 'href')
                 break
             # Get the height/width
-            if dimensions is not None:
-                file_dimensions = dimensions.get(file_dict['flocat'])
+            if self.dimensions is not None:
+                file_dimensions = self.dimensions.get(file_dict['flocat'])
                 if file_dimensions is not None:
                     file_dict.update(file_dimensions)
             # if it is the main fileSet file
