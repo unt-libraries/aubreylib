@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+1.1.1
+-----
+
+* Modified ResourceObject to store dimensions data as an attribute.
+
 1.1.0
 -----
 
