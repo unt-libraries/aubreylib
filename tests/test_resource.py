@@ -93,3 +93,46 @@ class TestResourceObject:
                               'USE': '4',
                               'flocat': 'file://web/pf_b-229.txt'}
         assert no_dimensions_data in ro.manifestation_dict[1][1]['file_ptrs']
+
+    @patch('aubreylib.resource.get_transcriptions_data')
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    def testResourceObjectTranscriptions(self, mocked_fileSet_file,
+                                         mocked_get_transcriptions_data):
+        """Verifies accurate transcriptions data is provided."""
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        expected_transcription_data = {
+            'MIMETYPE': 'text/vtt',
+            'SIZE': 3618,
+            'USE': 'vtt',
+            'flocat': 'http://example.com/over/there',
+            'language': 'eng',
+            'vtt_kind': 'captions',
+        }
+        mocked_get_transcriptions_data.return_value = {
+            '1': {
+                '1': [
+                    expected_transcription_data
+                ]
+            }
+        }
+
+        # Use the METs file from our test data to make resource object.
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+
+        ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                     staticFileLocations=[],
+                                     mimetypeIconsPath='', use=USE)
+        assert expected_transcription_data in ro.manifestation_dict[1][1]['file_ptrs']
+
+        # Check all the 'has_vtt...' values.
+        # This record does have captions.
+        assert ro.manifestation_dict[1][1]['has_vtt_captions']
+        # No other types of transcriptions exist for this record.
+        assert not ro.manifestation_dict[1][1]['has_vtt_subtitles']
+        assert not ro.manifestation_dict[1][1]['has_vtt_descriptions']
+        assert not ro.manifestation_dict[1][1]['has_vtt_chapters']
+        assert not ro.manifestation_dict[1][1]['has_vtt_thumbnails']
+        assert not ro.manifestation_dict[1][1]['has_vtt_metadata']
