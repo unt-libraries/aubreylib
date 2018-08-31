@@ -73,7 +73,7 @@ def get_getCopy_data(getCopy_url, meta_id):
     # Try returning the getCopy data
     try:
         return json.loads(urllib2.urlopen(record_url).read())
-    except:
+    except Exception:
         # Otherwise, return an empty dictionary
         return {}
 
@@ -116,8 +116,20 @@ def get_dimensions_data(mets_file):
     dimensions_file = mets_file.replace('.mets.xml', '.json')
     try:
         return json.load(open_system_file(dimensions_file))
-    except:
+    except Exception:
         return None
+
+
+def get_transcriptions_data(meta_id, resource_type, transcriptions_server_url):
+    """Return the JSON transcriptions structure if it exists. Only for sounds and videos."""
+    if resource_type not in ['sound', 'video'] or not transcriptions_server_url:
+        return {}
+    transcriptions_url = '{}/{}/'.format(transcriptions_server_url.rstrip('/'), meta_id)
+    try:
+        return json.loads(urllib2.urlopen(transcriptions_url).read())
+    except Exception:
+        # Otherwise, return an empty dictionary
+        return {}
 
 
 class ResourceObject(object):
@@ -162,7 +174,7 @@ class ResourceObject(object):
         # Open the METS document
         try:
             mets_filehandle = open_system_file(self.mets_filename)
-        except:
+        except Exception:
             raise ResourceObjectException("Could not open the Mets " +
                                           "document: %s" % (self.meta_id))
         # Parse the mets document
@@ -174,6 +186,12 @@ class ResourceObject(object):
         # Get the descriptive metadata
         self.desc_MD = get_desc_metadata(self.metadata_file,
                                          self.metadata_type)
+        # Get transcriptions data
+        self.transcriptions = get_transcriptions_data(
+            meta_id=self.meta_id,
+            resource_type=self.desc_MD['resourceType'][0]['content'],
+            transcriptions_server_url=kwargs.get('transcriptions_server_url'),
+        )
         # Get the fileSets within the fileSec
         self.get_structMap(parsed_mets)
         # Get the embargo information, if it exists
@@ -410,8 +428,13 @@ class ResourceObject(object):
         for fileSet in list(manifest):
             # Get the fileSet order number
             fileSet_num = int(fileSet.get("ORDER", '1'))
+            # Get the transcriptions data (if any) for this fileSet
+            fileSet_transcriptions = self.transcriptions.get(str(manifest_num), {}).get(
+                str(fileSet_num), [])
             # Get the file pointers and fileSet view type
             fileSet_data = self.get_file_pointers(fileSet, fileSec, file_index)
+            # Add the transcriptions (if any) to the file_ptrs list.
+            fileSet_data['file_ptrs'].extend(fileSet_transcriptions)
             # Create the fileSet data dictionary
             manifestation_dict[fileSet_num] = {
                 'file_ptrs': fileSet_data['file_ptrs'],
@@ -419,6 +442,12 @@ class ResourceObject(object):
                 'label': fileSet.get("LABEL"),
                 'fileSet_view_type': fileSet_data['fileSet_view_type'],
                 'zoom': fileSet_data['zoom'],
+                'has_vtt_captions': self.has_vtt_type(fileSet_transcriptions, 'captions'),
+                'has_vtt_subtitles': self.has_vtt_type(fileSet_transcriptions, 'subtitles'),
+                'has_vtt_descriptions': self.has_vtt_type(fileSet_transcriptions, 'descriptions'),
+                'has_vtt_chapters': self.has_vtt_type(fileSet_transcriptions, 'chapters'),
+                'has_vtt_thumbnails': self.has_vtt_type(fileSet_transcriptions, 'thumbnails'),
+                'has_vtt_metadata': self.has_vtt_type(fileSet_transcriptions, 'metadata'),
             }
             # If the manifestation doesn't have a view
             # type (return as a regular file)
@@ -447,6 +476,12 @@ class ResourceObject(object):
         self.manifestation_view_types[manifest_num] = manifest_view_type
         self.manifestation_labels[manifest_num] = manifest.get("LABEL", None)
         return manifestation_dict
+
+    def has_vtt_type(self, transcriptions_list, vtt_type):
+        for transcription_dict in transcriptions_list:
+            if transcription_dict.get('vtt_kind') == vtt_type:
+                return True
+        return False
 
     # Gets the file pointers from the given fileset
     # (searches for the fileset starting from the fileSec node or fileGrp node)
@@ -557,7 +592,7 @@ class ResourceObject(object):
                 try:
                     embargo_date = datetime.datetime.strptime(
                         date_string, "%Y-%m-%d")
-                except:
+                except Exception:
                     pass
                 else:
                     self.embargo_info['embargo_until_date'] = date_string
@@ -582,7 +617,7 @@ class ResourceObject(object):
                             'REPOSITORY_ADMIN_DICT',
                             default_contact,
                         )
-                except:
+                except Exception:
                     self.embargo_info['repository_admin_contact'] =\
                         default_contact
                 # Attempt to get the author e-mails from the creator field

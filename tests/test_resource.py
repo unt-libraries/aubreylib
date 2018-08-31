@@ -2,7 +2,8 @@
 
 import os
 import pytest
-from mock import mock_open, patch
+import urllib2
+from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
 
@@ -63,6 +64,61 @@ class TestGetDimensionsData:
             assert returned_json is None
 
 
+class TestGetTranscriptionsData:
+
+    def test_get_transcriptions_data_wrong_resource_type(self):
+        result = resource.get_transcriptions_data('metadc123', 'text', 'http://example.com')
+        assert result == {}
+
+    @pytest.mark.parametrize('url', [
+        '',
+        None,
+    ])
+    def test_no_transcriptions_server_url(self, url):
+        result = resource.get_transcriptions_data('metadc123', 'text', url)
+        assert result == {}
+
+    @pytest.mark.parametrize('url', [
+        'http://example.com',
+        'http://example.com/',
+    ])
+    @patch('urllib2.urlopen')
+    def test_no_double_slash(self, mock_urlopen, url):
+        mock_urlopen.return_value = '{}'
+        resource.get_transcriptions_data('metadc123', 'video', url)
+        mock_urlopen.assert_called_once_with('http://example.com/metadc123/')
+
+    @patch('urllib2.urlopen')
+    def test_catches_urlopen_exceptions(self, mock_urlopen):
+        mock_urlopen.side_effect = [
+            urllib2.HTTPError,
+            ValueError,
+            TypeError,
+            AttributeError,
+        ]
+        for i in range(4):
+            result = resource.get_transcriptions_data('metadc123', 'video', 'bad_url')
+            assert result == {}
+
+    @patch('json.loads')
+    @patch('urllib2.urlopen')
+    def test_catches_loads_exceptions(self, mock_urlopen, mock_loads):
+        mock_loads.side_effect = [
+            ValueError,
+            TypeError,
+        ]
+        mock_urlopen.return_value = ''
+        for i in range(2):
+            result = resource.get_transcriptions_data('metadc123', 'video', 'bad_json')
+            assert result == {}
+
+    @patch('urllib2.urlopen')
+    def test_returns_expected_data(self, mock_urlopen):
+        mock_urlopen.return_value = MagicMock(read=lambda: '{"some": "data"}')
+        result = resource.get_transcriptions_data('metadc123', 'video', 'http://example.com')
+        assert result == {'some': 'data'}
+
+
 class TestResourceObject:
 
     @patch.object(resource.ResourceObject, 'get_fileSet_file')
@@ -93,3 +149,50 @@ class TestResourceObject:
                               'USE': '4',
                               'flocat': 'file://web/pf_b-229.txt'}
         assert no_dimensions_data in ro.manifestation_dict[1][1]['file_ptrs']
+
+    @patch('aubreylib.resource.get_transcriptions_data')
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    def testResourceObjectTranscriptions(self, mocked_fileSet_file,
+                                         mocked_get_transcriptions_data):
+        """Verifies accurate transcriptions data is provided."""
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        expected_transcription_data = {
+            'MIMETYPE': 'text/vtt',
+            'SIZE': 3618,
+            'USE': 'vtt',
+            'flocat': 'http://example.com/over/there',
+            'language': 'eng',
+            'vtt_kind': 'captions',
+        }
+        mocked_get_transcriptions_data.return_value = {
+            '1': {
+                '1': [
+                    expected_transcription_data
+                ]
+            }
+        }
+
+        # Use the METs file from our test data to make resource object.
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+
+        ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                     staticFileLocations=[], mimetypeIconsPath='', use=USE,
+                                     transcriptions_server_url='http://example.com')
+
+        mocked_get_transcriptions_data.assert_called_once_with(
+            meta_id='metapth12434', resource_type='image_photo',
+            transcriptions_server_url='http://example.com')
+        assert expected_transcription_data in ro.manifestation_dict[1][1]['file_ptrs']
+
+        # Check all the 'has_vtt...' values.
+        # This record does have captions.
+        assert ro.manifestation_dict[1][1]['has_vtt_captions']
+        # No other types of transcriptions exist for this record.
+        assert not ro.manifestation_dict[1][1]['has_vtt_subtitles']
+        assert not ro.manifestation_dict[1][1]['has_vtt_descriptions']
+        assert not ro.manifestation_dict[1][1]['has_vtt_chapters']
+        assert not ro.manifestation_dict[1][1]['has_vtt_thumbnails']
+        assert not ro.manifestation_dict[1][1]['has_vtt_metadata']

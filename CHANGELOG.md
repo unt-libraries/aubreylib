@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+1.2.0
+-----
+
+* Added transcriptions data to ResourceObject instances.
+* Fixed flake8 failures dealing with bare excepts. Now those excepts catch all Exception instances.
+
+
 1.1.0
 -----
 

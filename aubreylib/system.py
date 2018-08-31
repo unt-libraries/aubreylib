@@ -68,7 +68,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                     break
                 else:
                     system_path = None
-            except:
+            except Exception:
                 pass
     # returns the file name
     return system_path, file_location
@@ -112,7 +112,7 @@ def open_system_file(file_name):
         valid_url = create_valid_url(file_name)
         try:
             return urllib2.urlopen(valid_url)
-        except:
+        except Exception:
             return get_other_system(valid_url)
     # open it over the file system
     else:
@@ -165,7 +165,7 @@ def open_file_range(file_name, range_tuple):
         req = urllib2.Request(valid_url, None, headers)
         try:
             return urllib2.urlopen(req)
-        except:
+        except Exception:
             raise SystemMethodsException("Specified Range (%s,%s) not valid." % range_tuple)
     # open it over the file system
     else:
@@ -179,13 +179,13 @@ def get_other_system(failed_url):
     # Determine meta/static servers locations
     try:
         from django.conf import settings
-    except:
+    except Exception:
         from aubreylib import METADATA_LOCATIONS, STATIC_FILE_LOCATIONS
     else:
         try:
             METADATA_LOCATIONS = settings.METADATA_LOCATIONS
             STATIC_FILE_LOCATIONS = settings.STATIC_FILE_LOCATIONS
-        except:
+        except Exception:
             from aubreylib import METADATA_LOCATIONS, STATIC_FILE_LOCATIONS
     # Combine the metadata locations with static locations
     all_locations = METADATA_LOCATIONS + STATIC_FILE_LOCATIONS
@@ -197,6 +197,6 @@ def get_other_system(failed_url):
         new_url = failed_url.replace(host, replacement_host)
         try:
             return urllib2.urlopen(new_url, timeout=3)
-        except:
+        except Exception:
             pass
     raise SystemMethodsException("Can't locate file: %s" % (failed_url))
