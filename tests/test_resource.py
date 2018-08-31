@@ -2,7 +2,8 @@
 
 import os
 import pytest
-from mock import mock_open, patch
+import urllib2
+from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
 
@@ -61,6 +62,61 @@ class TestGetDimensionsData:
         with patch('__builtin__.open', mock_open()):
             returned_json = resource.get_dimensions_data('/fake/file.mets.xml')
             assert returned_json is None
+
+
+class TestGetTranscriptionsData:
+
+    def test_get_transcriptions_data_wrong_resource_type(self):
+        result = resource.get_transcriptions_data('metadc123', 'text', 'http://example.com')
+        assert result == {}
+
+    @pytest.mark.parametrize('url', [
+        '',
+        None,
+    ])
+    def test_no_transcriptions_server_url(self, url):
+        result = resource.get_transcriptions_data('metadc123', 'text', url)
+        assert result == {}
+
+    @pytest.mark.parametrize('url', [
+        'http://example.com',
+        'http://example.com/',
+    ])
+    @patch('urllib2.urlopen')
+    def test_no_double_slash(self, mock_urlopen, url):
+        mock_urlopen.return_value = '{}'
+        resource.get_transcriptions_data('metadc123', 'video', url)
+        mock_urlopen.assert_called_once_with('http://example.com/metadc123/')
+
+    @patch('urllib2.urlopen')
+    def test_catches_urlopen_exceptions(self, mock_urlopen):
+        mock_urlopen.side_effect = [
+            urllib2.HTTPError,
+            ValueError,
+            TypeError,
+            AttributeError,
+        ]
+        for i in range(5):
+            result = resource.get_transcriptions_data('metadc123', 'video', 'bad_url')
+            assert result == {}
+
+    @patch('json.loads')
+    @patch('urllib2.urlopen')
+    def test_catches_loads_exceptions(self, mock_urlopen, mock_loads):
+        mock_loads.side_effect = [
+            ValueError,
+            TypeError,
+        ]
+        mock_urlopen.return_value = ''
+        for i in range(2):
+            result = resource.get_transcriptions_data('metadc123', 'video', 'bad_json')
+            assert result == {}
+
+    @patch('urllib2.urlopen')
+    def test_returns_expected_data(self, mock_urlopen):
+        mock_urlopen.return_value = MagicMock(read=lambda: '{"some": "data"}')
+        result = resource.get_transcriptions_data('metadc123', 'video', 'http://example.com')
+        assert result == {'some': 'data'}
 
 
 class TestResourceObject:
@@ -123,8 +179,12 @@ class TestResourceObject:
         mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
 
         ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
-                                     staticFileLocations=[],
-                                     mimetypeIconsPath='', use=USE)
+                                     staticFileLocations=[], mimetypeIconsPath='', use=USE,
+                                     transcriptions_server_url='http://example.com')
+
+        mocked_get_transcriptions_data.assert_called_once_with(
+            meta_id='metapth12434', resource_type='image_photo',
+            transcriptions_server_url='http://example.com')
         assert expected_transcription_data in ro.manifestation_dict[1][1]['file_ptrs']
 
         # Check all the 'has_vtt...' values.

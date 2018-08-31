@@ -73,7 +73,7 @@ def get_getCopy_data(getCopy_url, meta_id):
     # Try returning the getCopy data
     try:
         return json.loads(urllib2.urlopen(record_url).read())
-    except urllib2.URLError:
+    except Exception:
         # Otherwise, return an empty dictionary
         return {}
 
@@ -116,7 +116,7 @@ def get_dimensions_data(mets_file):
     dimensions_file = mets_file.replace('.mets.xml', '.json')
     try:
         return json.load(open_system_file(dimensions_file))
-    except:
+    except Exception:
         return None
 
 
@@ -127,7 +127,7 @@ def get_transcriptions_data(meta_id, resource_type, transcriptions_server_url):
     transcriptions_url = '{}/{}/'.format(transcriptions_server_url.rstrip('/'), meta_id)
     try:
         return json.loads(urllib2.urlopen(transcriptions_url).read())
-    except urllib2.URLError:
+    except Exception:
         # Otherwise, return an empty dictionary
         return {}
 
@@ -174,7 +174,7 @@ class ResourceObject(object):
         # Open the METS document
         try:
             mets_filehandle = open_system_file(self.mets_filename)
-        except:
+        except Exception:
             raise ResourceObjectException("Could not open the Mets " +
                                           "document: %s" % (self.meta_id))
         # Parse the mets document
@@ -592,7 +592,7 @@ class ResourceObject(object):
                 try:
                     embargo_date = datetime.datetime.strptime(
                         date_string, "%Y-%m-%d")
-                except ValueError:
+                except Exception:
                     pass
                 else:
                     self.embargo_info['embargo_until_date'] = date_string
@@ -617,7 +617,7 @@ class ResourceObject(object):
                             'REPOSITORY_ADMIN_DICT',
                             default_contact,
                         )
-                except:
+                except Exception:
                     self.embargo_info['repository_admin_contact'] =\
                         default_contact
                 # Attempt to get the author e-mails from the creator field
