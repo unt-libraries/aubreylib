@@ -96,7 +96,7 @@ class TestGetTranscriptionsData:
             TypeError,
             AttributeError,
         ]
-        for i in range(5):
+        for i in range(4):
             result = resource.get_transcriptions_data('metadc123', 'video', 'bad_url')
             assert result == {}
 
