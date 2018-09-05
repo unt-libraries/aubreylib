@@ -66,8 +66,13 @@ class TestGetDimensionsData:
 
 class TestGetTranscriptionsData:
 
-    def test_get_transcriptions_data_wrong_resource_type(self):
-        result = resource.get_transcriptions_data('metadc123', 'text', 'http://example.com')
+    @pytest.mark.parametrize('resource_type', [
+        '',
+        None,
+        'text',
+    ])
+    def test_get_transcriptions_data_wrong_resource_type(self, resource_type):
+        result = resource.get_transcriptions_data('metadc123', resource_type, 'http://example.com')
         assert result == {}
 
     @pytest.mark.parametrize('url', [
@@ -196,3 +201,18 @@ class TestResourceObject:
         assert not ro.manifestation_dict[1][1]['has_vtt_chapters']
         assert not ro.manifestation_dict[1][1]['has_vtt_thumbnails']
         assert not ro.manifestation_dict[1][1]['has_vtt_metadata']
+
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    @patch('aubreylib.resource.get_desc_metadata')
+    def testResourceObjectEmptyDescMD(self, mocked_get_desc_metadata, mocked_fileSet_file):
+        """Tests that a ResourceObject can instantiate with missing descriptive metadata keys."""
+        mocked_get_desc_metadata.return_value = {}
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+
+        resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                staticFileLocations=[], mimetypeIconsPath='', use=USE,
+                                transcriptions_server_url='http://example.com')

@@ -189,7 +189,7 @@ class ResourceObject(object):
         # Get transcriptions data
         self.transcriptions = get_transcriptions_data(
             meta_id=self.meta_id,
-            resource_type=self.desc_MD['resourceType'][0]['content'],
+            resource_type=self.desc_MD.get('resourceType', [{}])[0].get('content'),
             transcriptions_server_url=kwargs.get('transcriptions_server_url'),
         )
         # Get the fileSets within the fileSec
