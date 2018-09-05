@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+
+1.2.1
+-----
+
+* Fixed bug which could raise KeyError when looking up transcription files for records with no resourceType.
+
+
 1.2.0
 -----
 

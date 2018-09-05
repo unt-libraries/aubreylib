@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='aubreylib',
-    version='1.2.0',
+    version='1.2.1',
     description='A helper library for the Aubrey access system.',
     author='University of North Texas Libraries',
     author_email='mark.phillips@unt.edu',
