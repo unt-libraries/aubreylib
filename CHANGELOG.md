@@ -1,6 +1,11 @@
 Change Log
 ==========
 
+1.2.2
+-----
+
+* Fixed a bug which caused an IndexError when the descriptive metadata has an empty list for the resourceType.
+
 
 1.2.1
 -----
