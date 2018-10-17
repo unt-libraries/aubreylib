@@ -187,9 +187,14 @@ class ResourceObject(object):
         self.desc_MD = get_desc_metadata(self.metadata_file,
                                          self.metadata_type)
         # Get transcriptions data
+        resource_type = self.desc_MD.get('resourceType')
+        if resource_type:
+            resource_type = resource_type[0].get('content')
+        else:
+            resource_type = None
         self.transcriptions = get_transcriptions_data(
             meta_id=self.meta_id,
-            resource_type=self.desc_MD.get('resourceType', [{}])[0].get('content'),
+            resource_type=resource_type,
             transcriptions_server_url=kwargs.get('transcriptions_server_url'),
         )
         # Get the fileSets within the fileSec

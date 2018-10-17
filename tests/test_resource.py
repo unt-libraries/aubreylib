@@ -216,3 +216,18 @@ class TestResourceObject:
         resource.ResourceObject(identifier=mets_path, metadataLocations=[],
                                 staticFileLocations=[], mimetypeIconsPath='', use=USE,
                                 transcriptions_server_url='http://example.com')
+
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    @patch('aubreylib.resource.get_desc_metadata')
+    def testResourceObjectEmptyResourceType(self, mocked_get_desc_metadata, mocked_fileSet_file):
+        """Make sure we can handle having an empty resourceType list in the desc_MD."""
+        mocked_get_desc_metadata.return_value = {'resourceType': []}
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+
+        resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                staticFileLocations=[], mimetypeIconsPath='', use=USE,
+                                transcriptions_server_url='http://example.com')
