@@ -2,7 +2,9 @@
 
 import os
 import pytest
-import urllib.request, urllib.error, urllib.parse
+import urllib.request
+import urllib.error
+import urllib.parse
 from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
