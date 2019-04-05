@@ -2,7 +2,7 @@
 
 import os
 import pytest
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
@@ -96,7 +96,7 @@ class TestGetTranscriptionsData:
     @patch('urllib2.urlopen')
     def test_catches_urlopen_exceptions(self, mock_urlopen):
         mock_urlopen.side_effect = [
-            urllib2.HTTPError,
+            urllib.error.HTTPError,
             ValueError,
             TypeError,
             AttributeError,
@@ -142,9 +142,9 @@ class TestResourceObject:
                                      mimetypeIconsPath='', use=USE)
         # Check dimensions appear for image.
         with_dimensions_data = {'MIMETYPE': 'image/jpeg',
-                                u'width': 1500,
+                                'width': 1500,
                                 'USE': '1',
-                                u'height': 1154,
+                                'height': 1154,
                                 'flocat': 'file://web/pf_b-229.jpg',
                                 'SIZE': '444455'}
         assert with_dimensions_data in ro.manifestation_dict[1][1]['file_ptrs']
