@@ -1,7 +1,5 @@
-# from builtins import object
 import mock
 import pytest
-
 from aubreylib import system
 
 

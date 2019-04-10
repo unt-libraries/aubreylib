@@ -1,18 +1,11 @@
 #!/usr/bin/env python
-# from builtins import range
-# from builtins import object
-
 import os
 import pytest
 import urllib.request
 import urllib.error
 import urllib.parse
 from mock import mock_open, patch, MagicMock
-
 from aubreylib import resource, USE
-
-# from future import standard_library
-# standard_library.install_aliases()
 
 
 def generate_creator_list(num_creators, creator_type, name):
