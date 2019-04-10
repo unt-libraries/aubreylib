@@ -11,8 +11,8 @@ from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
 
-from future import standard_library
-standard_library.install_aliases()
+# from future import standard_library
+# standard_library.install_aliases()
 
 
 def generate_creator_list(num_creators, creator_type, name):
@@ -58,7 +58,7 @@ class TestGetDimensionsData(object):
         """Check that data is returned when file is found."""
         mock_exists.return_value = True
         mock_load.return_value = {}
-        with patch('__builtin__.open', mock_open()):
+        with patch('builtins.open', mock_open()):
             returned_json = resource.get_dimensions_data('/fake/file.mets.xml')
             assert returned_json == {}
 
@@ -66,7 +66,7 @@ class TestGetDimensionsData(object):
     def test_get_dimensions_data_absent(self, mock_exists):
         """Check None is returned if dimensions file does not exist."""
         mock_exists.return_value = False
-        with patch('__builtin__.open', mock_open()):
+        with patch('builtins.open', mock_open()):
             returned_json = resource.get_dimensions_data('/fake/file.mets.xml')
             assert returned_json is None
 
@@ -94,13 +94,13 @@ class TestGetTranscriptionsData(object):
         'http://example.com',
         'http://example.com/',
     ])
-    @patch('urllib2.urlopen')
+    @patch('urllib.request.urlopen')
     def test_no_double_slash(self, mock_urlopen, url):
         mock_urlopen.return_value = '{}'
         resource.get_transcriptions_data('metadc123', 'video', url)
         mock_urlopen.assert_called_once_with('http://example.com/metadc123/')
 
-    @patch('urllib2.urlopen')
+    @patch('urllib.request.urlopen')
     def test_catches_urlopen_exceptions(self, mock_urlopen):
         mock_urlopen.side_effect = [
             urllib.error.HTTPError,
@@ -113,7 +113,7 @@ class TestGetTranscriptionsData(object):
             assert result == {}
 
     @patch('json.loads')
-    @patch('urllib2.urlopen')
+    @patch('urllib.request.urlopen')
     def test_catches_loads_exceptions(self, mock_urlopen, mock_loads):
         mock_loads.side_effect = [
             ValueError,
@@ -124,7 +124,7 @@ class TestGetTranscriptionsData(object):
             result = resource.get_transcriptions_data('metadc123', 'video', 'bad_json')
             assert result == {}
 
-    @patch('urllib2.urlopen')
+    @patch('urllib.request.urlopen')
     def test_returns_expected_data(self, mock_urlopen):
         mock_urlopen.return_value = MagicMock(read=lambda: '{"some": "data"}')
         result = resource.get_transcriptions_data('metadc123', 'video', 'http://example.com')

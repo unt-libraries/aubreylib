@@ -35,7 +35,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_file_at_http_url(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via http URL."""
         mocked_urlopen.return_value.getcode.return_value = 200
@@ -48,7 +48,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_file_at_https_url(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via https URL."""
         # Respond with Success for location_tuple https URL only.
@@ -63,7 +63,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_file_at_http_with_file_in_path(self, mocked_urlopen, mocked_exists):
         """Locate a file on another server via http URL when file path
         starts with 'file://'.
@@ -78,7 +78,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_file_system_with_empty_path(self, mocked_urlopen, mocked_exists):
         """Test http:// location with an '' (empty) `path`."""
         # Respond with Not Found for the first location_tuple URL tried,
@@ -92,7 +92,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
     @mock.patch('os.path.exists')
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_file_not_found(self, mocked_urlopen, mocked_exists):
         """Test file not found on any given system."""
         mocked_urlopen.return_value.getcode.return_value = 404
@@ -135,14 +135,14 @@ class TestOpenSystemFile(object):
         'http://example.com/pth/f.jpg',
         'https://example.com/pth/f.jpg'
     ])
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_open_system_file_via_url(self, mocked_urlopen, url):
         """Test return value comes from urlopen call."""
         mocked_urlopen.return_value = expected = 'file'
         file_obj = system.open_system_file(url)
         assert file_obj == expected
 
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     @mock.patch('aubreylib.system.get_other_system')
     def test_open_system_file_http_other_system(self,
                                                 mocked_other_system,
@@ -153,7 +153,7 @@ class TestOpenSystemFile(object):
         file_obj = system.open_system_file('http://example.com/pth/f.jpg')
         assert file_obj == expected
 
-    @mock.patch('__builtin__.open')
+    @mock.patch('builtins.open')
     def test_open_system_file_local(self, mocked_open):
         """Test return value comes from local location."""
         mocked_open.return_value = expected = 'file'
@@ -167,7 +167,7 @@ class TestOpenArgsSystemFile(object):
         'http://example.com/pth/f.jpg?start=123',
         'https://example.com/pth/f.jpg?start=123'
     ])
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_open_args_system_file_returns_file(self, mocked_urlopen, url):
         """Test a valid URL results in a returned object."""
         mocked_urlopen.return_value = expected = 'file'
@@ -207,8 +207,8 @@ class TestOpenFileRange(object):
         'http://example.com/path',
         'https://example.com/path'
     ])
-    @mock.patch('urllib2.urlopen')
-    @mock.patch('urllib2.Request')
+    @mock.patch('urllib.request.urlopen')
+    @mock.patch('urllib.request.Request')
     def test_open_file_range(self, MockedRequest, _, url):
         """Test the HTTP request is made with supplied range."""
         system.open_file_range(url, (0, 10))
@@ -226,7 +226,7 @@ class TestGetOtherSystem(object):
 
     @mock.patch('aubreylib.METADATA_LOCATIONS', ('http://url.com/disk2',))
     @mock.patch('aubreylib.STATIC_FILE_LOCATIONS', ('http://url2.com/disk2',))
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_get_other_system_finds_no_file(self, mocked_urlopen):
         """Test not finding file raises exception."""
         mocked_urlopen.side_effect = Exception()
@@ -236,7 +236,7 @@ class TestGetOtherSystem(object):
 
     @mock.patch('aubreylib.METADATA_LOCATIONS', ('http://url.com/disk2',))
     @mock.patch('aubreylib.STATIC_FILE_LOCATIONS', ('http://url2.com/disk2',))
-    @mock.patch('urllib2.urlopen')
+    @mock.patch('urllib.request.urlopen')
     def test_get_other_system_finds_file(self, mocked_urlopen):
         """Test file is returned using tuple-supplied locations."""
         mocked_urlopen.return_value = expected = 'file'
