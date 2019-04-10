@@ -1,8 +1,12 @@
+from future import standard_library
+standard_library.install_aliases()
+from builtins import range
+from builtins import object
 #!/usr/bin/env python
 
 import os
 import pytest
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 from mock import mock_open, patch, MagicMock
 
 from aubreylib import resource, USE
@@ -15,7 +19,7 @@ def generate_creator_list(num_creators, creator_type, name):
     ]
 
 
-class TestGetAuthorCitationString():
+class TestGetAuthorCitationString(object):
 
     @pytest.mark.parametrize('creator_type, name', [
         ('org', 'An, Org'),
@@ -43,7 +47,7 @@ class TestGetAuthorCitationString():
         assert citation_string == expected
 
 
-class TestGetDimensionsData:
+class TestGetDimensionsData(object):
 
     @patch('os.path.exists')
     @patch('json.load')
@@ -64,7 +68,7 @@ class TestGetDimensionsData:
             assert returned_json is None
 
 
-class TestGetTranscriptionsData:
+class TestGetTranscriptionsData(object):
 
     @pytest.mark.parametrize('resource_type', [
         '',
@@ -96,7 +100,7 @@ class TestGetTranscriptionsData:
     @patch('urllib2.urlopen')
     def test_catches_urlopen_exceptions(self, mock_urlopen):
         mock_urlopen.side_effect = [
-            urllib2.HTTPError,
+            urllib.error.HTTPError,
             ValueError,
             TypeError,
             AttributeError,
@@ -124,7 +128,7 @@ class TestGetTranscriptionsData:
         assert result == {'some': 'data'}
 
 
-class TestResourceObject:
+class TestResourceObject(object):
 
     @patch.object(resource.ResourceObject, 'get_fileSet_file')
     def testResourceObjectDimensions(self, mocked_fileSet_file):

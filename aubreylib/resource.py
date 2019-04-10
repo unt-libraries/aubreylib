@@ -1,8 +1,12 @@
+from future import standard_library
+standard_library.install_aliases()
+from builtins import str
+from builtins import object
 import os
 import re
-import StringIO
+import io
 import datetime
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import json
 
 
@@ -48,7 +52,7 @@ def get_desc_metadata(metadata_filename, metadata_type):
     """ Get the descriptive metadata for the object """
     # Open and read the metadata file into a StringIO filehandle
     metadata_filehandle = open_system_file(metadata_filename)
-    metadata_stringfile = StringIO.StringIO(metadata_filehandle.read())
+    metadata_stringfile = io.StringIO(metadata_filehandle.read())
     if metadata_type == 'UNTL':
         # Get the untl descriptive metadata dictionary
         desc_metadata = untlxml2pydict(metadata_stringfile)
@@ -72,7 +76,7 @@ def get_getCopy_data(getCopy_url, meta_id):
     record_url = "%s%s/" % (getCopy_url, meta_id)
     # Try returning the getCopy data
     try:
-        return json.loads(urllib2.urlopen(record_url).read())
+        return json.loads(urllib.request.urlopen(record_url).read())
     except Exception:
         # Otherwise, return an empty dictionary
         return {}
@@ -126,7 +130,7 @@ def get_transcriptions_data(meta_id, resource_type, transcriptions_server_url):
         return {}
     transcriptions_url = '{}/{}/'.format(transcriptions_server_url.rstrip('/'), meta_id)
     try:
-        return json.loads(urllib2.urlopen(transcriptions_url).read())
+        return json.loads(urllib.request.urlopen(transcriptions_url).read())
     except Exception:
         # Otherwise, return an empty dictionary
         return {}
@@ -215,7 +219,7 @@ class ResourceObject(object):
         else:
             raise ResourceObjectException("Descriptive metadata not defined " +
                                           "in the METS file.")
-        for attribs, value in mdRef.attrib.items():
+        for attribs, value in list(mdRef.attrib.items()):
             if re.compile(r'\{[\w\W]*\}href').search(attribs, 0) is not None:
                 self.xlink_namespace = re.compile(
                     r'(\{[\w\W]*\})href').search(attribs, 0).group(1)
@@ -522,7 +526,7 @@ class ResourceObject(object):
                 'OWNERID',
             ]
             # Loop through file attributes and keep the ones that matter
-            for key, value in ptr_file.attrib.items():
+            for key, value in list(ptr_file.attrib.items()):
                 if key == 'SIZE':
                     if ptr_file.get('USE') == str(self.use['high_res']):
                         file_dict[key] = value
