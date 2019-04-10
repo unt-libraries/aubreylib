@@ -9,7 +9,7 @@ A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digit
 Requirements
 ------------
 
-* Python ~= 2.7.0
+* Python ~= 3.7.0
 * libxml2
 * libxslt
 
