@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from builtins import range
-from builtins import object
+# from builtins import range
+# from builtins import object
 
 import os
 import pytest
@@ -22,7 +22,7 @@ def generate_creator_list(num_creators, creator_type, name):
     ]
 
 
-class TestGetAuthorCitationString(object):
+class TestGetAuthorCitationString:
 
     @pytest.mark.parametrize('creator_type, name', [
         ('org', 'An, Org'),
@@ -50,7 +50,7 @@ class TestGetAuthorCitationString(object):
         assert citation_string == expected
 
 
-class TestGetDimensionsData(object):
+class TestGetDimensionsData:
 
     @patch('os.path.exists')
     @patch('json.load')
@@ -71,7 +71,7 @@ class TestGetDimensionsData(object):
             assert returned_json is None
 
 
-class TestGetTranscriptionsData(object):
+class TestGetTranscriptionsData:
 
     @pytest.mark.parametrize('resource_type', [
         '',
@@ -131,7 +131,7 @@ class TestGetTranscriptionsData(object):
         assert result == {'some': 'data'}
 
 
-class TestResourceObject(object):
+class TestResourceObject:
 
     @patch.object(resource.ResourceObject, 'get_fileSet_file')
     def testResourceObjectDimensions(self, mocked_fileSet_file):

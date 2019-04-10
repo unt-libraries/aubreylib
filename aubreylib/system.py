@@ -1,3 +1,5 @@
+# from future import standard_library
+
 import os
 import re
 import urllib.request
@@ -6,8 +8,7 @@ import urllib.error
 
 from pypairtree.pairtree import get_pair_path
 
-from future import standard_library
-standard_library.install_aliases()
+# standard_library.install_aliases()
 
 
 class SystemMethodsException(Exception):

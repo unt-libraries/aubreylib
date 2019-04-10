@@ -1,11 +1,11 @@
-from builtins import object
+# from builtins import object
 import mock
 import pytest
 
 from aubreylib import system
 
 
-class TestGetFileSystem(object):
+class TestGetFileSystem:
 
     location_tuple = ('file://disk2/',
                       'http://unt.edu/disk2/',
@@ -104,7 +104,7 @@ class TestGetFileSystem(object):
         assert (path, location) == expected
 
 
-class TestGetFilePath(object):
+class TestGetFilePath:
 
     def test_get_file_path(self):
         """Test correct creation of file path."""
@@ -118,7 +118,7 @@ class TestGetFilePath(object):
             system.get_file_path('metapthx', '/web/01_tif/4.jpg')
 
 
-class TestGetCompleteFilePath(object):
+class TestGetCompleteFilePath:
 
     def test_get_complete_filepath(self):
         """Test correct generation of the complete file path."""
@@ -129,7 +129,7 @@ class TestGetCompleteFilePath(object):
         assert complete_path == expected_path
 
 
-class TestOpenSystemFile(object):
+class TestOpenSystemFile:
 
     @pytest.mark.parametrize('url', [
         'http://example.com/pth/f.jpg',
@@ -161,7 +161,7 @@ class TestOpenSystemFile(object):
         assert file_obj == expected
 
 
-class TestOpenArgsSystemFile(object):
+class TestOpenArgsSystemFile:
 
     @pytest.mark.parametrize('url', [
         'http://example.com/pth/f.jpg?start=123',
@@ -182,7 +182,7 @@ class TestOpenArgsSystemFile(object):
             system.open_args_system_file('/bad/url')
 
 
-class TestCreateValidUrl(object):
+class TestCreateValidUrl:
 
     def test_create_valid_url_encodes_url(self):
         """Test url is encoded when not split improperly."""
@@ -201,7 +201,7 @@ class TestCreateValidUrl(object):
         assert url == expected
 
 
-class TestOpenFileRange(object):
+class TestOpenFileRange:
 
     @pytest.mark.parametrize('url', [
         'http://example.com/path',
@@ -222,7 +222,7 @@ class TestOpenFileRange(object):
         assert file_obj is None
 
 
-class TestGetOtherSystem(object):
+class TestGetOtherSystem:
 
     @mock.patch('aubreylib.METADATA_LOCATIONS', ('http://url.com/disk2',))
     @mock.patch('aubreylib.STATIC_FILE_LOCATIONS', ('http://url2.com/disk2',))

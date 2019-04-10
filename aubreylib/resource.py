@@ -1,5 +1,7 @@
-from builtins import str
-from builtins import object
+# from future import standard_library
+# standard_library.install_aliases()
+# from builtins import str
+# from builtins import object
 import os
 import re
 import io
@@ -12,12 +14,9 @@ import json
 
 from lxml import etree
 from aubreylib.system import get_file_system, open_system_file, get_pair_path
-from pyuntl.untldoc import untlxml2pydict, untldict2py
-from pyuntl.util import untldict_normalizer
 from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
-
-from future import standard_library
-standard_library.install_aliases()
+# from pyuntl.untldoc import untlxml2pydict, untldict2py
+# from pyuntl.util import untldict_normalizer
 
 
 class ResourceObjectException(Exception):
@@ -58,11 +57,13 @@ def get_desc_metadata(metadata_filename, metadata_type):
     metadata_stringfile = io.StringIO(metadata_filehandle.read())
     if metadata_type == 'UNTL':
         # Get the untl descriptive metadata dictionary
+        from pyuntl.untldoc import untlxml2pydict
         desc_metadata = untlxml2pydict(metadata_stringfile)
         normalize_required = {
             'subject': ['LCSH', 'UNTL-BS'],
         }
         # Normalize the values in the untl dictionary
+        from pyuntl.util import untldict_normalizer
         normalized_metadata = untldict_normalizer(
             desc_metadata,
             normalize_required,
@@ -139,7 +140,7 @@ def get_transcriptions_data(meta_id, resource_type, transcriptions_server_url):
         return {}
 
 
-class ResourceObject(object):
+class ResourceObject:
 
     def __init__(self, identifier, metadataLocations, staticFileLocations,
                  mimetypeIconsPath, use, **kwargs):
@@ -210,6 +211,7 @@ class ResourceObject(object):
         self.get_embargo()
         # Get the author citation string
         self.author_citation_string = get_author_citation_string(self.desc_MD)
+        from pyuntl.untldoc import untldict2py
         self.completeness = untldict2py(self.desc_MD).completeness
 
     def get_metadata_file(self, parsed_mets):
