@@ -1,12 +1,12 @@
-from future import standard_library
-standard_library.install_aliases()
 from builtins import str
 from builtins import object
 import os
 import re
 import io
 import datetime
-import urllib.request, urllib.error, urllib.parse
+import urllib.request
+import urllib.error
+import urllib.parse
 import json
 
 
@@ -15,6 +15,9 @@ from aubreylib.system import get_file_system, open_system_file, get_pair_path
 from pyuntl.untldoc import untlxml2pydict, untldict2py
 from pyuntl.util import untldict_normalizer
 from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
+
+from future import standard_library
+standard_library.install_aliases()
 
 
 class ResourceObjectException(Exception):

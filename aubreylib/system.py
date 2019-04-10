@@ -1,12 +1,13 @@
-from future import standard_library
-standard_library.install_aliases()
-import urllib.parse
 import os
 import re
-import urllib.request, urllib.parse, urllib.error
-import urllib.request, urllib.error, urllib.parse
+import urllib.request
+import urllib.parse
+import urllib.error
 
 from pypairtree.pairtree import get_pair_path
+
+from future import standard_library
+standard_library.install_aliases()
 
 
 class SystemMethodsException(Exception):
