@@ -13,9 +13,9 @@ setup(
     packages=['aubreylib'],
     install_requires=[
         'lxml>=3.3.3',
-        'pyuntl>=1.0.1',
         'pypairtree>=1.0.0',
     ],
+
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
