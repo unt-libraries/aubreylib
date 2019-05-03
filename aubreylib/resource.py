@@ -1,6 +1,6 @@
 import os
 import re
-import io
+from io import BytesIO
 import datetime
 import urllib.request
 import urllib.error
@@ -48,7 +48,7 @@ def get_desc_metadata(metadata_filename, metadata_type):
     """ Get the descriptive metadata for the object """
     # Open and read the metadata file into a StringIO filehandle
     metadata_filehandle = open_system_file(metadata_filename)
-    metadata_stringfile = io.StringIO(metadata_filehandle.read())
+    metadata_stringfile = BytesIO(metadata_filehandle.read().encode('utf-8'))
     if metadata_type == 'UNTL':
         # Get the untl descriptive metadata dictionary
         desc_metadata = untlxml2pydict(metadata_stringfile)
