@@ -2,8 +2,6 @@
 import os
 import pytest
 import urllib.request
-import urllib.error
-import urllib.parse
 from unittest.mock import mock_open, patch, MagicMock
 from aubreylib import resource, USE
 

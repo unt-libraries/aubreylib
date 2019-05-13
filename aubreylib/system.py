@@ -1,8 +1,6 @@
 import os
 import re
 import urllib.request
-import urllib.parse
-import urllib.error
 from pypairtree.pairtree import get_pair_path
 
 

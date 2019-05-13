@@ -3,8 +3,6 @@ import re
 from io import BytesIO
 import datetime
 import urllib.request
-import urllib.error
-import urllib.parse
 import json
 from lxml import etree
 from aubreylib.system import get_file_system, open_system_file, get_pair_path
@@ -215,7 +213,7 @@ class ResourceObject:
         else:
             raise ResourceObjectException("Descriptive metadata not defined " +
                                           "in the METS file.")
-        for attribs, value in list(mdRef.attrib.items()):
+        for attribs, value in mdRef.attrib.items():
             if re.compile(r'\{[\w\W]*\}href').search(attribs, 0) is not None:
                 self.xlink_namespace = re.compile(
                     r'(\{[\w\W]*\})href').search(attribs, 0).group(1)
