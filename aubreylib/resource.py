@@ -44,9 +44,9 @@ def get_mets_record_system(meta_id, pair_path, metadata_locations):
 
 def get_desc_metadata(metadata_filename, metadata_type):
     """ Get the descriptive metadata for the object """
-    # Open and read the metadata file into a StringIO filehandle
+    # Open and read the metadata file into a BytesIO filehandle
     metadata_filehandle = open_system_file(metadata_filename)
-    metadata_stringfile = BytesIO(metadata_filehandle.read().encode('utf-8'))
+    metadata_stringfile = BytesIO(metadata_filehandle.read())
     if metadata_type == 'UNTL':
         # Get the untl descriptive metadata dictionary
         desc_metadata = untlxml2pydict(metadata_stringfile)

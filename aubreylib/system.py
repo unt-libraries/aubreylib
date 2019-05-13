@@ -113,7 +113,7 @@ def open_system_file(file_name):
             return get_other_system(valid_url)
     # open it over the file system
     else:
-        return open(file_name)
+        return open(file_name, 'rb')
 
 
 def open_args_system_file(file_name):
