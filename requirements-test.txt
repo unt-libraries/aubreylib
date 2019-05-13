@@ -1,2 +1,0 @@
-pytest
-https://github.com/unt-libraries/pyuntl/tarball/python2to3#egg=pyuntl
