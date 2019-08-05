@@ -28,15 +28,10 @@ repository:
 $ pip install git+git://github.com/unt-libraries/aubreylib
 ```
 
-The dependencies for this project can be installed using the following:
-```console
-$ python setup.py install
-``` 
-
 Testing
 --------
 
-To run the tests, you can use tox, along with the flake8 style checker:
+To run the tests and the flake8 style checker, you can use tox:
 
 Install tox on your system:
 ```console
