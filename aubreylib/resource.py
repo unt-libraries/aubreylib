@@ -265,8 +265,8 @@ class ResourceObject:
                                           "file.")
         # Create an index for files within the fileSec file_ID --> file_group
         file_index = {}
-        for file_group in list(fileSec):
-            for file_item in list(file_group):
+        for file_group in fileSec:
+            for file_item in file_group:
                 file_index[file_item.get('ID')] = file_group
         # Get thumbnail
         self.thumbnail(fileSec, structMap)
@@ -298,13 +298,13 @@ class ResourceObject:
 
     def get_primary_fileSet(self, thumbnail, structMap):
         """ Gets the primary fileSet of the object """
-        for fptr in list(thumbnail):
+        for fptr in thumbnail:
             thumbnail_id = fptr.get('FILEID')
             break
         manifestations = structMap.xpath(
             './/div[@TYPE=\"manifestation\"]',
         )
-        for manifest in list(manifestations):
+        for manifest in manifestations:
             thumbnail_ptr = manifest.xpath(
                 ".//fptr[@FILEID=\"%s\"]" % (thumbnail_id),
             )
@@ -412,7 +412,7 @@ class ResourceObject:
         manifestations = structMap.xpath(
             './/div[@TYPE=\"manifestation\"]',
         )
-        for manifest in list(manifestations):
+        for manifest in manifestations:
             # Get the manifestation order number
             manifest_num = int(manifest.get("ORDER", '1'))
             # Get the fileSet dictionary and manifestation view type
@@ -428,7 +428,7 @@ class ResourceObject:
         if not getattr(self, 'pdf_dict', None):
             self.pdf_dict = {}
         manifest_view_type = ''
-        for fileSet in list(manifest):
+        for fileSet in manifest:
             # Get the fileSet order number
             fileSet_num = int(fileSet.get("ORDER", '1'))
             # Get the transcriptions data (if any) for this fileSet
@@ -491,7 +491,7 @@ class ResourceObject:
     # Slowest part of getting the resource object
     def get_file_pointers(self, fileset, fileSec, file_index=None):
         # get the first file id file from the fileSec
-        for fptr in list(fileset):
+        for fptr in fileset:
             first_file = fptr
             break
         # If the function was passed a index of the file's groups
@@ -510,7 +510,7 @@ class ResourceObject:
         fileSet_view_type = ''
         zoom = False
         pdf = None
-        for ptr_file in list(file_group):
+        for ptr_file in file_group:
             file_dict = {}
             ignore_ptr_field = [
                 'ID',
@@ -520,14 +520,14 @@ class ResourceObject:
                 'OWNERID',
             ]
             # Loop through file attributes and keep the ones that matter
-            for key, value in list(ptr_file.attrib.items()):
+            for key, value in ptr_file.attrib.items():
                 if key == 'SIZE':
                     if ptr_file.get('USE') == str(self.use['high_res']):
                         file_dict[key] = value
                 elif key not in ignore_ptr_field:
                     file_dict[key] = value
             # Get the file location
-            for flocat in list(ptr_file):
+            for flocat in ptr_file:
                 file_dict['flocat'] = flocat.get(self.xlink_namespace + 'href')
                 break
             # Get the height/width
