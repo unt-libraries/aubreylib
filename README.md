@@ -9,7 +9,7 @@ A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digit
 Requirements
 ------------
 
-* Python ~= 2.7.0
+* Python ~= 3.7.0
 * libxml2
 * libxslt
 
@@ -27,6 +27,21 @@ repository:
 ```console
 $ pip install git+git://github.com/unt-libraries/aubreylib
 ```
+
+Testing
+--------
+
+To run the tests and the flake8 style checker, you can use tox:
+
+Install tox on your system:
+```console
+$ pip install tox
+``` 
+
+Run the tox test suite:
+```console
+$ tox
+``` 
 
 License
 -------

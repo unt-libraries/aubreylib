@@ -1,16 +1,14 @@
 import os
 import re
-import StringIO
+from io import BytesIO
 import datetime
-import urllib2
+import urllib.request
 import json
-
-
 from lxml import etree
 from aubreylib.system import get_file_system, open_system_file, get_pair_path
+from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
 from pyuntl.untldoc import untlxml2pydict, untldict2py
 from pyuntl.util import untldict_normalizer
-from aubreylib import VIEW_TYPE_MIMETYPES, EMAIL_REGEX
 
 
 class ResourceObjectException(Exception):
@@ -46,9 +44,9 @@ def get_mets_record_system(meta_id, pair_path, metadata_locations):
 
 def get_desc_metadata(metadata_filename, metadata_type):
     """ Get the descriptive metadata for the object """
-    # Open and read the metadata file into a StringIO filehandle
+    # Open and read the metadata file into a BytesIO filehandle
     metadata_filehandle = open_system_file(metadata_filename)
-    metadata_stringfile = StringIO.StringIO(metadata_filehandle.read())
+    metadata_stringfile = BytesIO(metadata_filehandle.read())
     if metadata_type == 'UNTL':
         # Get the untl descriptive metadata dictionary
         desc_metadata = untlxml2pydict(metadata_stringfile)
@@ -72,7 +70,7 @@ def get_getCopy_data(getCopy_url, meta_id):
     record_url = "%s%s/" % (getCopy_url, meta_id)
     # Try returning the getCopy data
     try:
-        return json.loads(urllib2.urlopen(record_url).read())
+        return json.loads(urllib.request.urlopen(record_url).read())
     except Exception:
         # Otherwise, return an empty dictionary
         return {}
@@ -126,13 +124,13 @@ def get_transcriptions_data(meta_id, resource_type, transcriptions_server_url):
         return {}
     transcriptions_url = '{}/{}/'.format(transcriptions_server_url.rstrip('/'), meta_id)
     try:
-        return json.loads(urllib2.urlopen(transcriptions_url).read())
+        return json.loads(urllib.request.urlopen(transcriptions_url).read())
     except Exception:
         # Otherwise, return an empty dictionary
         return {}
 
 
-class ResourceObject(object):
+class ResourceObject:
 
     def __init__(self, identifier, metadataLocations, staticFileLocations,
                  mimetypeIconsPath, use, **kwargs):
@@ -267,8 +265,8 @@ class ResourceObject(object):
                                           "file.")
         # Create an index for files within the fileSec file_ID --> file_group
         file_index = {}
-        for file_group in list(fileSec):
-            for file_item in list(file_group):
+        for file_group in fileSec:
+            for file_item in file_group:
                 file_index[file_item.get('ID')] = file_group
         # Get thumbnail
         self.thumbnail(fileSec, structMap)
@@ -300,13 +298,13 @@ class ResourceObject(object):
 
     def get_primary_fileSet(self, thumbnail, structMap):
         """ Gets the primary fileSet of the object """
-        for fptr in list(thumbnail):
+        for fptr in thumbnail:
             thumbnail_id = fptr.get('FILEID')
             break
         manifestations = structMap.xpath(
             './/div[@TYPE=\"manifestation\"]',
         )
-        for manifest in list(manifestations):
+        for manifest in manifestations:
             thumbnail_ptr = manifest.xpath(
                 ".//fptr[@FILEID=\"%s\"]" % (thumbnail_id),
             )
@@ -414,7 +412,7 @@ class ResourceObject(object):
         manifestations = structMap.xpath(
             './/div[@TYPE=\"manifestation\"]',
         )
-        for manifest in list(manifestations):
+        for manifest in manifestations:
             # Get the manifestation order number
             manifest_num = int(manifest.get("ORDER", '1'))
             # Get the fileSet dictionary and manifestation view type
@@ -430,7 +428,7 @@ class ResourceObject(object):
         if not getattr(self, 'pdf_dict', None):
             self.pdf_dict = {}
         manifest_view_type = ''
-        for fileSet in list(manifest):
+        for fileSet in manifest:
             # Get the fileSet order number
             fileSet_num = int(fileSet.get("ORDER", '1'))
             # Get the transcriptions data (if any) for this fileSet
@@ -493,7 +491,7 @@ class ResourceObject(object):
     # Slowest part of getting the resource object
     def get_file_pointers(self, fileset, fileSec, file_index=None):
         # get the first file id file from the fileSec
-        for fptr in list(fileset):
+        for fptr in fileset:
             first_file = fptr
             break
         # If the function was passed a index of the file's groups
@@ -512,7 +510,7 @@ class ResourceObject(object):
         fileSet_view_type = ''
         zoom = False
         pdf = None
-        for ptr_file in list(file_group):
+        for ptr_file in file_group:
             file_dict = {}
             ignore_ptr_field = [
                 'ID',
@@ -529,7 +527,7 @@ class ResourceObject(object):
                 elif key not in ignore_ptr_field:
                     file_dict[key] = value
             # Get the file location
-            for flocat in list(ptr_file):
+            for flocat in ptr_file:
                 file_dict['flocat'] = flocat.get(self.xlink_namespace + 'href')
                 break
             # Get the height/width

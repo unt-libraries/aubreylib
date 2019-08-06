@@ -1,9 +1,7 @@
-import urlparse
 import os
 import re
-import urllib
-import urllib2
-
+import urllib.request
+import urllib.parse
 from pypairtree.pairtree import get_pair_path
 
 
@@ -47,18 +45,18 @@ def get_file_system(meta_id, file_path, location_tuple):
                 else:
                     http_file_path = file_path
                 # Separate the host and the path
-                scheme, host, system_path = urlparse.urlsplit(file_system)[:3]
+                scheme, host, system_path = urllib.parse.urlsplit(file_system)[:3]
                 # Join the system and file path
-                raw_path = urlparse.urljoin(system_path, http_file_path[1:])
+                raw_path = urllib.parse.urljoin(system_path, http_file_path[1:])
                 # Quote the url path (helps with spaces and special characters)
-                path = urllib.quote(raw_path)
+                path = urllib.parse.quote(raw_path)
                 if host != '' and path != '':
                     # Check if file exists on the server
                     url = '%s://%s%s' % (scheme, host, path)
                     headers = {'Host': host}
-                    request = urllib2.Request(url, headers=headers)
+                    request = urllib.request.Request(url, headers=headers)
                     request.get_method = lambda: 'HEAD'
-                    status_code = urllib2.urlopen(request, timeout=3).getcode()
+                    status_code = urllib.request.urlopen(request, timeout=3).getcode()
                 else:
                     system_path = None
                 # if the file exists, return the necessary data
@@ -111,12 +109,12 @@ def open_system_file(file_name):
     if re.compile(r'^https?://').search(file_name, 0) is not None:
         valid_url = create_valid_url(file_name)
         try:
-            return urllib2.urlopen(valid_url)
+            return urllib.request.urlopen(valid_url)
         except Exception:
             return get_other_system(valid_url)
     # open it over the file system
     else:
-        return open(file_name)
+        return open(file_name, 'rb')
 
 
 def open_args_system_file(file_name):
@@ -124,9 +122,9 @@ def open_args_system_file(file_name):
     # open the file over http
     if re.compile(r'^https?://').search(file_name, 0) is not None:
         valid_url = create_valid_url(file_name)
-        args = urlparse.urlsplit(file_name)[3]
+        args = urllib.parse.urlsplit(file_name)[3]
         arg_url = "%s?%s" % (valid_url, args)
-        return urllib2.urlopen(arg_url)
+        return urllib.request.urlopen(arg_url)
     else:
         raise SystemMethodsException("Invalid url: %s" % (file_name))
 
@@ -134,15 +132,15 @@ def open_args_system_file(file_name):
 def create_valid_url(file_name):
     """Creates a valid url from the given url"""
     # Separate the host and the path
-    scheme, host, raw_path = urlparse.urlsplit(file_name)[:3]
+    scheme, host, raw_path = urllib.parse.urlsplit(file_name)[:3]
     # Make sure that the filename isn't being parsed improperly
-    if urlparse.urlsplit(file_name)[4] == '':
+    if urllib.parse.urlsplit(file_name)[4] == '':
         # quote the path to fix special characters
-        path = urllib.quote(raw_path)
+        path = urllib.parse.quote(raw_path)
     # The path was split up by a bad character
     else:
         # Get the broken off part of the path
-        broken_path = urlparse.urlsplit(file_name)[4]
+        broken_path = urllib.parse.urlsplit(file_name)[4]
         # Create the bad character locating regex
         bad_regex = re.compile(raw_path+r'([\W]+)'+broken_path+r'$')
         # If the bad character(s) are found
@@ -151,7 +149,7 @@ def create_valid_url(file_name):
         else:
             bad_char = ''
         # Combine the broken path into one and quote it
-        path = urllib.quote("%s%s%s" % (raw_path, bad_char, broken_path))
+        path = urllib.parse.quote("%s%s%s" % (raw_path, bad_char, broken_path))
     # Join the system and file path
     return "%s://%s%s" % (scheme, host, path)
 
@@ -162,9 +160,9 @@ def open_file_range(file_name, range_tuple):
     if re.compile(r'^https?://').search(file_name, 0) is not None:
         headers = {'Range': "bytes=%s-%s" % range_tuple}
         valid_url = create_valid_url(file_name)
-        req = urllib2.Request(valid_url, None, headers)
+        req = urllib.request.Request(valid_url, None, headers)
         try:
-            return urllib2.urlopen(req)
+            return urllib.request.urlopen(req)
         except Exception:
             raise SystemMethodsException("Specified Range (%s,%s) not valid." % range_tuple)
     # open it over the file system
@@ -190,13 +188,13 @@ def get_other_system(failed_url):
     # Combine the metadata locations with static locations
     all_locations = METADATA_LOCATIONS + STATIC_FILE_LOCATIONS
     # Determine the host
-    host = urlparse.urlsplit(failed_url)[1]
+    host = urllib.parse.urlsplit(failed_url)[1]
     # Try to find file on metadata/static servers
     for metadata_location in all_locations:
-        replacement_host = urlparse.urlsplit(metadata_location)[1]
+        replacement_host = urllib.parse.urlsplit(metadata_location)[1]
         new_url = failed_url.replace(host, replacement_host)
         try:
-            return urllib2.urlopen(new_url, timeout=3)
+            return urllib.request.urlopen(new_url, timeout=3)
         except Exception:
             pass
     raise SystemMethodsException("Can't locate file: %s" % (failed_url))
