@@ -16,16 +16,13 @@ Requirements
 Installation
 ------------
 
-This package is available on the Python Package Index (PyPI), and can be
-installed with pip:
+This application can be installed by following the steps below:
 ```console
-$ pip install aubreylib
-```
+$ git clone https://github.com/unt-libraries/aubreylib.git 
 
-Alternatively, you can install the package directly from this GitHub
-repository:
-```console
-$ pip install git+git://github.com/unt-libraries/aubreylib
+$ cd aubreylib
+
+$ pip install .
 ```
 
 Testing
