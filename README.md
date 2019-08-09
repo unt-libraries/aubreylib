@@ -16,7 +16,7 @@ Requirements
 Installation
 ------------
 
-This application can be installed by following the steps below:
+This package can be installed by following the steps below:
 ```console
 $ git clone https://github.com/unt-libraries/aubreylib.git 
 
