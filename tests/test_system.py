@@ -188,8 +188,8 @@ class TestCreateValidUrl:
         assert url == 'http://ex.com/path%2C/sdf'
 
     @pytest.mark.parametrize('original, expected', [
-        ('http://ex.com/path#01/seg', 'http://ex.com/path%2301/seg'),
-        ('https://ex.com/path#01/seg', 'https://ex.com/path%2301/seg'),
+        ('http://ex.com/p(ath#01(/seg', 'http://ex.com/p%28ath%2301%28/seg'),
+        ('https://ex.com/p(ath#01(/seg', 'https://ex.com/p%28ath%2301%28/seg'),
     ])
     def test_create_valid_url_fixes_and_encodes_url(self, original, expected):
         """Test url is put back together correctly and percent
