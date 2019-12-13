@@ -142,7 +142,7 @@ def create_valid_url(file_name):
         # Get the broken off part of the path
         broken_path = urllib.parse.urlsplit(file_name)[4]
         # Create the bad character locating regex
-        bad_regex = re.compile(raw_path+r'([\W]+)'+broken_path+r'$')
+        bad_regex = re.compile(re.escape(raw_path)+r'([\W]+)'+re.escape(broken_path)+r'$')
         # If the bad character(s) are found
         if bad_regex.search(file_name, 0) is not None:
             bad_char = bad_regex.search(file_name, 0).group(1)
