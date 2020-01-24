@@ -56,7 +56,7 @@ def get_file_system(meta_id, file_path, location_tuple):
                     headers = {'Host': host}
                     request = urllib.request.Request(url, headers=headers)
                     request.get_method = lambda: 'HEAD'
-                    status_code = urllib.request.urlopen(request, timeout=3).getcode()
+                    status_code = urllib.request.urlopen(request, timeout=6).getcode()
                 else:
                     system_path = None
                 # if the file exists, return the necessary data
