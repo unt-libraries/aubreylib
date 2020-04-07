@@ -9,24 +9,36 @@ A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digit
 Requirements
 ------------
 
-* Python ~= 2.7.0
+* Python ~= 3.7.0
 * libxml2
 * libxslt
 
 Installation
 ------------
 
-This package is available on the Python Package Index (PyPI), and can be
-installed with pip:
+This package can be installed by following the steps below:
 ```console
-$ pip install aubreylib
+$ git clone https://github.com/unt-libraries/aubreylib.git 
+
+$ cd aubreylib
+
+$ pip install .
 ```
 
-Alternatively, you can install the package directly from this GitHub
-repository:
+Testing
+--------
+
+To run the tests and the flake8 style checker, you can use tox:
+
+Install tox on your system:
 ```console
-$ pip install git+git://github.com/unt-libraries/aubreylib
-```
+$ pip install tox
+``` 
+
+Run the tox test suite:
+```console
+$ tox
+``` 
 
 License
 -------
