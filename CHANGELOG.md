@@ -4,7 +4,8 @@ Change Log
 -----
 
 * Upgraded to Python 3.
-
+* Increased timeout to 6 seconds.
+* Escaped URL parts when forming regex.
 
 1.2.2
 -----
