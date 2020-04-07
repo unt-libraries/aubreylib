@@ -1,5 +1,10 @@
 Change Log
 ==========
+2.0.0
+-----
+
+* Upgraded to Python 3.
+
 
 1.2.2
 -----
