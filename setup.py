@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'lxml>=3.3.3',
         'pypairtree>=1.0.0',
-        'pyuntl @ git+https://github.com/unt-libraries/pyuntl@py3',
+        'pyuntl @ git+https://github.com/unt-libraries/pyuntl@master',
     ],
 
     classifiers=[
