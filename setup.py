@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='aubreylib',
-    version='1.2.2',
+    version='2.0.0',
     description='A helper library for the Aubrey access system.',
     author='University of North Texas Libraries',
     author_email='mark.phillips@unt.edu',
@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'lxml>=3.3.3',
         'pypairtree>=1.0.0',
-        'pyuntl @ git+https://github.com/unt-libraries/pyuntl@py3',
+        'pyuntl @ git+https://github.com/unt-libraries/pyuntl@master',
     ],
 
     classifiers=[

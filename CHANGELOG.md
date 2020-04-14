@@ -1,5 +1,11 @@
 Change Log
 ==========
+2.0.0
+-----
+
+* Upgraded to Python 3.
+* Increased urlopen timeout to 6 seconds when determining file system location.
+* Escaped URL parts when forming regex to find characters that cause incorrect URL parsing.
 
 1.2.2
 -----
