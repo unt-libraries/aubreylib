@@ -13,7 +13,7 @@ setup(
     packages=['aubreylib'],
     install_requires=[
         'lxml>=3.3.3',
-        'pypairtree>=1.0.0',
+        'pypairtree @ git+https://github.com/unt-libraries/pypairtree.git@master#egg=pypairtree',
         'pyuntl @ git+https://github.com/unt-libraries/pyuntl.git@master#egg=pyuntl',
     ],
 
