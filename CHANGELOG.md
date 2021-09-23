@@ -1,5 +1,10 @@
 Change Log
 ==========
+x.x.x
+-----
+
+* Added acp_modification_date attribute to ResourceObject.
+
 2.0.0
 -----
 
