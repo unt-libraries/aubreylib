@@ -177,6 +177,8 @@ class ResourceObject:
                                           "document: %s" % (self.meta_id))
         # Parse the mets document
         parsed_mets = etree.parse(mets_filehandle)
+        # Get the acp last modification date (useful for ETag hashes)
+        self.acp_modification_date = parsed_mets.getroot().find('metsHdr').attrib['LASTMODDATE']
         # Close the mets file
         mets_filehandle.close()
         # Get Metadata File
