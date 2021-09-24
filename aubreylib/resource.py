@@ -177,10 +177,10 @@ class ResourceObject:
                                           "document: %s" % (self.meta_id))
         # Parse the mets document
         parsed_mets = etree.parse(mets_filehandle)
-        # Get the acp last modification date (useful for ETag hashes)
-        self.acp_modification_date = parsed_mets.getroot().find('metsHdr').attrib['LASTMODDATE']
         # Close the mets file
         mets_filehandle.close()
+        # Get the acp last modification date (useful for ETag hashes)
+        self.get_acp_last_modification_date(parsed_mets)
         # Get Metadata File
         self.get_metadata_file(parsed_mets)
         # Get the descriptive metadata
@@ -243,6 +243,14 @@ class ResourceObject:
         if not hasattr(self, 'metadata_file'):
             raise ResourceObjectException("Could not retrieve the " +
                                           "descriptive metadata file.")
+
+    def get_acp_last_modification_date(self, parsed_mets):
+        """Set the acp_modification_date if we get it, or None otherwise."""
+        metsHdr = parsed_mets.getroot().xpath('metsHdr')
+        if len(metsHdr) > 0:
+            self.acp_modification_date = metsHdr[0].attrib.get('LASTMODDATE')
+        else:
+            self.acp_modification_date = None
 
     # Grabs the structMap portion of the mets xml file
     def get_structMap(self, parsed_mets):

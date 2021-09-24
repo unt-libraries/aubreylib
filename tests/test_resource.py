@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 import os
+from unittest.mock import mock_open, patch, MagicMock
+from io import BytesIO
+
 import pytest
 import urllib.request
-from unittest.mock import mock_open, patch, MagicMock
+from lxml import etree
+
 from aubreylib import resource, USE
 
 
@@ -229,3 +233,39 @@ class TestResourceObject:
         resource.ResourceObject(identifier=mets_path, metadataLocations=[],
                                 staticFileLocations=[], mimetypeIconsPath='', use=USE,
                                 transcriptions_server_url='http://example.com')
+
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    def testGetAcpLastModificationDate(self, mocked_fileSet_file):
+        """Make sure we are getting the date if present, None otherwise."""
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        # Use the METs file from our test data to make resource object.
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+        ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                     staticFileLocations=[],
+                                     mimetypeIconsPath='', use=USE)
+        # Should get the date from the mets file on initialization
+        assert ro.acp_modification_date == '2009-06-17T23:48:57Z'
+        # Should return None for a tree with no metsHdr
+        ro.get_acp_last_modification_date(etree.parse(BytesIO(
+            # No metsHdr
+            b'<?xml version="1.0" encoding="UTF-8"?><mets></mets>'
+        )))
+        assert ro.acp_modification_date is None
+        # Should return the date from this minimal xml, showing that we're grabbing
+        # the date from the expected attribute and that the next assertion is the result
+        # of overriding the attribute value set here.
+        ro.get_acp_last_modification_date(etree.parse(BytesIO(
+            # Normal LASTMODDATE
+            b'''<?xml version="1.0" encoding="UTF-8"?><mets><metsHdr
+            LASTMODDATE="2021-09-24T12:45:34Z"></metsHdr></mets>'''
+        )))
+        assert ro.acp_modification_date == '2021-09-24T12:45:34Z'
+        # Should return None for a tree that has metsHdr but no LASTMODDATE
+        ro.get_acp_last_modification_date(etree.parse(BytesIO(
+            # No LASTMODDATE
+            b'<?xml version="1.0" encoding="UTF-8"?><mets><metsHdr></metsHdr></mets>'
+        )))
+        assert ro.acp_modification_date is None
