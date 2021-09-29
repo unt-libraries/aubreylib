@@ -254,18 +254,3 @@ class TestResourceObject:
             b'<?xml version="1.0" encoding="UTF-8"?><mets></mets>'
         )))
         assert ro.acp_modification_date is None
-        # Should return the date from this minimal xml, showing that we're grabbing
-        # the date from the expected attribute and that the next assertion is the result
-        # of overriding the attribute value set here.
-        ro.get_acp_last_modification_date(etree.parse(BytesIO(
-            # Normal LASTMODDATE
-            b'''<?xml version="1.0" encoding="UTF-8"?><mets><metsHdr
-            LASTMODDATE="2021-09-24T12:45:34Z"></metsHdr></mets>'''
-        )))
-        assert ro.acp_modification_date == '2021-09-24T12:45:34Z'
-        # Should return None for a tree that has metsHdr but no LASTMODDATE
-        ro.get_acp_last_modification_date(etree.parse(BytesIO(
-            # No LASTMODDATE
-            b'<?xml version="1.0" encoding="UTF-8"?><mets><metsHdr></metsHdr></mets>'
-        )))
-        assert ro.acp_modification_date is None
