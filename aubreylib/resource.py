@@ -247,7 +247,7 @@ class ResourceObject:
     def get_acp_last_modification_date(self, parsed_mets):
         """Set the acp_modification_date if we get it, or None otherwise."""
         metsHdr = parsed_mets.getroot().xpath('metsHdr')
-        if len(metsHdr):
+        if metsHdr:
             self.acp_modification_date = metsHdr[0].attrib.get('LASTMODDATE')
         else:
             self.acp_modification_date = None
