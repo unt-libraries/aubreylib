@@ -1,6 +1,9 @@
 aubreylib
 =========
 
+.. image:: https://github.com/unt-libraries/aubreylib/actions/workflows/test.yml/badge.svg?branch=master
+    :target: https://github.com/unt-libraries/aubrey/actions
+
 About
 -----
 
