@@ -11,7 +11,7 @@ A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digit
 Requirements
 ------------
 
-* Python ~= 3.7.0
+* Python 3.7 - 3.9
 * libxml2
 * libxslt
 
