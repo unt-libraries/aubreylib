@@ -4,6 +4,8 @@ x.x.x
 -----
 
 * Added acp_modification_date attribute to ResourceObject.
+* Replace Travis with GitHub Actions.
+* Add support for Python 3.8 and 3.9.
 
 2.0.0
 -----

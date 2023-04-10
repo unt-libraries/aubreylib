@@ -1,6 +1,8 @@
 aubreylib
 =========
 
+[![Build Status](https://github.com/unt-libraries/aubreylib/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/unt-libraries/aubrey/actions)
+
 About
 -----
 
@@ -9,7 +11,7 @@ A helper library for the [aubrey](https://github.com/unt-libraries/aubrey) digit
 Requirements
 ------------
 
-* Python ~= 3.7.0
+* Python 3.7 - 3.9
 * libxml2
 * libxslt
 
