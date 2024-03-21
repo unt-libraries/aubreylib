@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" TYPE="access content package" OBJID="ark:/67531/metadc2280433" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov./standards/mets/mets.xsd">
+  <metsHdr CREATEDATE="2024-02-11T10:39:02Z" LASTMODDATE="2024-02-11T10:39:02Z" ID="hdr_00001">
+    <agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <name>UNT Libraries: Digital Projects Unit</name>
+    </agent>
+    <metsDocumentID TYPE="AIP-Version-Identifier">metadc2280433.aip.2024-02-11T09:31:22Z</metsDocumentID>
+  </metsHdr>
+  <dmdSec ID="dmd_00001">
+    <mdRef LOCTYPE="URI" MDTYPE="OTHER" OTHERMDTYPE="UNTL" xlink:href="file://metadc2280433.untl.xml"/>
+  </dmdSec>
+  <fileSec ID="sec_00001">
+    <fileGrp ID="fgrp_00001">
+      <file ID="file_00211" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7d0c8b8819b1aeadec7fd88cca1d4549" CHECKSUMTYPE="MD5" SIZE="77380" OWNERID="a2c34903-3f1d-43cc-9672-831cea0be10d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.jpg"/>
+      </file>
+      <file ID="file_00212" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d01d543ae8892d0ae4e446e0b691d754" CHECKSUMTYPE="MD5" SIZE="1421" OWNERID="a5458521-7900-4fa9-9152-9204dd4a6f91">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00213" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ae96c4f0f51d7883ce32a68a4b979c48" CHECKSUMTYPE="MD5" SIZE="25380" OWNERID="2cf6cd57-66c9-41a0-8711-7a56ee9f1324">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.med_res.jpg"/>
+      </file>
+      <file ID="file_00214" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6874de005dab3b8cedd4223466374914" CHECKSUMTYPE="MD5" SIZE="1433" OWNERID="0adc4cdd-166d-4570-972f-12a783c1e972">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.square.jpg"/>
+      </file>
+      <file ID="file_00215" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="655edca3e0089a18f1b6208fd6bdb96b" CHECKSUMTYPE="MD5" SIZE="2103" OWNERID="d67e369f-efd6-4125-94d8-7074567d10c4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.pro.xml"/>
+      </file>
+      <file ID="file_00216" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8e27b7af9fb54a42dd14c8eefd7afa23" CHECKSUMTYPE="MD5" SIZE="453" OWNERID="5ae78ade-ec6b-4669-8e6c-eebdd20f8f7a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/000100tp.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00002">
+      <file ID="file_00217" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c610122ab84e870632a708d106d24e3e" CHECKSUMTYPE="MD5" SIZE="169079" OWNERID="975f35a2-0df8-4009-b646-295a84f0eda2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.jpg"/>
+      </file>
+      <file ID="file_00218" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6853bdfd84c9daf56424b20c503ebb19" CHECKSUMTYPE="MD5" SIZE="1572" OWNERID="6eb4eabd-90d3-4e87-b18b-1137effc2c95">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00219" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8f478f29fc89c000c7156d2f7682bbfa" CHECKSUMTYPE="MD5" SIZE="54417" OWNERID="5006e46a-8dea-43be-9aac-873f382c6589">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.med_res.jpg"/>
+      </file>
+      <file ID="file_00220" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f643367b5c774feb10a00a14f8f97892" CHECKSUMTYPE="MD5" SIZE="1626" OWNERID="4645e43c-3f8f-4ff9-9efa-74569c40b4f9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.square.jpg"/>
+      </file>
+      <file ID="file_00221" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4b3dec91193e74fe38ff79e1e7de7635" CHECKSUMTYPE="MD5" SIZE="5601" OWNERID="aa473980-5608-41e0-b459-83ca8209cedb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.pro.xml"/>
+      </file>
+      <file ID="file_00222" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b7abe226765078b80d5f39378550c228" CHECKSUMTYPE="MD5" SIZE="1366" OWNERID="305fc2cd-c2fb-4c98-8a00-c2dd0a550cc3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0002r001.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00003">
+      <file ID="file_00223" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="05ca54acce203591ee738044e74ff441" CHECKSUMTYPE="MD5" SIZE="22701" OWNERID="0a0985bb-7492-409f-8190-0761547298f9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.jpg"/>
+      </file>
+      <file ID="file_00224" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="31ee48cd07f44680fe46b0fd85697e1a" CHECKSUMTYPE="MD5" SIZE="1103" OWNERID="538cd886-3226-43aa-87d6-0b43568a655a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00225" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c888fe3563a0ad9fef9c3c86310abe74" CHECKSUMTYPE="MD5" SIZE="6425" OWNERID="4b4518ec-bb6a-4465-93a0-d598722ad2bf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.med_res.jpg"/>
+      </file>
+      <file ID="file_00226" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="55e4cc8478f0b1a4e759877ee3b46af1" CHECKSUMTYPE="MD5" SIZE="1121" OWNERID="f5efb8b4-1ebe-4974-85ad-6872729ea3de">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.square.jpg"/>
+      </file>
+      <file ID="file_00227" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6f61ddc0d7856fc64625652647ca66aa" CHECKSUMTYPE="MD5" SIZE="404" OWNERID="379ac9fc-60f8-4929-b0da-ebaeaf276a5e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.pro.xml"/>
+      </file>
+      <file ID="file_00228" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8ac1b21840ba3efdedad1c3fb0c2f1c1" CHECKSUMTYPE="MD5" SIZE="41" OWNERID="525f781c-5066-459e-8e7c-2be8b4af4875">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0003r002.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00004">
+      <file ID="file_00229" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ce573c1ee4bdcaa9e35c74fcbadb6db7" CHECKSUMTYPE="MD5" SIZE="109324" OWNERID="fdbd9fe4-d3c9-4bb4-ac33-a730495baeb9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.jpg"/>
+      </file>
+      <file ID="file_00230" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="fde0929c88d718f34fefbdeeec3eb10b" CHECKSUMTYPE="MD5" SIZE="1427" OWNERID="4f43801d-b795-4c91-b9b9-61d9813a8e55">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00231" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2bc286db651825c76699cd7a3e0828fb" CHECKSUMTYPE="MD5" SIZE="35102" OWNERID="e59c153c-be66-43dc-a2b2-c701e911955d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.med_res.jpg"/>
+      </file>
+      <file ID="file_00232" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="98ac631e26da25552b02d4d9dc630263" CHECKSUMTYPE="MD5" SIZE="1434" OWNERID="381dd475-6f3c-4d86-abeb-a4d9b3a3e916">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.square.jpg"/>
+      </file>
+      <file ID="file_00233" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d7cb9176f18ff9652d211d117bb07359" CHECKSUMTYPE="MD5" SIZE="3699" OWNERID="b98b002e-941a-4501-a143-3a34c8399bc6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.pro.xml"/>
+      </file>
+      <file ID="file_00234" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bf82019158a905d0d308239e2771d30d" CHECKSUMTYPE="MD5" SIZE="821" OWNERID="ad8e52de-3624-4c68-b66e-b9d679a95a08">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0004r003.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00005">
+      <file ID="file_00235" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4187818729542948cf7fcfe7ac113f4a" CHECKSUMTYPE="MD5" SIZE="145814" OWNERID="75aa767c-8fb9-42fb-b947-c7f3ffa39dd0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.jpg"/>
+      </file>
+      <file ID="file_00236" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="27ef7bfc2cd60eef4cc65689f6d52f9a" CHECKSUMTYPE="MD5" SIZE="1622" OWNERID="0e549341-e118-47e0-ae07-32a628e34440">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00237" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e8724e818b5b4aae912621eebd58b7ca" CHECKSUMTYPE="MD5" SIZE="53195" OWNERID="76da061c-61bf-4b12-a440-cc0eebd9efdf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.med_res.jpg"/>
+      </file>
+      <file ID="file_00238" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5a55f6da298dad024799e035f67121a7" CHECKSUMTYPE="MD5" SIZE="1686" OWNERID="0e215f04-cb20-45bc-b6fe-a5497879965e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.square.jpg"/>
+      </file>
+      <file ID="file_00239" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d973609e9d246c4ab2be933c02930028" CHECKSUMTYPE="MD5" SIZE="2358" OWNERID="3b134ce7-65e8-43cb-9e5f-ba8373eba539">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.pro.xml"/>
+      </file>
+      <file ID="file_00240" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0d5327b9cc2b647525839afbd856a8ca" CHECKSUMTYPE="MD5" SIZE="3083" OWNERID="d53ec133-43d3-4ce3-a028-8fd30cf707df">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0005r004.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00006">
+      <file ID="file_00241" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ca18059c633ce374f0fa5e97e24b9d2a" CHECKSUMTYPE="MD5" SIZE="232057" OWNERID="279ae01b-7d48-461c-83c5-5cdde686b518">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.jpg"/>
+      </file>
+      <file ID="file_00242" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="58bd0b086a711367ed46a774bb502897" CHECKSUMTYPE="MD5" SIZE="1775" OWNERID="19b421d1-c985-4839-b85d-8b4aa6d782a8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00243" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="381b4740a0208f300c7c212241c02a1f" CHECKSUMTYPE="MD5" SIZE="78502" OWNERID="9789d32c-b064-48ba-be2d-83a05d5456c3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.med_res.jpg"/>
+      </file>
+      <file ID="file_00244" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="50f8fdbe0a5bb5e6394a3e882f6a6eb7" CHECKSUMTYPE="MD5" SIZE="1905" OWNERID="7446199c-d9ad-478f-a887-20ba54b6a0da">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.square.jpg"/>
+      </file>
+      <file ID="file_00245" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9d2e966a2e1ee02026fa1af505005fb3" CHECKSUMTYPE="MD5" SIZE="7165" OWNERID="5dc8d1a9-b9cc-4ad4-bbd4-8ed2b0e1a598">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.pro.xml"/>
+      </file>
+      <file ID="file_00246" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="093f2946cb0e3ffdba497a29bfec6659" CHECKSUMTYPE="MD5" SIZE="2701" OWNERID="094adf50-01aa-4c0b-bd37-564dd2c7e220">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0006r005.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00007">
+      <file ID="file_00247" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5c2f4bc4f561ed4c60fbf9537d870179" CHECKSUMTYPE="MD5" SIZE="34209" OWNERID="815f2d58-e7aa-4543-8c4f-7055472d47bb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.jpg"/>
+      </file>
+      <file ID="file_00248" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="16acae149401966e5978f9d909d1a34e" CHECKSUMTYPE="MD5" SIZE="1154" OWNERID="8a140ebb-b14c-47f2-8830-9e61931163b5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00249" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="635c6aa3698fd293c2abcf17ec9eb8df" CHECKSUMTYPE="MD5" SIZE="9856" OWNERID="374c4074-fbb7-4f5b-8ee0-2c244dafba83">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.med_res.jpg"/>
+      </file>
+      <file ID="file_00250" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="99d1b10efcb17157d9086d36a0b5ee82" CHECKSUMTYPE="MD5" SIZE="1081" OWNERID="d13d8bd8-cf94-41c9-9ae1-d929ccf4e0fa">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.square.jpg"/>
+      </file>
+      <file ID="file_00251" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="caf41e46f0719792f162f0f189b6a747" CHECKSUMTYPE="MD5" SIZE="707" OWNERID="5cac815c-5e10-469b-8007-0629275d419a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.pro.xml"/>
+      </file>
+      <file ID="file_00252" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1471549a9702468f92d32a6dfbc36459" CHECKSUMTYPE="MD5" SIZE="182" OWNERID="d053cf62-f3e6-4f07-98fb-b1e4028a8eee">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/0007r006.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00008">
+      <file ID="file_00253" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="85cac5e35421d5d9617075c278af34fb" CHECKSUMTYPE="MD5" SIZE="237263" OWNERID="484e1316-448b-4c1e-b86b-91fdc4f10afa">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.jpg"/>
+      </file>
+      <file ID="file_00254" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4ecef0e68025fd41a7317ac7921451e8" CHECKSUMTYPE="MD5" SIZE="1791" OWNERID="0dce7955-b28e-43c3-9886-84232df40aab">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00255" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5bc741c5281fa7370abf5d8287a38f03" CHECKSUMTYPE="MD5" SIZE="76509" OWNERID="013e4bd1-5d66-4a5b-bed2-f44305d1fde9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.med_res.jpg"/>
+      </file>
+      <file ID="file_00256" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="73429af81f07103927f1107168f5d2df" CHECKSUMTYPE="MD5" SIZE="1985" OWNERID="59a18fca-a3ae-4893-a041-7b26c8baf68d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.square.jpg"/>
+      </file>
+      <file ID="file_00257" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2b6f5609f56afa541def6eba656d6068" CHECKSUMTYPE="MD5" SIZE="8418" OWNERID="5a45676c-082d-41d6-bc1d-0f2edcf5455c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.pro.xml"/>
+      </file>
+      <file ID="file_00258" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2367a911fcf3f722a1228e18e0abd141" CHECKSUMTYPE="MD5" SIZE="1992" OWNERID="e22de8ea-4cc4-4a9e-877e-2376bb87017c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00080001.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00009">
+      <file ID="file_00259" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d2aa91903324f700fd2de43417d7c07d" CHECKSUMTYPE="MD5" SIZE="246756" OWNERID="c8a91130-3944-4e4c-a763-87f0c6eef620">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.jpg"/>
+      </file>
+      <file ID="file_00260" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5ef4f637670f0c8d8bdcd0f7ecc145d9" CHECKSUMTYPE="MD5" SIZE="1812" OWNERID="827de8fe-ede6-4c7d-b9aa-7c1ad7fdc231">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00261" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a52fbe1129e958d01735d749070012aa" CHECKSUMTYPE="MD5" SIZE="78920" OWNERID="0a3b323c-c0ba-407e-8792-3c4146b1292b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.med_res.jpg"/>
+      </file>
+      <file ID="file_00262" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1e071ba9bf0f09ce008e956de262dccb" CHECKSUMTYPE="MD5" SIZE="1975" OWNERID="a31e7f57-9339-44fa-862a-b3e542f3cbfc">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.square.jpg"/>
+      </file>
+      <file ID="file_00263" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="dd7aec2dad73066822851f698bae5a59" CHECKSUMTYPE="MD5" SIZE="9110" OWNERID="144e41a5-8a09-4cb5-9883-49fe13070cdf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.pro.xml"/>
+      </file>
+      <file ID="file_00264" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9cc56c4504c41d39334989e0c677838f" CHECKSUMTYPE="MD5" SIZE="2106" OWNERID="94e55f3c-1f31-47cd-930c-ff6abcd6e3f0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00090002.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00010">
+      <file ID="file_00265" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="37a82195a76f90f8222138f68ae40cd7" CHECKSUMTYPE="MD5" SIZE="235417" OWNERID="33a37c81-9c29-4edc-8eb8-1ddf8066fa36">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.jpg"/>
+      </file>
+      <file ID="file_00266" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="00420fafc373f2b8567e8c0ea1086841" CHECKSUMTYPE="MD5" SIZE="1782" OWNERID="5eae312e-919f-43e8-acc2-5c8ad20ed176">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00267" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6aa35827427f4ca978f4c2809df795b1" CHECKSUMTYPE="MD5" SIZE="77478" OWNERID="909a6961-a62a-479a-89b1-a66e400e0e07">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.med_res.jpg"/>
+      </file>
+      <file ID="file_00268" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7de31830c2d5c67ef2aca193194dbcd0" CHECKSUMTYPE="MD5" SIZE="1995" OWNERID="16f21b1f-5992-49e5-a6f3-cc785966c8a2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.square.jpg"/>
+      </file>
+      <file ID="file_00269" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9ee4d12c9bdff29526e4df664a22395d" CHECKSUMTYPE="MD5" SIZE="8525" OWNERID="f79e7fa2-eea0-42b2-a2f7-7d8d646aa5dd">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.pro.xml"/>
+      </file>
+      <file ID="file_00270" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9847d855ba459220f11fe6c15e06ddd8" CHECKSUMTYPE="MD5" SIZE="2026" OWNERID="52e80885-1072-4c13-a0a1-368a42c0c700">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00100003.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00011">
+      <file ID="file_00271" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d1348073180eb23b494ff402dc50c57e" CHECKSUMTYPE="MD5" SIZE="258345" OWNERID="9e6b1264-2591-400c-9771-566a204f18d3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.jpg"/>
+      </file>
+      <file ID="file_00272" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c388dd37fed190f5c6d729c4db887922" CHECKSUMTYPE="MD5" SIZE="1783" OWNERID="86df531d-b5f6-466e-a234-414359dad89d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00273" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d80056ec82f5deda3b1de3aee272bd6b" CHECKSUMTYPE="MD5" SIZE="82680" OWNERID="225d7b53-0b6d-45c7-981c-8bff10a3114f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.med_res.jpg"/>
+      </file>
+      <file ID="file_00274" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="59b34847608a91aa2530460f51b2717b" CHECKSUMTYPE="MD5" SIZE="1964" OWNERID="52e77cd1-2c3b-44b7-abe1-ab2f13a629a3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.square.jpg"/>
+      </file>
+      <file ID="file_00275" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="dccfb8eaa4c07b8d0ea0ca5be157a115" CHECKSUMTYPE="MD5" SIZE="9014" OWNERID="9b00fd3d-f6a3-45d5-bf83-3b9a637d03a7">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.pro.xml"/>
+      </file>
+      <file ID="file_00276" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c2188b8daec16665b9405c21ca6284ae" CHECKSUMTYPE="MD5" SIZE="2161" OWNERID="efa92def-75ec-4773-b017-31f3ce3fff94">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00110004.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00012">
+      <file ID="file_00277" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="544582c585424972c9d30123d416ad73" CHECKSUMTYPE="MD5" SIZE="236565" OWNERID="799a29e6-74ed-40e1-84d8-9a0dc60da580">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.jpg"/>
+      </file>
+      <file ID="file_00278" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="48c987fc409d4eaff0d417761d27724d" CHECKSUMTYPE="MD5" SIZE="1803" OWNERID="d00f2d56-a6bd-422e-a3ce-231711438c05">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00279" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ca230addfc289e98ab37cc9abc9b37be" CHECKSUMTYPE="MD5" SIZE="76679" OWNERID="6269e398-3b59-49f3-926c-b8e56831cdc0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.med_res.jpg"/>
+      </file>
+      <file ID="file_00280" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="16e9da8a491d9280e8a47891f13a81f7" CHECKSUMTYPE="MD5" SIZE="1969" OWNERID="0706bda1-e365-4baf-af24-9eb52b2dc7d6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.square.jpg"/>
+      </file>
+      <file ID="file_00281" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5c7ed7a3681a97a1da556bc13b72b364" CHECKSUMTYPE="MD5" SIZE="8876" OWNERID="a39853bb-1567-42b1-92c2-48091ce51f00">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.pro.xml"/>
+      </file>
+      <file ID="file_00282" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="184061e50ac2e06843ded5dffbb8e62c" CHECKSUMTYPE="MD5" SIZE="1993" OWNERID="c150e398-27a7-4f8d-ae04-c42b7ed94ec0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00120005.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00013">
+      <file ID="file_00283" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3d9eb203ca505b80a3ad01b8ea97967c" CHECKSUMTYPE="MD5" SIZE="249605" OWNERID="dc6b64b5-8a60-4d7b-a0f0-94fb76f3f073">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.jpg"/>
+      </file>
+      <file ID="file_00284" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7470c0441469b811c71623b93048c717" CHECKSUMTYPE="MD5" SIZE="1804" OWNERID="6b478c5e-53bb-4f13-b589-86f5449d5982">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00285" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="dffa92874a8f15c8dd14bdc8aaa25efc" CHECKSUMTYPE="MD5" SIZE="78975" OWNERID="c02338ea-0959-47a0-b454-5673b3267dd5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.med_res.jpg"/>
+      </file>
+      <file ID="file_00286" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7101a56be02c1f9d069b2de58af4cf3c" CHECKSUMTYPE="MD5" SIZE="1995" OWNERID="8917a1ee-a812-4504-9020-4089b20d7bbf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.square.jpg"/>
+      </file>
+      <file ID="file_00287" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0ee62204eab7563c4cb55b491e9a10d7" CHECKSUMTYPE="MD5" SIZE="8866" OWNERID="c8bcd24a-07a5-4771-b064-8efc7793f300">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.pro.xml"/>
+      </file>
+      <file ID="file_00288" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ebd4b2b2f5b425e4f2e3c30505984d07" CHECKSUMTYPE="MD5" SIZE="2086" OWNERID="a101d4f7-70ba-4ed7-b191-562b8a39ec04">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00130006.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00014">
+      <file ID="file_00289" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7cb7034a57a4eebe4686c43bf11f10d3" CHECKSUMTYPE="MD5" SIZE="252824" OWNERID="9bfd3677-4f80-4d79-8109-b412d8c9202f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.jpg"/>
+      </file>
+      <file ID="file_00290" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bb290e8ce1c64dfdcd7a61e8557a397b" CHECKSUMTYPE="MD5" SIZE="1790" OWNERID="5de4d88d-bf28-421e-bcbd-4655b5455849">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00291" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="76f31a34fc77cf490ee7b927bd38f07b" CHECKSUMTYPE="MD5" SIZE="79894" OWNERID="7452021f-7714-47d0-a7e8-b306fcd2ea08">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.med_res.jpg"/>
+      </file>
+      <file ID="file_00292" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="22d75ad2ce8abcd39ac41b92f696373a" CHECKSUMTYPE="MD5" SIZE="1971" OWNERID="3e467b55-0d7d-4b34-886b-4cafeaf83c2d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.square.jpg"/>
+      </file>
+      <file ID="file_00293" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5cc8592c72ced4515854a0bddd236f7e" CHECKSUMTYPE="MD5" SIZE="9002" OWNERID="27d5c986-74d5-4b0b-aa81-02f161e43ea6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.pro.xml"/>
+      </file>
+      <file ID="file_00294" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="62a1771c4b4f4dd1d0bed7f098b33d00" CHECKSUMTYPE="MD5" SIZE="2131" OWNERID="2f6643b1-d9cd-4211-865d-a5ee569349ea">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00140007.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00015">
+      <file ID="file_00295" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="14cde41eb6e7788333f0ada7ec941cc5" CHECKSUMTYPE="MD5" SIZE="232785" OWNERID="8cc6f38e-d03b-444d-997f-850a9e84dee0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.jpg"/>
+      </file>
+      <file ID="file_00296" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="29c44c2fbddef8170d4736bc5ee6f4fe" CHECKSUMTYPE="MD5" SIZE="1830" OWNERID="eb48c836-b62d-45b7-81d3-8f99772dfbf6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00297" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="52d386e5464ad93ac35b1cc5046cd620" CHECKSUMTYPE="MD5" SIZE="73787" OWNERID="92471324-8f63-45cf-88be-47f876de598e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.med_res.jpg"/>
+      </file>
+      <file ID="file_00298" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="830a8ecce5fea8f65415f874eb5582a3" CHECKSUMTYPE="MD5" SIZE="1986" OWNERID="b7202356-208b-4f83-b5a9-1d71b1b86a4c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.square.jpg"/>
+      </file>
+      <file ID="file_00299" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7331ced0787f622350103782f2c6916e" CHECKSUMTYPE="MD5" SIZE="8142" OWNERID="baffbb09-97a1-48b9-8d10-7becd84cd858">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.pro.xml"/>
+      </file>
+      <file ID="file_00300" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c9b544d639db76628c1b826e1f17b2f0" CHECKSUMTYPE="MD5" SIZE="1935" OWNERID="796e9455-c34d-456d-a5f0-bb0ac6698dba">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00150008.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00016">
+      <file ID="file_00301" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d66fb93b57649a2fd59b4bb1c04727fd" CHECKSUMTYPE="MD5" SIZE="248619" OWNERID="362c1e59-305d-42d5-8816-f878c8ef0c7a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.jpg"/>
+      </file>
+      <file ID="file_00302" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="286443d1ec0253478cb444f96f4e7a65" CHECKSUMTYPE="MD5" SIZE="1809" OWNERID="b80f7bd3-a2ec-4369-a4c1-130ebed10559">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00303" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="535cdbc81a1367ee38fbb41732ad0f52" CHECKSUMTYPE="MD5" SIZE="78523" OWNERID="368ebced-9825-49a3-9e1e-1db9c4748963">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.med_res.jpg"/>
+      </file>
+      <file ID="file_00304" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0835bbf13832ee964acfdc863f950a71" CHECKSUMTYPE="MD5" SIZE="1959" OWNERID="4d63b506-e1ab-41ca-8af9-ef005bb1a0a5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.square.jpg"/>
+      </file>
+      <file ID="file_00305" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="24a8aa63851d1af16396dc313ab84b74" CHECKSUMTYPE="MD5" SIZE="8576" OWNERID="39f5159c-65d9-4f69-98ba-af419a15deea">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.pro.xml"/>
+      </file>
+      <file ID="file_00306" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8398d53d689a0d3dc621ea8e749432fc" CHECKSUMTYPE="MD5" SIZE="2085" OWNERID="9cf07094-e9b4-4423-9537-239e4eb0b883">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00160009.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00017">
+      <file ID="file_00307" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4c1a8e630d81b2e02bac3d9bf4e697ce" CHECKSUMTYPE="MD5" SIZE="243412" OWNERID="637d34b9-ae0c-46f8-8302-8cfea029aba2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.jpg"/>
+      </file>
+      <file ID="file_00308" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="249ce07eaa89da0d0b5175eb840cfb06" CHECKSUMTYPE="MD5" SIZE="1820" OWNERID="592b0072-573a-4f22-bb60-ec1aab3cbb2b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00309" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e737ad4b0851378c7b133e6c8007d551" CHECKSUMTYPE="MD5" SIZE="78105" OWNERID="188ae5e5-4a3a-4bd3-8a74-1c19cfec9488">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.med_res.jpg"/>
+      </file>
+      <file ID="file_00310" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e09d84ea885d353ec6998ff8632b3ab6" CHECKSUMTYPE="MD5" SIZE="2011" OWNERID="e5e6197e-c48c-4f75-beda-924e29ac1d54">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.square.jpg"/>
+      </file>
+      <file ID="file_00311" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="faae430ccfec924df0e585c76e04ef00" CHECKSUMTYPE="MD5" SIZE="8922" OWNERID="49e8d10d-33f3-41db-973c-ba8867abdd62">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.pro.xml"/>
+      </file>
+      <file ID="file_00312" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="996eb924cb38c47d934c275e02c0ac8a" CHECKSUMTYPE="MD5" SIZE="2080" OWNERID="7d2c2e52-9d07-4c55-9db1-369199156585">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00170010.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00018">
+      <file ID="file_00313" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="43b023b23ad79e226fc872b7605daeab" CHECKSUMTYPE="MD5" SIZE="230140" OWNERID="2433cdf5-e4e9-47c4-b8b4-d96d3f4aa741">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.jpg"/>
+      </file>
+      <file ID="file_00314" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="041a524d40ae8582a636075387d14cee" CHECKSUMTYPE="MD5" SIZE="1811" OWNERID="5a4fb661-286a-48a0-a84f-daa4dd55c144">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00315" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1b5a265cdaa9a38f0c8a8f3f32909331" CHECKSUMTYPE="MD5" SIZE="72592" OWNERID="75717c5d-a006-46f9-9fe4-76e882833e7c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.med_res.jpg"/>
+      </file>
+      <file ID="file_00316" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4c7f32bbfc32035e47601e3c290dd3da" CHECKSUMTYPE="MD5" SIZE="1900" OWNERID="6461a677-a4df-49f5-816a-328e941f0ebe">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.square.jpg"/>
+      </file>
+      <file ID="file_00317" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="20d73bfab56fb91991c569aaf3cd0920" CHECKSUMTYPE="MD5" SIZE="8205" OWNERID="4c906fd0-8816-4c31-b0d2-9bbe0d642c37">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.pro.xml"/>
+      </file>
+      <file ID="file_00318" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b5730bd1a336610e20155395864c2fea" CHECKSUMTYPE="MD5" SIZE="1928" OWNERID="d66d72ee-2759-4c43-b065-a38ded36ea78">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00180011.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00019">
+      <file ID="file_00319" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="41fcbf9892f0fb67f7caf87dc8b7eb25" CHECKSUMTYPE="MD5" SIZE="31887" OWNERID="4093f74a-b94e-4926-8114-9b8db2189452">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.jpg"/>
+      </file>
+      <file ID="file_00320" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="edbe612e8f8463c0853ef6b37ab108b9" CHECKSUMTYPE="MD5" SIZE="1164" OWNERID="fc353f27-6376-4ce9-a866-bfe0bc9d80c3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00321" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2ff290fcb38d8df578e9105489ff33b8" CHECKSUMTYPE="MD5" SIZE="8465" OWNERID="7f8efbf7-729c-48e7-8871-5301045e90d8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.med_res.jpg"/>
+      </file>
+      <file ID="file_00322" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0eee58b5a87a9255d5f70e0185758759" CHECKSUMTYPE="MD5" SIZE="1075" OWNERID="23ee7237-237b-45c6-830c-6aa9cb167530">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.square.jpg"/>
+      </file>
+      <file ID="file_00323" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="02d79b207993aba5e56e88bb185a1f48" CHECKSUMTYPE="MD5" SIZE="750" OWNERID="6f6fb9bc-14a0-41b7-b322-58fdc3fe4421">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.pro.xml"/>
+      </file>
+      <file ID="file_00324" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="66d4cb32114305ba8619d619bca4c25e" CHECKSUMTYPE="MD5" SIZE="128" OWNERID="1f80e105-a3f3-4e88-9aef-a8b05d164f70">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00190012.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00020">
+      <file ID="file_00325" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7ab62692e3839733f2a5ef59dcd7ca94" CHECKSUMTYPE="MD5" SIZE="212529" OWNERID="551688e0-a4af-4699-bfe7-077e45ecb53b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.jpg"/>
+      </file>
+      <file ID="file_00326" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="473f93ac372c3eb59138040144b23026" CHECKSUMTYPE="MD5" SIZE="1807" OWNERID="01d8c4e0-51be-4bd2-9538-3b98dd4bd08e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00327" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3a87c742d2a381ac1dbef4f19ea35811" CHECKSUMTYPE="MD5" SIZE="70350" OWNERID="091bb4bb-36a0-4b63-a475-200c3b824e3e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.med_res.jpg"/>
+      </file>
+      <file ID="file_00328" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7e38ea3fd2e95980f24a68e670513786" CHECKSUMTYPE="MD5" SIZE="1984" OWNERID="4b125056-9d1b-47a0-8c87-5be8229f1328">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.square.jpg"/>
+      </file>
+      <file ID="file_00329" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ff02665cfd05307cfa99606dce3b3c79" CHECKSUMTYPE="MD5" SIZE="7886" OWNERID="6f60edcd-f37e-4cfe-ba2a-ab34f0a2d371">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.pro.xml"/>
+      </file>
+      <file ID="file_00330" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2c0baf9f8ef92be0698132a93cbeb641" CHECKSUMTYPE="MD5" SIZE="1764" OWNERID="9d36e245-749b-4b68-905e-3273376df9a7">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00200013.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00021">
+      <file ID="file_00331" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d9e862e55a3096d7fd28b21c3e0d52f6" CHECKSUMTYPE="MD5" SIZE="227936" OWNERID="66c3317d-ae26-4226-b5cf-065b5b7b94a6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.jpg"/>
+      </file>
+      <file ID="file_00332" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6f2016d5f83a39e2230f08d189e7d872" CHECKSUMTYPE="MD5" SIZE="1829" OWNERID="c2da154a-69e5-4922-86f7-9b0bba94f343">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00333" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3538083326626842176fd7af5106cd84" CHECKSUMTYPE="MD5" SIZE="73934" OWNERID="b12ceba6-e7aa-4840-8d6c-fdac3e441ef5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.med_res.jpg"/>
+      </file>
+      <file ID="file_00334" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7294f698274124eb8a219b020c0d882a" CHECKSUMTYPE="MD5" SIZE="2022" OWNERID="5a25e16e-5610-4131-ae88-1bd6b5e9c354">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.square.jpg"/>
+      </file>
+      <file ID="file_00335" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3c3d35aa5097762751df6c154cd2b059" CHECKSUMTYPE="MD5" SIZE="8809" OWNERID="12a1e006-9587-4181-bd9f-c343c96dd6d3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.pro.xml"/>
+      </file>
+      <file ID="file_00336" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ad7b06e6e0e3029707a11ed94b983feb" CHECKSUMTYPE="MD5" SIZE="1948" OWNERID="1e53784a-875c-4845-a01b-289f5b6eca22">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00210014.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00022">
+      <file ID="file_00337" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8963a42513fbbc95140d0e420092179f" CHECKSUMTYPE="MD5" SIZE="214180" OWNERID="2b6e502f-3354-446d-bb12-86573117eaef">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.jpg"/>
+      </file>
+      <file ID="file_00338" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d2668e7fb30b941b6421b7f7fa491980" CHECKSUMTYPE="MD5" SIZE="1830" OWNERID="1ab13d91-8d02-4c28-9365-9dca3c602284">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00339" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5eae8425d3503bbbb4062e06ace13788" CHECKSUMTYPE="MD5" SIZE="69614" OWNERID="2a1ef977-a838-4901-866d-ca891c5d3ba4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.med_res.jpg"/>
+      </file>
+      <file ID="file_00340" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8029ec3a4fd158f7b5bd27547670340a" CHECKSUMTYPE="MD5" SIZE="1902" OWNERID="cadcd3e7-cad4-4e38-b05e-d034ff95c984">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.square.jpg"/>
+      </file>
+      <file ID="file_00341" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6c2f38ca5aae83e597c0f02c29f8de25" CHECKSUMTYPE="MD5" SIZE="8201" OWNERID="86980e5f-8485-44f6-afd4-37221761e0b1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.pro.xml"/>
+      </file>
+      <file ID="file_00342" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ddf4688565241582704d6a3bd9d645d1" CHECKSUMTYPE="MD5" SIZE="1835" OWNERID="d554e738-0c8c-4bdb-b500-5063c51e3bfb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00220015.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00023">
+      <file ID="file_00343" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="67dfc52f7518e6de755915765da23028" CHECKSUMTYPE="MD5" SIZE="243590" OWNERID="3fe25130-d0a4-4cc4-9e11-35f9ddd4b380">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.jpg"/>
+      </file>
+      <file ID="file_00344" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="457c17f64ff890aa0f18048eed9b5c2c" CHECKSUMTYPE="MD5" SIZE="1803" OWNERID="602fe704-d5f3-4501-b6e7-486ee1fe1a53">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00345" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="db60e101daa05d201b497fc85fbdcdfe" CHECKSUMTYPE="MD5" SIZE="78419" OWNERID="3c4610ac-af90-46ce-985f-7a7383da766b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.med_res.jpg"/>
+      </file>
+      <file ID="file_00346" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2e6a69d2713efc9bd5330319ee5fa227" CHECKSUMTYPE="MD5" SIZE="2028" OWNERID="08cb570c-4fc3-45bd-95a5-99d71390fac2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.square.jpg"/>
+      </file>
+      <file ID="file_00347" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="44f3a4387283919e2d8719e5c2a9d0a4" CHECKSUMTYPE="MD5" SIZE="9480" OWNERID="5c4af808-99d8-459f-b9da-9bd8e54d67b9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.pro.xml"/>
+      </file>
+      <file ID="file_00348" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="596eada603abe110a5b1bdf79a4e6f33" CHECKSUMTYPE="MD5" SIZE="2083" OWNERID="781c01ce-6179-4048-aa6e-83fd1e640a14">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00230016.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00024">
+      <file ID="file_00349" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="cecc821608776c461bb4b0a3e1c83416" CHECKSUMTYPE="MD5" SIZE="223202" OWNERID="7c183592-d1f4-4983-8c47-de609c21144f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.jpg"/>
+      </file>
+      <file ID="file_00350" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3d7356996022fa220c303c2a6193e9ed" CHECKSUMTYPE="MD5" SIZE="1781" OWNERID="003e9f7b-8c42-465f-9cc7-07dcaf6b3118">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00351" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5122a6ec0ab5a984ff43fc9ad536a0f7" CHECKSUMTYPE="MD5" SIZE="70567" OWNERID="7fd3625b-a7af-42df-ae06-71685aa7b424">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.med_res.jpg"/>
+      </file>
+      <file ID="file_00352" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9c146b099c9d646e4361f7be4c7d9d61" CHECKSUMTYPE="MD5" SIZE="1899" OWNERID="fd66567a-9237-4b81-959a-a0a54f9eae7d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.square.jpg"/>
+      </file>
+      <file ID="file_00353" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0f1e98bb111a70aa2df6a71d7181c5d6" CHECKSUMTYPE="MD5" SIZE="8143" OWNERID="12593f2c-ecc5-49ca-b5d2-64ad6f32b2db">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.pro.xml"/>
+      </file>
+      <file ID="file_00354" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5e75ba8a919bac63cb2a021d1eb2440b" CHECKSUMTYPE="MD5" SIZE="1883" OWNERID="f5d423bc-d2a6-44e3-9e61-ab5064f4d2e8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00240017.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00025">
+      <file ID="file_00355" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f2cb6b8ebe1c4377dc5f04659a1581d7" CHECKSUMTYPE="MD5" SIZE="227691" OWNERID="1474094d-d4b1-426b-ae6a-6fcbf507260b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.jpg"/>
+      </file>
+      <file ID="file_00356" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="50d20a83d728a2fb57e413afd9fab2fe" CHECKSUMTYPE="MD5" SIZE="1804" OWNERID="0a7e19fd-4952-4a95-b4d7-4b252e0d8967">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00357" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a2b05579bb9fe5494cd88b0a5d6d1aad" CHECKSUMTYPE="MD5" SIZE="73967" OWNERID="4f800d99-c167-4f82-8ded-006bc56ff540">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.med_res.jpg"/>
+      </file>
+      <file ID="file_00358" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4a20241460b5607ef8fda0ab33a40fda" CHECKSUMTYPE="MD5" SIZE="1968" OWNERID="fa97934c-1be5-4952-8940-ad2fc234ecf5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.square.jpg"/>
+      </file>
+      <file ID="file_00359" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b7f93c2104175a71f93756e59ed70374" CHECKSUMTYPE="MD5" SIZE="8951" OWNERID="dbac7092-efad-4e05-8f05-abd790140d91">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.pro.xml"/>
+      </file>
+      <file ID="file_00360" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9a4151b947e932004b949a986299dc2c" CHECKSUMTYPE="MD5" SIZE="1914" OWNERID="4927c946-c86b-4228-8538-e7512a8d19f0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00250018.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00026">
+      <file ID="file_00361" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d592c947fac821f0e61d4c7cb84c3780" CHECKSUMTYPE="MD5" SIZE="223923" OWNERID="622ea650-1025-44ce-a3a0-045b4231725f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.jpg"/>
+      </file>
+      <file ID="file_00362" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="014d01ca01968a7e2b2da249d6d0b812" CHECKSUMTYPE="MD5" SIZE="1803" OWNERID="1298adc0-4bd6-4649-8b93-465c530df18b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00363" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="299c5502a7811904ae8cf172a27b536a" CHECKSUMTYPE="MD5" SIZE="72090" OWNERID="d5235a98-184a-4d98-a368-84ac9d7fc417">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.med_res.jpg"/>
+      </file>
+      <file ID="file_00364" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="11adf44a7984cf024520e1a8c7fd5257" CHECKSUMTYPE="MD5" SIZE="1993" OWNERID="0028136f-971e-40ff-8300-dfa55463c158">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.square.jpg"/>
+      </file>
+      <file ID="file_00365" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d0515e4c1c1210ccef08fb0b392a33a4" CHECKSUMTYPE="MD5" SIZE="8873" OWNERID="d86d4482-7c06-467c-9283-2c18a199c041">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.pro.xml"/>
+      </file>
+      <file ID="file_00366" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="450537394b7b69b027e8a13da337d61c" CHECKSUMTYPE="MD5" SIZE="1917" OWNERID="0bed6bc1-4727-4dcd-a5c0-2773c13573b5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00260019.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00027">
+      <file ID="file_00367" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ecd7471c53e7aca014723c1fffc95645" CHECKSUMTYPE="MD5" SIZE="231973" OWNERID="02da436c-b0b5-4fad-aac9-05196508b8b5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.jpg"/>
+      </file>
+      <file ID="file_00368" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="da9e00e000ee4057d71a97053cf395d3" CHECKSUMTYPE="MD5" SIZE="1795" OWNERID="50128570-0962-4188-b4aa-77bf3816eedc">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00369" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4a0d73c9b2f36f321342b4673ec750ac" CHECKSUMTYPE="MD5" SIZE="74086" OWNERID="133af7df-55ee-4c1f-9704-be2dd8f7c7ae">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.med_res.jpg"/>
+      </file>
+      <file ID="file_00370" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7f3a8d71e9609aec6bf64da066eff64a" CHECKSUMTYPE="MD5" SIZE="1973" OWNERID="31b46fea-5825-42ea-8371-b39c82cff5c5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.square.jpg"/>
+      </file>
+      <file ID="file_00371" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f97d398dd57b0209bf8bbda9159b1349" CHECKSUMTYPE="MD5" SIZE="8703" OWNERID="14f7fe4f-e171-4774-ad68-12d620c35014">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.pro.xml"/>
+      </file>
+      <file ID="file_00372" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b2bea657445e14922d48811cf4d44425" CHECKSUMTYPE="MD5" SIZE="1967" OWNERID="93d4a9b2-a68f-4d4b-b9cb-12c64ec460e6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00270020.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00028">
+      <file ID="file_00373" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c204aa523a0b976d032cdfe9a67c196b" CHECKSUMTYPE="MD5" SIZE="232721" OWNERID="8fc09aad-2e5d-4bc3-9a2e-23df44ff225f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.jpg"/>
+      </file>
+      <file ID="file_00374" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="50a1b4d7547a363755ac63c81ee6fecb" CHECKSUMTYPE="MD5" SIZE="1803" OWNERID="bbd3aae8-0b11-468b-9c30-140c3ec0b3f5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00375" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ca229615fa6d340207e983608d39359c" CHECKSUMTYPE="MD5" SIZE="77840" OWNERID="26a9097c-6e4a-4e44-b687-4c50360efd6f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.med_res.jpg"/>
+      </file>
+      <file ID="file_00376" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a819f56317679b93296373645df50182" CHECKSUMTYPE="MD5" SIZE="2000" OWNERID="73844e4c-b70e-4ce5-a0ef-2941ad59b549">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.square.jpg"/>
+      </file>
+      <file ID="file_00377" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3713fbd24930136c07c0e7ced2c3e0d9" CHECKSUMTYPE="MD5" SIZE="8825" OWNERID="f6acb493-501e-4e19-8fd3-ce3fab3e9bf0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.pro.xml"/>
+      </file>
+      <file ID="file_00378" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5cc554437c385c6289e77eeb94bd2475" CHECKSUMTYPE="MD5" SIZE="1982" OWNERID="0f284ba6-0e6f-414d-95de-d3f5494b0799">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00280021.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00029">
+      <file ID="file_00379" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e4c96526fbf024f8e8fc1388e9aaeaf7" CHECKSUMTYPE="MD5" SIZE="231855" OWNERID="c64b290f-ee4e-42aa-b844-bf535988adcb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.jpg"/>
+      </file>
+      <file ID="file_00380" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bf02f02b8f6a689993b4e58b0ccf2338" CHECKSUMTYPE="MD5" SIZE="1816" OWNERID="fb38cbee-d8ca-488e-b445-d4187b9e000e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00381" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0c42eca31d7a080a1b4f666b2ed09056" CHECKSUMTYPE="MD5" SIZE="77769" OWNERID="9498d6cf-d46c-4bb3-a204-85a599bb263e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.med_res.jpg"/>
+      </file>
+      <file ID="file_00382" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="31a512b34117c549ab9a267a189240e9" CHECKSUMTYPE="MD5" SIZE="1949" OWNERID="46268648-5fae-44bd-8758-20ce7ff7f061">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.square.jpg"/>
+      </file>
+      <file ID="file_00383" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d9f6161147998846520c0848a51b6857" CHECKSUMTYPE="MD5" SIZE="8766" OWNERID="6f079f47-fa27-438a-8793-8f8b8ad48242">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.pro.xml"/>
+      </file>
+      <file ID="file_00384" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bf386bc35dc5644c1b58ea623a3251a7" CHECKSUMTYPE="MD5" SIZE="1985" OWNERID="8d36ccfd-4801-4818-a74c-e7140162b5d8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00290022.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00030">
+      <file ID="file_00385" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c5e76a74cf65dd18aa101d4d091ba8d9" CHECKSUMTYPE="MD5" SIZE="251900" OWNERID="8ae53980-45ae-4fe7-b1c3-6d9932422f49">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.jpg"/>
+      </file>
+      <file ID="file_00386" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="42ee85d0b6ac7281e27603bd2a5a448d" CHECKSUMTYPE="MD5" SIZE="1769" OWNERID="7073c2a2-0bca-48d1-bf1f-14fe604034ae">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00387" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0de5b0b4ebc70c93b29bd0ae11802836" CHECKSUMTYPE="MD5" SIZE="80129" OWNERID="9c496102-3b52-4fea-af93-6562855dcda0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.med_res.jpg"/>
+      </file>
+      <file ID="file_00388" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8fbb4fb72b8dc722d23cbdf2c7a7246f" CHECKSUMTYPE="MD5" SIZE="1941" OWNERID="f034ea2d-62cd-4223-8484-56dcdc96431c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.square.jpg"/>
+      </file>
+      <file ID="file_00389" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a83da2d8837edafdcc6bbe5f0df1809f" CHECKSUMTYPE="MD5" SIZE="9377" OWNERID="940d6e4f-d6cc-4c12-b456-e2bc84ca1bff">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.pro.xml"/>
+      </file>
+      <file ID="file_00390" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="455f280cea2a0139595947385e1e0788" CHECKSUMTYPE="MD5" SIZE="2147" OWNERID="da3d940e-040c-46e6-aae7-762667bd8cd7">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00300023.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00031">
+      <file ID="file_00391" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="fac361c58e54c18b6832d77792e09a85" CHECKSUMTYPE="MD5" SIZE="249289" OWNERID="9ceb3d84-a063-46fe-b459-42a03852f976">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.jpg"/>
+      </file>
+      <file ID="file_00392" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="245e2ca381c6c74d3ef9dfc69bc6d9b4" CHECKSUMTYPE="MD5" SIZE="1775" OWNERID="6a15c264-fefe-4730-b9a1-4339a9a32527">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00393" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="015920a6f97ad19abc8e5e3017dbb08a" CHECKSUMTYPE="MD5" SIZE="80697" OWNERID="a141d4e6-0f0c-4f4b-a5f3-a065624e2bb4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.med_res.jpg"/>
+      </file>
+      <file ID="file_00394" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2c4628006f3380e3eaef7f05b42d2457" CHECKSUMTYPE="MD5" SIZE="1982" OWNERID="83734d97-0bdd-45b6-b43b-eafa99261d80">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.square.jpg"/>
+      </file>
+      <file ID="file_00395" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="97541e057b9ee056742b2035d4304b23" CHECKSUMTYPE="MD5" SIZE="10338" OWNERID="34953259-3f45-4666-be20-e2368b69509a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.pro.xml"/>
+      </file>
+      <file ID="file_00396" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f9ee7fe73185bf6c50a8ec3ddbbda582" CHECKSUMTYPE="MD5" SIZE="2118" OWNERID="a590b791-7730-439e-bd71-e628e5098842">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00310024.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00032">
+      <file ID="file_00397" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1bfc8320565987f42e497fa9caad83c0" CHECKSUMTYPE="MD5" SIZE="246081" OWNERID="472a6ab6-8df6-4dc1-ac52-6d0641e8740f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.jpg"/>
+      </file>
+      <file ID="file_00398" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="59427dfb81c1a693e9ed5349cce32a35" CHECKSUMTYPE="MD5" SIZE="1843" OWNERID="611de29e-30d9-4f8d-9f02-ad7989b96461">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00399" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="424e98769716c26f3c03539166e14896" CHECKSUMTYPE="MD5" SIZE="79749" OWNERID="956ca8fb-6f0b-407d-82e3-6574a84eed0d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.med_res.jpg"/>
+      </file>
+      <file ID="file_00400" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2426d7e162c8ef8088baf0256dac5046" CHECKSUMTYPE="MD5" SIZE="2008" OWNERID="dd8b50c7-4e60-4c95-8c64-ad324de4f9d5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.square.jpg"/>
+      </file>
+      <file ID="file_00401" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0b5eb15ca7f5177b69fb8bfe306bfa40" CHECKSUMTYPE="MD5" SIZE="10387" OWNERID="05a16939-89d1-4ab8-b71c-a07e831f46f3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.pro.xml"/>
+      </file>
+      <file ID="file_00402" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="aa1fc3d9f2ebecb45bbf0de621968934" CHECKSUMTYPE="MD5" SIZE="2080" OWNERID="dc3ffc4d-04c8-4e99-b781-a02c2d924346">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00320025.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00033">
+      <file ID="file_00403" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4bec5fe591e8d4e0c2707eb26f3d3cf7" CHECKSUMTYPE="MD5" SIZE="237292" OWNERID="ab95c30f-2946-4801-b51d-b8f449a85a2d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.jpg"/>
+      </file>
+      <file ID="file_00404" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c6039a933301dd444e4ed048ad9d2719" CHECKSUMTYPE="MD5" SIZE="1827" OWNERID="f1c5c4d2-1d40-41c1-b9e8-1e6cac32da39">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00405" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="849b06983692b9503685b07bb3b97144" CHECKSUMTYPE="MD5" SIZE="76567" OWNERID="fca3f84d-e9e4-4f57-a142-63b424ddf726">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.med_res.jpg"/>
+      </file>
+      <file ID="file_00406" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bbafd58278973c6e863587e8c9d81170" CHECKSUMTYPE="MD5" SIZE="1980" OWNERID="69b91a92-df68-448b-b5cb-2c9f78fa68c6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.square.jpg"/>
+      </file>
+      <file ID="file_00407" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bf7601c1036521093611d100092398ba" CHECKSUMTYPE="MD5" SIZE="9563" OWNERID="f2254b09-7005-4e1f-89ec-f49471dacc3d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.pro.xml"/>
+      </file>
+      <file ID="file_00408" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ef6a6b843dcff42307d6e06ebaf633e7" CHECKSUMTYPE="MD5" SIZE="2000" OWNERID="f48ef084-7d20-430b-a1c7-9f7da0863061">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00330026.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00034">
+      <file ID="file_00409" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="87a5fd211338c93ddf886110ad5fe1b9" CHECKSUMTYPE="MD5" SIZE="236846" OWNERID="9af745d2-4d5b-4f47-8176-eabb6a93ef48">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.jpg"/>
+      </file>
+      <file ID="file_00410" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9716401605a1a3dc21137f6b12b6fc75" CHECKSUMTYPE="MD5" SIZE="1816" OWNERID="250553fb-fbc6-4dce-a576-232662f9d4e2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00411" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5303ec72da8134448d5aae06b759613d" CHECKSUMTYPE="MD5" SIZE="76045" OWNERID="b6f030d7-e1c5-4917-9aaf-10566360b4b2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.med_res.jpg"/>
+      </file>
+      <file ID="file_00412" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c760837f38c8ef99d10531c849230c00" CHECKSUMTYPE="MD5" SIZE="1909" OWNERID="4160953b-cba3-4a81-8987-10e606fb22d3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.square.jpg"/>
+      </file>
+      <file ID="file_00413" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="cffb8b5940655db48e05461a1eb06fce" CHECKSUMTYPE="MD5" SIZE="9503" OWNERID="2d34eda4-ecb5-4e4f-bfb0-13cf448bdcb0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.pro.xml"/>
+      </file>
+      <file ID="file_00414" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1f825dfaba1765b796429520ea75c16a" CHECKSUMTYPE="MD5" SIZE="1990" OWNERID="e3d1e4f0-91bc-49f6-8295-d43b432d7320">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00340027.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00035">
+      <file ID="file_00415" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f4c1243d1709f29feb1d2be0017a707c" CHECKSUMTYPE="MD5" SIZE="36851" OWNERID="850c0224-8093-4482-930b-b2842b4d63f2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.jpg"/>
+      </file>
+      <file ID="file_00416" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="19e8c56687deee44cbf62fd5962e0b97" CHECKSUMTYPE="MD5" SIZE="1165" OWNERID="c39b2f9b-219c-4364-8b0c-826f96f67ffb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00417" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b36af1a17194f31b46309a3aeabdab05" CHECKSUMTYPE="MD5" SIZE="10125" OWNERID="8367ff2f-3aab-48c2-8c07-4d8266c142dd">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.med_res.jpg"/>
+      </file>
+      <file ID="file_00418" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="acc304f7e3d140b21ed62843ae8f68bb" CHECKSUMTYPE="MD5" SIZE="1120" OWNERID="1ed15145-1ee6-42f9-9895-a300cb94939d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.square.jpg"/>
+      </file>
+      <file ID="file_00419" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="05ec2181da14b65acc22e509623e1e4a" CHECKSUMTYPE="MD5" SIZE="920" OWNERID="a48cfeb7-5afd-4295-9049-c701ac6e3592">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.pro.xml"/>
+      </file>
+      <file ID="file_00420" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="54725dbac6519c468f618ad90ca9f6a7" CHECKSUMTYPE="MD5" SIZE="178" OWNERID="95c56b21-ebcf-4ea7-a84a-a11d32cdcb3e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00350028.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00036">
+      <file ID="file_00421" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a29ec60f7869eb11648d4a1368885f36" CHECKSUMTYPE="MD5" SIZE="236221" OWNERID="7cc89488-0e7f-4614-9529-da0691d5d494">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.jpg"/>
+      </file>
+      <file ID="file_00422" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d8c05fd880844d0ed914361f456ef9a9" CHECKSUMTYPE="MD5" SIZE="1792" OWNERID="a3d728b5-2338-46ee-9d5f-db57913a63f3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00423" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ee544f64dc14cc034b41f8f0aaf137b9" CHECKSUMTYPE="MD5" SIZE="76513" OWNERID="3f0a0547-9915-4311-a299-e93de9d30e39">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.med_res.jpg"/>
+      </file>
+      <file ID="file_00424" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="aa3c03e404ec1863d229873f20cc3a84" CHECKSUMTYPE="MD5" SIZE="1968" OWNERID="36072ae9-53b3-4fc7-876c-47fc268fd49f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.square.jpg"/>
+      </file>
+      <file ID="file_00425" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="fe86c8a7d4d62eae5ae8e2d0eabaf729" CHECKSUMTYPE="MD5" SIZE="8638" OWNERID="7b2255f8-5802-4fd0-9578-28b720fde783">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.pro.xml"/>
+      </file>
+      <file ID="file_00426" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6b7b969aafd15215544c085c3942d764" CHECKSUMTYPE="MD5" SIZE="1994" OWNERID="f4457a74-7934-424f-abba-de942be622bf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00360029.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00037">
+      <file ID="file_00427" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bd6271fe60098997eb2be01b5d716334" CHECKSUMTYPE="MD5" SIZE="244701" OWNERID="028cac68-459a-4cc5-8e8e-9adc37e9a1ea">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.jpg"/>
+      </file>
+      <file ID="file_00428" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="981e6c2071436c3dafcba607263b1ddc" CHECKSUMTYPE="MD5" SIZE="1802" OWNERID="6c3580ef-27dd-4010-9b3e-06f34a952ae3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00429" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="83e9d6ae80b11e86934937bdddeb5199" CHECKSUMTYPE="MD5" SIZE="78093" OWNERID="8b07dd0e-12d6-4cc0-bbc1-c985a76d5b7d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.med_res.jpg"/>
+      </file>
+      <file ID="file_00430" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="cda6aec6515fea0ee23ded983274fc18" CHECKSUMTYPE="MD5" SIZE="1938" OWNERID="cf2bf023-755d-4be6-82a2-1628db62cb3b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.square.jpg"/>
+      </file>
+      <file ID="file_00431" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7043c623becc3a72530e69309aba9f45" CHECKSUMTYPE="MD5" SIZE="8903" OWNERID="10623c89-3ba7-475c-a797-bfba24cd6132">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.pro.xml"/>
+      </file>
+      <file ID="file_00432" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="349c3fda0fea505740a27f2318446b01" CHECKSUMTYPE="MD5" SIZE="2074" OWNERID="e749941b-9cb9-4191-89c1-797d45498594">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00370030.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00038">
+      <file ID="file_00433" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="54e09e8dfa2ad59c30ae17b3b5b9ba49" CHECKSUMTYPE="MD5" SIZE="237456" OWNERID="9363bf8e-418b-4d47-9c0c-219450a5ca97">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.jpg"/>
+      </file>
+      <file ID="file_00434" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d0205d9d74dec57d1daed1ecc1b04bfa" CHECKSUMTYPE="MD5" SIZE="1810" OWNERID="c1187a90-b952-48f7-a355-d391d5d99254">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00435" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e0e1af9f7cf5b47501a130d0e4fdb698" CHECKSUMTYPE="MD5" SIZE="75541" OWNERID="910c4d03-aa98-46fc-a3b7-f50c4326f1bb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.med_res.jpg"/>
+      </file>
+      <file ID="file_00436" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="00dd9ebb5205911389eb06efb999fd8b" CHECKSUMTYPE="MD5" SIZE="1984" OWNERID="addc7432-d942-42d3-94d7-b286e30167aa">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.square.jpg"/>
+      </file>
+      <file ID="file_00437" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d28b4990b5a26aa62099aac79cf2d469" CHECKSUMTYPE="MD5" SIZE="8389" OWNERID="d1a658e2-0ab9-4806-8f9f-e8cde710f863">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.pro.xml"/>
+      </file>
+      <file ID="file_00438" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="11d3f81a8728302d74f92056f649cfb7" CHECKSUMTYPE="MD5" SIZE="2011" OWNERID="6b44924e-1d97-4b37-ae8a-54238130dfb0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00380031.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00039">
+      <file ID="file_00439" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="07c1ea2e1688e274f0d8a0c52d7097f1" CHECKSUMTYPE="MD5" SIZE="232682" OWNERID="fe183b42-59a5-4668-aac8-495919f0ec86">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.jpg"/>
+      </file>
+      <file ID="file_00440" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="ac23a225342de1cb995d891e7e9ae364" CHECKSUMTYPE="MD5" SIZE="1803" OWNERID="0278c67c-0b2b-4d75-9ddf-e5951f856b46">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00441" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="73ddf7355bd8927edfc7dc8ddc51ae18" CHECKSUMTYPE="MD5" SIZE="73785" OWNERID="b03572a8-27af-465b-9b7a-0634495cd92a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.med_res.jpg"/>
+      </file>
+      <file ID="file_00442" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bb82dc3176ad84fc7d790b94b0248a4a" CHECKSUMTYPE="MD5" SIZE="1875" OWNERID="8f9448a8-98df-4af5-a360-80ea5e8db6e8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.square.jpg"/>
+      </file>
+      <file ID="file_00443" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="45f27f724fcdda4f03951451438e1545" CHECKSUMTYPE="MD5" SIZE="8439" OWNERID="58a265c2-ad03-4f57-aea1-2b2c285aa477">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.pro.xml"/>
+      </file>
+      <file ID="file_00444" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="34385046dbe1b5b15642a153749e347e" CHECKSUMTYPE="MD5" SIZE="1960" OWNERID="45bbd2df-a55b-487a-ab7c-dee623a33c90">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00390032.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00040">
+      <file ID="file_00445" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d7a37681933db4296def71badcb50e29" CHECKSUMTYPE="MD5" SIZE="174629" OWNERID="906e3fe8-623b-4495-b5f3-71e532802bc5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.jpg"/>
+      </file>
+      <file ID="file_00446" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b3da569a4d9320b9888abc12c8ac4d94" CHECKSUMTYPE="MD5" SIZE="1624" OWNERID="39759799-2453-4015-a352-7adfd63fb753">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00447" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2ff1006d00ddf8b0e947cb8fe1c35167" CHECKSUMTYPE="MD5" SIZE="57105" OWNERID="35d8d245-d74a-439c-975f-57343b9fd438">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.med_res.jpg"/>
+      </file>
+      <file ID="file_00448" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9d1f9ee349ff3a7ec2d60e1822841def" CHECKSUMTYPE="MD5" SIZE="1696" OWNERID="722a5f5e-6aae-47cc-b517-b544b0b980bd">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.square.jpg"/>
+      </file>
+      <file ID="file_00449" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3e30981919b617456cda5082c419bdfd" CHECKSUMTYPE="MD5" SIZE="6182" OWNERID="d83b42c8-db94-4168-b69c-957a25b083c7">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.pro.xml"/>
+      </file>
+      <file ID="file_00450" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="4d6ee0a3efa9532ca9dad62dd814dfe4" CHECKSUMTYPE="MD5" SIZE="1433" OWNERID="41d4c773-231d-4c14-9050-cd565fc89f6f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00400033.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00041">
+      <file ID="file_00451" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9b734188e45470c8d5f088be91c93696" CHECKSUMTYPE="MD5" SIZE="204711" OWNERID="70f4c0ce-24a8-4a46-9c74-0748280f11a5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.jpg"/>
+      </file>
+      <file ID="file_00452" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="588491cc669df3ff8c3a76a6e23183c3" CHECKSUMTYPE="MD5" SIZE="2426" OWNERID="3f5e488a-7222-4906-9671-6caab34491f4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00453" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d04eb9bdecc2c2388b1d1897c2cc79ce" CHECKSUMTYPE="MD5" SIZE="67160" OWNERID="ca589d05-a128-4529-9a51-a8de38a4fce0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.med_res.jpg"/>
+      </file>
+      <file ID="file_00454" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="1a30fe6c37025fd2872e44c735b64217" CHECKSUMTYPE="MD5" SIZE="2612" OWNERID="efac726b-3a0c-4cd6-bc8a-71714d2f88a8">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.square.jpg"/>
+      </file>
+      <file ID="file_00455" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9d5d32e4aaeb603f360bff4d7a085c55" CHECKSUMTYPE="MD5" SIZE="1363" OWNERID="1c79bf86-e4d0-47c4-a34a-73ccc42d7151">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.pro.xml"/>
+      </file>
+      <file ID="file_00456" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="8d7801c2357e2e51fb8d15b9d5112776" CHECKSUMTYPE="MD5" SIZE="235" OWNERID="d6d0a983-1d95-4390-8234-bc0c59c77b02">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00410034.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00042">
+      <file ID="file_00457" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d7e679a8f2ce9d5cd463dc1cfc79207b" CHECKSUMTYPE="MD5" SIZE="110165" OWNERID="f582c4fe-6674-436e-b945-5c66caad55bf">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.jpg"/>
+      </file>
+      <file ID="file_00458" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6fab6f584771e589e3d50b52a3c5a460" CHECKSUMTYPE="MD5" SIZE="2305" OWNERID="0a022e7b-4e99-4d25-8a10-4dc55e5a4bc6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00459" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a35d29cef7def74dd2bc19f4f1213133" CHECKSUMTYPE="MD5" SIZE="38841" OWNERID="e49f08be-3b5d-41ca-ab57-244a974fbc40">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.med_res.jpg"/>
+      </file>
+      <file ID="file_00460" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="30c5b8a8d1c4ac5c33ce0992a32a2c7c" CHECKSUMTYPE="MD5" SIZE="2242" OWNERID="e80e9297-32e8-4ece-b75e-da03b89e1363">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.square.jpg"/>
+      </file>
+      <file ID="file_00461" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="824f1830534e01422708c70ffbc5aedc" CHECKSUMTYPE="MD5" SIZE="1127" OWNERID="79399dd2-bf7d-4788-9ca6-8dde393d04c6">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.pro.xml"/>
+      </file>
+      <file ID="file_00462" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="532298790424ae760204be0316fdb966" CHECKSUMTYPE="MD5" SIZE="220" OWNERID="5ef08de9-2b29-4cb7-8c61-ed73624155d1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00420035.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00043">
+      <file ID="file_00463" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9b87c14f90eb91340457684e9272d405" CHECKSUMTYPE="MD5" SIZE="151861" OWNERID="5c712fee-3534-4cd4-aefe-81d4863944f9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.jpg"/>
+      </file>
+      <file ID="file_00464" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2ffc1a14a7d7a42db14f116e5dba7e2f" CHECKSUMTYPE="MD5" SIZE="1780" OWNERID="de27df61-6699-4962-b0ef-619bfc4767d4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00465" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e89961655486c33a9aebc48ec732589b" CHECKSUMTYPE="MD5" SIZE="49454" OWNERID="73ebd2cb-47d9-4ad0-8f1a-a1546565a447">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.med_res.jpg"/>
+      </file>
+      <file ID="file_00466" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="a438da577f8a3fbfd8ef55a25e53dbfd" CHECKSUMTYPE="MD5" SIZE="2089" OWNERID="66a4bb25-33e2-4217-b1d4-9008d44181fb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.square.jpg"/>
+      </file>
+      <file ID="file_00467" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="fed7843aee2e0889797cd88012bc30bf" CHECKSUMTYPE="MD5" SIZE="4915" OWNERID="58e075ff-eaf3-4250-b2fc-dca1289972b3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.pro.xml"/>
+      </file>
+      <file ID="file_00468" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9f2832a95fb7577ee10a7b49d6523566" CHECKSUMTYPE="MD5" SIZE="1099" OWNERID="05c795d0-27f2-4c52-9b4f-084e6e92a687">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00430036.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00044">
+      <file ID="file_00469" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="6f1ffcf243a4c373cc9bdbba368510ff" CHECKSUMTYPE="MD5" SIZE="152212" OWNERID="a5c28ab9-9007-4d8b-8589-0013f78a1ca1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.jpg"/>
+      </file>
+      <file ID="file_00470" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e9f631b5bbc67616d93ada3da15f5ab1" CHECKSUMTYPE="MD5" SIZE="1756" OWNERID="4767f5aa-83c4-4bfd-9d88-e4e001a09fd0">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00471" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="31219a65e3a29e26476fcb2fefb25233" CHECKSUMTYPE="MD5" SIZE="49443" OWNERID="c612d655-8f56-417a-aaa6-36757a5522a2">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.med_res.jpg"/>
+      </file>
+      <file ID="file_00472" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b56e37eee23154c5f91047fc10dd726e" CHECKSUMTYPE="MD5" SIZE="2056" OWNERID="6b7b1d5c-c7f1-45b5-bf83-15eafbd86d8b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.square.jpg"/>
+      </file>
+      <file ID="file_00473" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d073e933f2dcc246fa3927e493e0cc66" CHECKSUMTYPE="MD5" SIZE="4163" OWNERID="0135d829-6e04-4434-b6f2-aa1e2554b9e5">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.pro.xml"/>
+      </file>
+      <file ID="file_00474" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="671c41313703201f09805fd809182388" CHECKSUMTYPE="MD5" SIZE="815" OWNERID="178b7fba-04e6-4e3e-88b0-98adf4a2f5e3">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00440037.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00045">
+      <file ID="file_00475" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b8b43855a7881553d392b9b24e40d93b" CHECKSUMTYPE="MD5" SIZE="144215" OWNERID="969ed7db-5b64-4343-9b8d-d0b4e73cadd9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.jpg"/>
+      </file>
+      <file ID="file_00476" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="21ceb256f631c016cb90837668224ac1" CHECKSUMTYPE="MD5" SIZE="1759" OWNERID="703067cc-a019-4b51-90d0-5bfd1827e2eb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00477" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f73978921bd06ff9cfe2e82123db9780" CHECKSUMTYPE="MD5" SIZE="47272" OWNERID="da7d6abd-8175-4482-b0ed-e1efd7d56fdb">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.med_res.jpg"/>
+      </file>
+      <file ID="file_00478" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9e62084729607b3697b7881c8a579c07" CHECKSUMTYPE="MD5" SIZE="2122" OWNERID="f038f969-adb7-4557-ba78-d9910c93f1f9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.square.jpg"/>
+      </file>
+      <file ID="file_00479" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b66a1eb2346f51b823528ed75db1aabb" CHECKSUMTYPE="MD5" SIZE="4799" OWNERID="e78193dd-aa70-4e34-bbab-13231154f998">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.pro.xml"/>
+      </file>
+      <file ID="file_00480" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bf08481d7091c804995836a84b2b6f85" CHECKSUMTYPE="MD5" SIZE="913" OWNERID="68e1e1fb-c89c-4d31-8733-1c28a55a949f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00450038.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00046">
+      <file ID="file_00481" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b55b8c19900b02a75eb7a905d011f5a7" CHECKSUMTYPE="MD5" SIZE="126783" OWNERID="7de9759b-a1a3-4caf-88e4-6a07c3549e3e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.jpg"/>
+      </file>
+      <file ID="file_00482" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="fb996f9c0361470f95c67e6e1aee901c" CHECKSUMTYPE="MD5" SIZE="1736" OWNERID="fa7ee176-4839-471a-ae57-a9dd28d7eca1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00483" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="7200506895b639bcb440af31315f030e" CHECKSUMTYPE="MD5" SIZE="44318" OWNERID="810e7362-d43d-4a1a-8dea-ea73054c54f1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.med_res.jpg"/>
+      </file>
+      <file ID="file_00484" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="95255d95d5bbb7d0d12df7b52d912215" CHECKSUMTYPE="MD5" SIZE="1980" OWNERID="e8e57a1c-e9f8-480e-963b-fa1b8ac31407">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.square.jpg"/>
+      </file>
+      <file ID="file_00485" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="c96a4115254f403a6ed30c4c1758059b" CHECKSUMTYPE="MD5" SIZE="5594" OWNERID="7ec5ad39-7ad3-4fba-b0fe-84c3cf936832">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.pro.xml"/>
+      </file>
+      <file ID="file_00486" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="50ffaab6424a456769137404259367af" CHECKSUMTYPE="MD5" SIZE="1088" OWNERID="e1326831-0d55-425e-8ec0-bb3118d2f83c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00460039.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00047">
+      <file ID="file_00487" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="90f5c6b1c335d96928b8d50aba900d9a" CHECKSUMTYPE="MD5" SIZE="178050" OWNERID="7e19516b-6944-4b84-b925-fd03cb5d4850">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.jpg"/>
+      </file>
+      <file ID="file_00488" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b8f94fa9064a3f0e3b5c599192d7feb4" CHECKSUMTYPE="MD5" SIZE="1911" OWNERID="2e5cce52-44f2-463d-9dd3-a050b8f28224">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00489" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="eb9f6f7293aa10ef4f3778ba5834d31a" CHECKSUMTYPE="MD5" SIZE="60161" OWNERID="56c9de03-f941-432d-86b7-adfc8cc915ed">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.med_res.jpg"/>
+      </file>
+      <file ID="file_00490" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="68bd91e79d77ca54dbbf6189424bedf0" CHECKSUMTYPE="MD5" SIZE="2062" OWNERID="c5535738-3540-4104-9fea-f80872d8aeae">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.square.jpg"/>
+      </file>
+      <file ID="file_00491" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="3de121ea02e62f56d5efe9c01efcbff5" CHECKSUMTYPE="MD5" SIZE="9223" OWNERID="261753be-d54e-4074-b84e-bfcf7d487396">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.pro.xml"/>
+      </file>
+      <file ID="file_00492" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="018e4dacdb7a61e2d0e3145240c5bff7" CHECKSUMTYPE="MD5" SIZE="2500" OWNERID="9e44e47a-04f7-43ed-9409-d0af17187800">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00470040.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00048">
+      <file ID="file_00493" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="bc1e0813db90e8a2c00b2c35bceed007" CHECKSUMTYPE="MD5" SIZE="291248" OWNERID="71e2313d-47d5-4776-ab91-eb7d6356dcce">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.jpg"/>
+      </file>
+      <file ID="file_00494" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0292349cba3f97ae1cd612e135bc06d4" CHECKSUMTYPE="MD5" SIZE="1938" OWNERID="0e1b736c-9ef1-43f4-a75c-aea369072f89">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00495" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="0776ffd03a0f9245b97295970e93c87e" CHECKSUMTYPE="MD5" SIZE="93793" OWNERID="31121df3-8775-403d-aa17-15f92a940d92">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.med_res.jpg"/>
+      </file>
+      <file ID="file_00496" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="d07f32a2421018fe3b7f4471eaa5fe77" CHECKSUMTYPE="MD5" SIZE="2092" OWNERID="d62c75e1-5f2d-42b3-a248-ba9d1d37209c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.square.jpg"/>
+      </file>
+      <file ID="file_00497" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="38dc55b2414df5833adb4febaec38b6b" CHECKSUMTYPE="MD5" SIZE="9956" OWNERID="1a924460-06b9-4956-adb9-143403fc86e9">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.pro.xml"/>
+      </file>
+      <file ID="file_00498" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="9a810f9220372e3c2c6303414ee43478" CHECKSUMTYPE="MD5" SIZE="2382" OWNERID="43d32c3d-aa91-429d-ac7a-528963817c0d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00480041.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00049">
+      <file ID="file_00499" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="08bdbf8eeedb2f4c4c5f1482bbc26647" CHECKSUMTYPE="MD5" SIZE="304081" OWNERID="24e618f8-4ce2-420a-a150-fde782128d2b">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.jpg"/>
+      </file>
+      <file ID="file_00500" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="b180ec7a126986176b0ca46176e5658d" CHECKSUMTYPE="MD5" SIZE="1941" OWNERID="57c5cae8-17e5-4c3d-aff1-dead967c2bb7">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00501" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2d4bd3dc178c1361a7293de71e8ddbf0" CHECKSUMTYPE="MD5" SIZE="97778" OWNERID="b041d244-5c3b-4368-88da-23de746cc3f1">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.med_res.jpg"/>
+      </file>
+      <file ID="file_00502" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="e276fe7d01e0b7b0f66ade6926bf1831" CHECKSUMTYPE="MD5" SIZE="2059" OWNERID="8253465d-aaba-4b14-814e-40e653a8855f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.square.jpg"/>
+      </file>
+      <file ID="file_00503" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="2a8681e4acedd2a3d25345b2d080d76b" CHECKSUMTYPE="MD5" SIZE="9992" OWNERID="2cebb0da-5a89-419f-919d-46ceed4e414a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.pro.xml"/>
+      </file>
+      <file ID="file_00504" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="523ef8ac327452b40b056fb33f2ebaa5" CHECKSUMTYPE="MD5" SIZE="2438" OWNERID="92c04a2a-c2a3-4c99-a31a-43dd0eddd1ea">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00490042.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00050">
+      <file ID="file_00505" MIMETYPE="image/jpeg" USE="1" CREATED="2024-02-11T10:41:59Z" CHECKSUM="f4559ab3c68d13240375ae8ca67a097a" CHECKSUMTYPE="MD5" SIZE="43037" OWNERID="9d34b942-0746-439c-858c-0c5707ce964e">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.jpg"/>
+      </file>
+      <file ID="file_00506" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:41:59Z" CHECKSUM="914f5e34527cdc632ab7837054ceba47" CHECKSUMTYPE="MD5" SIZE="1174" OWNERID="39b5aa66-e442-4fb4-a4a6-815a97474db4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00507" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:41:59Z" CHECKSUM="05d4b364a99fe4c526aea3d4af5c5877" CHECKSUMTYPE="MD5" SIZE="12344" OWNERID="2c736fdb-38d7-4359-8101-1b9f10726ace">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.med_res.jpg"/>
+      </file>
+      <file ID="file_00508" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:41:59Z" CHECKSUM="434118b85e3d95cb653718cb8c5d0a38" CHECKSUMTYPE="MD5" SIZE="1154" OWNERID="8c44b7d1-9cbd-4d0c-9450-c08ef5255e10">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.square.jpg"/>
+      </file>
+      <file ID="file_00509" MIMETYPE="text/xml" USE="5" CREATED="2024-02-11T10:41:59Z" CHECKSUM="5383707ca6451973efc0c4f6af181e03" CHECKSUMTYPE="MD5" SIZE="1118" OWNERID="81b89290-4189-4c40-b62e-08cace3ee82d">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.pro.xml"/>
+      </file>
+      <file ID="file_00510" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:41:59Z" CHECKSUM="756f12b614932a59aaab5377eac681ef" CHECKSUMTYPE="MD5" SIZE="295" OWNERID="310f0c1c-9fa3-4b69-a410-97b1f9c64b2f">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/01_jpg/00500043.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00051">
+      <file ID="file_00511" MIMETYPE="application/pdf" USE="1" CREATED="2024-02-11T10:42:00Z" CHECKSUM="d0a14d48074dcabba6f3b386d64530c1" CHECKSUMTYPE="MD5" SIZE="968863" OWNERID="66865968-8764-4e13-910c-46f8e2124e59">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/02_pdf/ARIAS-THESIS-2023.pdf"/>
+      </file>
+      <file ID="file_00512" MIMETYPE="image/jpeg" USE="2" CREATED="2024-02-11T10:42:00Z" CHECKSUM="7980c54a2f0c05d75e99976e260d7f04" CHECKSUMTYPE="MD5" SIZE="1424" OWNERID="2d369a96-b1ea-4be2-8b2d-0c5683600cc4">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/02_pdf/ARIAS-THESIS-2023.thumbnail.jpg"/>
+      </file>
+      <file ID="file_00513" MIMETYPE="image/jpeg" USE="3" CREATED="2024-02-11T10:42:00Z" CHECKSUM="6a69a641bc5b3ebafa919d18e0008841" CHECKSUMTYPE="MD5" SIZE="25594" OWNERID="4b784711-e16a-41fd-af51-e78885d3660c">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/02_pdf/ARIAS-THESIS-2023.med_res.jpg"/>
+      </file>
+      <file ID="file_00514" MIMETYPE="text/plain" USE="4" CREATED="2024-02-11T10:42:00Z" CHECKSUM="ff1a47eea9cc73af8b64183433299784" CHECKSUMTYPE="MD5" SIZE="77228" OWNERID="d398dbf5-3523-4fab-ad4c-e1d7a8dd919a">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/02_pdf/ARIAS-THESIS-2023.txt"/>
+      </file>
+      <file ID="file_00515" MIMETYPE="image/jpeg" USE="10" CREATED="2024-02-11T10:42:00Z" CHECKSUM="84fe111b7540eec10a077b5620b12022" CHECKSUMTYPE="MD5" SIZE="1448" OWNERID="c38c724e-8f02-419f-8902-e855fdc9edde">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/02_pdf/ARIAS-THESIS-2023.square.jpg"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00059">
+      <file ID="file_00516" MIMETYPE="text/plain" USE="1" CREATED="2024-02-11T10:42:00Z" CHECKSUM="dfa7d8b2330ab348e8f73cffd802e726" CHECKSUMTYPE="MD5" SIZE="1080" OWNERID="23bde4e1-b236-485b-b331-0fd841424e87">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/04_wacz/ARIAS-THESIS-2023.pdf.urls"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fgrp_00060">
+      <file ID="file_00517" MIMETYPE="application/zip" USE="1" CREATED="2024-02-11T10:42:00Z" CHECKSUM="5e4863c935648578d6f364a4a4af65a4" CHECKSUMTYPE="MD5" SIZE="44427679" OWNERID="049e4c35-03e5-43ac-bccd-51f739379051">
+        <FLocat LOCTYPE="URL" xlink:href="file://web/04_wacz/submission_3270_ARIAS-THESIS-2023.wacz"/>
+      </file>
+    </fileGrp>
+  </fileSec>
+  <structMap ID="smap_00001">
+    <div DMDID="dmd_00001" TYPE="object" ID="obj_00001">
+      <div TYPE="manifestation" ID="mn_00001" ORDER="1" LABEL="jpg">
+        <div TYPE="fileSet" ID="fs_00001" ORDER="1" ORDERLABEL="Title Page">
+          <fptr FILEID="file_00211"/>
+          <fptr FILEID="file_00212"/>
+          <fptr FILEID="file_00213"/>
+          <fptr FILEID="file_00214"/>
+          <fptr FILEID="file_00215"/>
+          <fptr FILEID="file_00216"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00002" ORDER="2" ORDERLABEL="I">
+          <fptr FILEID="file_00217"/>
+          <fptr FILEID="file_00218"/>
+          <fptr FILEID="file_00219"/>
+          <fptr FILEID="file_00220"/>
+          <fptr FILEID="file_00221"/>
+          <fptr FILEID="file_00222"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00003" ORDER="3" ORDERLABEL="II">
+          <fptr FILEID="file_00223"/>
+          <fptr FILEID="file_00224"/>
+          <fptr FILEID="file_00225"/>
+          <fptr FILEID="file_00226"/>
+          <fptr FILEID="file_00227"/>
+          <fptr FILEID="file_00228"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00004" ORDER="4" ORDERLABEL="III">
+          <fptr FILEID="file_00229"/>
+          <fptr FILEID="file_00230"/>
+          <fptr FILEID="file_00231"/>
+          <fptr FILEID="file_00232"/>
+          <fptr FILEID="file_00233"/>
+          <fptr FILEID="file_00234"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00005" ORDER="5" ORDERLABEL="IV">
+          <fptr FILEID="file_00235"/>
+          <fptr FILEID="file_00236"/>
+          <fptr FILEID="file_00237"/>
+          <fptr FILEID="file_00238"/>
+          <fptr FILEID="file_00239"/>
+          <fptr FILEID="file_00240"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00006" ORDER="6" ORDERLABEL="V">
+          <fptr FILEID="file_00241"/>
+          <fptr FILEID="file_00242"/>
+          <fptr FILEID="file_00243"/>
+          <fptr FILEID="file_00244"/>
+          <fptr FILEID="file_00245"/>
+          <fptr FILEID="file_00246"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00007" ORDER="7" ORDERLABEL="VI">
+          <fptr FILEID="file_00247"/>
+          <fptr FILEID="file_00248"/>
+          <fptr FILEID="file_00249"/>
+          <fptr FILEID="file_00250"/>
+          <fptr FILEID="file_00251"/>
+          <fptr FILEID="file_00252"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00008" ORDER="8" ORDERLABEL="1">
+          <fptr FILEID="file_00253"/>
+          <fptr FILEID="file_00254"/>
+          <fptr FILEID="file_00255"/>
+          <fptr FILEID="file_00256"/>
+          <fptr FILEID="file_00257"/>
+          <fptr FILEID="file_00258"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00009" ORDER="9" ORDERLABEL="2">
+          <fptr FILEID="file_00259"/>
+          <fptr FILEID="file_00260"/>
+          <fptr FILEID="file_00261"/>
+          <fptr FILEID="file_00262"/>
+          <fptr FILEID="file_00263"/>
+          <fptr FILEID="file_00264"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00010" ORDER="10" ORDERLABEL="3">
+          <fptr FILEID="file_00265"/>
+          <fptr FILEID="file_00266"/>
+          <fptr FILEID="file_00267"/>
+          <fptr FILEID="file_00268"/>
+          <fptr FILEID="file_00269"/>
+          <fptr FILEID="file_00270"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00011" ORDER="11" ORDERLABEL="4">
+          <fptr FILEID="file_00271"/>
+          <fptr FILEID="file_00272"/>
+          <fptr FILEID="file_00273"/>
+          <fptr FILEID="file_00274"/>
+          <fptr FILEID="file_00275"/>
+          <fptr FILEID="file_00276"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00012" ORDER="12" ORDERLABEL="5">
+          <fptr FILEID="file_00277"/>
+          <fptr FILEID="file_00278"/>
+          <fptr FILEID="file_00279"/>
+          <fptr FILEID="file_00280"/>
+          <fptr FILEID="file_00281"/>
+          <fptr FILEID="file_00282"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00013" ORDER="13" ORDERLABEL="6">
+          <fptr FILEID="file_00283"/>
+          <fptr FILEID="file_00284"/>
+          <fptr FILEID="file_00285"/>
+          <fptr FILEID="file_00286"/>
+          <fptr FILEID="file_00287"/>
+          <fptr FILEID="file_00288"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00014" ORDER="14" ORDERLABEL="7">
+          <fptr FILEID="file_00289"/>
+          <fptr FILEID="file_00290"/>
+          <fptr FILEID="file_00291"/>
+          <fptr FILEID="file_00292"/>
+          <fptr FILEID="file_00293"/>
+          <fptr FILEID="file_00294"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00015" ORDER="15" ORDERLABEL="8">
+          <fptr FILEID="file_00295"/>
+          <fptr FILEID="file_00296"/>
+          <fptr FILEID="file_00297"/>
+          <fptr FILEID="file_00298"/>
+          <fptr FILEID="file_00299"/>
+          <fptr FILEID="file_00300"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00016" ORDER="16" ORDERLABEL="9">
+          <fptr FILEID="file_00301"/>
+          <fptr FILEID="file_00302"/>
+          <fptr FILEID="file_00303"/>
+          <fptr FILEID="file_00304"/>
+          <fptr FILEID="file_00305"/>
+          <fptr FILEID="file_00306"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00017" ORDER="17" ORDERLABEL="10">
+          <fptr FILEID="file_00307"/>
+          <fptr FILEID="file_00308"/>
+          <fptr FILEID="file_00309"/>
+          <fptr FILEID="file_00310"/>
+          <fptr FILEID="file_00311"/>
+          <fptr FILEID="file_00312"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00018" ORDER="18" ORDERLABEL="11">
+          <fptr FILEID="file_00313"/>
+          <fptr FILEID="file_00314"/>
+          <fptr FILEID="file_00315"/>
+          <fptr FILEID="file_00316"/>
+          <fptr FILEID="file_00317"/>
+          <fptr FILEID="file_00318"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00019" ORDER="19" ORDERLABEL="12">
+          <fptr FILEID="file_00319"/>
+          <fptr FILEID="file_00320"/>
+          <fptr FILEID="file_00321"/>
+          <fptr FILEID="file_00322"/>
+          <fptr FILEID="file_00323"/>
+          <fptr FILEID="file_00324"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00020" ORDER="20" ORDERLABEL="13">
+          <fptr FILEID="file_00325"/>
+          <fptr FILEID="file_00326"/>
+          <fptr FILEID="file_00327"/>
+          <fptr FILEID="file_00328"/>
+          <fptr FILEID="file_00329"/>
+          <fptr FILEID="file_00330"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00021" ORDER="21" ORDERLABEL="14">
+          <fptr FILEID="file_00331"/>
+          <fptr FILEID="file_00332"/>
+          <fptr FILEID="file_00333"/>
+          <fptr FILEID="file_00334"/>
+          <fptr FILEID="file_00335"/>
+          <fptr FILEID="file_00336"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00022" ORDER="22" ORDERLABEL="15">
+          <fptr FILEID="file_00337"/>
+          <fptr FILEID="file_00338"/>
+          <fptr FILEID="file_00339"/>
+          <fptr FILEID="file_00340"/>
+          <fptr FILEID="file_00341"/>
+          <fptr FILEID="file_00342"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00023" ORDER="23" ORDERLABEL="16">
+          <fptr FILEID="file_00343"/>
+          <fptr FILEID="file_00344"/>
+          <fptr FILEID="file_00345"/>
+          <fptr FILEID="file_00346"/>
+          <fptr FILEID="file_00347"/>
+          <fptr FILEID="file_00348"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00024" ORDER="24" ORDERLABEL="17">
+          <fptr FILEID="file_00349"/>
+          <fptr FILEID="file_00350"/>
+          <fptr FILEID="file_00351"/>
+          <fptr FILEID="file_00352"/>
+          <fptr FILEID="file_00353"/>
+          <fptr FILEID="file_00354"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00025" ORDER="25" ORDERLABEL="18">
+          <fptr FILEID="file_00355"/>
+          <fptr FILEID="file_00356"/>
+          <fptr FILEID="file_00357"/>
+          <fptr FILEID="file_00358"/>
+          <fptr FILEID="file_00359"/>
+          <fptr FILEID="file_00360"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00026" ORDER="26" ORDERLABEL="19">
+          <fptr FILEID="file_00361"/>
+          <fptr FILEID="file_00362"/>
+          <fptr FILEID="file_00363"/>
+          <fptr FILEID="file_00364"/>
+          <fptr FILEID="file_00365"/>
+          <fptr FILEID="file_00366"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00027" ORDER="27" ORDERLABEL="20">
+          <fptr FILEID="file_00367"/>
+          <fptr FILEID="file_00368"/>
+          <fptr FILEID="file_00369"/>
+          <fptr FILEID="file_00370"/>
+          <fptr FILEID="file_00371"/>
+          <fptr FILEID="file_00372"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00028" ORDER="28" ORDERLABEL="21">
+          <fptr FILEID="file_00373"/>
+          <fptr FILEID="file_00374"/>
+          <fptr FILEID="file_00375"/>
+          <fptr FILEID="file_00376"/>
+          <fptr FILEID="file_00377"/>
+          <fptr FILEID="file_00378"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00029" ORDER="29" ORDERLABEL="22">
+          <fptr FILEID="file_00379"/>
+          <fptr FILEID="file_00380"/>
+          <fptr FILEID="file_00381"/>
+          <fptr FILEID="file_00382"/>
+          <fptr FILEID="file_00383"/>
+          <fptr FILEID="file_00384"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00030" ORDER="30" ORDERLABEL="23">
+          <fptr FILEID="file_00385"/>
+          <fptr FILEID="file_00386"/>
+          <fptr FILEID="file_00387"/>
+          <fptr FILEID="file_00388"/>
+          <fptr FILEID="file_00389"/>
+          <fptr FILEID="file_00390"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00031" ORDER="31" ORDERLABEL="24">
+          <fptr FILEID="file_00391"/>
+          <fptr FILEID="file_00392"/>
+          <fptr FILEID="file_00393"/>
+          <fptr FILEID="file_00394"/>
+          <fptr FILEID="file_00395"/>
+          <fptr FILEID="file_00396"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00032" ORDER="32" ORDERLABEL="25">
+          <fptr FILEID="file_00397"/>
+          <fptr FILEID="file_00398"/>
+          <fptr FILEID="file_00399"/>
+          <fptr FILEID="file_00400"/>
+          <fptr FILEID="file_00401"/>
+          <fptr FILEID="file_00402"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00033" ORDER="33" ORDERLABEL="26">
+          <fptr FILEID="file_00403"/>
+          <fptr FILEID="file_00404"/>
+          <fptr FILEID="file_00405"/>
+          <fptr FILEID="file_00406"/>
+          <fptr FILEID="file_00407"/>
+          <fptr FILEID="file_00408"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00034" ORDER="34" ORDERLABEL="27">
+          <fptr FILEID="file_00409"/>
+          <fptr FILEID="file_00410"/>
+          <fptr FILEID="file_00411"/>
+          <fptr FILEID="file_00412"/>
+          <fptr FILEID="file_00413"/>
+          <fptr FILEID="file_00414"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00035" ORDER="35" ORDERLABEL="28">
+          <fptr FILEID="file_00415"/>
+          <fptr FILEID="file_00416"/>
+          <fptr FILEID="file_00417"/>
+          <fptr FILEID="file_00418"/>
+          <fptr FILEID="file_00419"/>
+          <fptr FILEID="file_00420"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00036" ORDER="36" ORDERLABEL="29">
+          <fptr FILEID="file_00421"/>
+          <fptr FILEID="file_00422"/>
+          <fptr FILEID="file_00423"/>
+          <fptr FILEID="file_00424"/>
+          <fptr FILEID="file_00425"/>
+          <fptr FILEID="file_00426"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00037" ORDER="37" ORDERLABEL="30">
+          <fptr FILEID="file_00427"/>
+          <fptr FILEID="file_00428"/>
+          <fptr FILEID="file_00429"/>
+          <fptr FILEID="file_00430"/>
+          <fptr FILEID="file_00431"/>
+          <fptr FILEID="file_00432"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00038" ORDER="38" ORDERLABEL="31">
+          <fptr FILEID="file_00433"/>
+          <fptr FILEID="file_00434"/>
+          <fptr FILEID="file_00435"/>
+          <fptr FILEID="file_00436"/>
+          <fptr FILEID="file_00437"/>
+          <fptr FILEID="file_00438"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00039" ORDER="39" ORDERLABEL="32">
+          <fptr FILEID="file_00439"/>
+          <fptr FILEID="file_00440"/>
+          <fptr FILEID="file_00441"/>
+          <fptr FILEID="file_00442"/>
+          <fptr FILEID="file_00443"/>
+          <fptr FILEID="file_00444"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00040" ORDER="40" ORDERLABEL="33">
+          <fptr FILEID="file_00445"/>
+          <fptr FILEID="file_00446"/>
+          <fptr FILEID="file_00447"/>
+          <fptr FILEID="file_00448"/>
+          <fptr FILEID="file_00449"/>
+          <fptr FILEID="file_00450"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00041" ORDER="41" ORDERLABEL="34">
+          <fptr FILEID="file_00451"/>
+          <fptr FILEID="file_00452"/>
+          <fptr FILEID="file_00453"/>
+          <fptr FILEID="file_00454"/>
+          <fptr FILEID="file_00455"/>
+          <fptr FILEID="file_00456"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00042" ORDER="42" ORDERLABEL="35">
+          <fptr FILEID="file_00457"/>
+          <fptr FILEID="file_00458"/>
+          <fptr FILEID="file_00459"/>
+          <fptr FILEID="file_00460"/>
+          <fptr FILEID="file_00461"/>
+          <fptr FILEID="file_00462"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00043" ORDER="43" ORDERLABEL="36">
+          <fptr FILEID="file_00463"/>
+          <fptr FILEID="file_00464"/>
+          <fptr FILEID="file_00465"/>
+          <fptr FILEID="file_00466"/>
+          <fptr FILEID="file_00467"/>
+          <fptr FILEID="file_00468"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00044" ORDER="44" ORDERLABEL="37">
+          <fptr FILEID="file_00469"/>
+          <fptr FILEID="file_00470"/>
+          <fptr FILEID="file_00471"/>
+          <fptr FILEID="file_00472"/>
+          <fptr FILEID="file_00473"/>
+          <fptr FILEID="file_00474"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00045" ORDER="45" ORDERLABEL="38">
+          <fptr FILEID="file_00475"/>
+          <fptr FILEID="file_00476"/>
+          <fptr FILEID="file_00477"/>
+          <fptr FILEID="file_00478"/>
+          <fptr FILEID="file_00479"/>
+          <fptr FILEID="file_00480"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00046" ORDER="46" ORDERLABEL="39">
+          <fptr FILEID="file_00481"/>
+          <fptr FILEID="file_00482"/>
+          <fptr FILEID="file_00483"/>
+          <fptr FILEID="file_00484"/>
+          <fptr FILEID="file_00485"/>
+          <fptr FILEID="file_00486"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00047" ORDER="47" ORDERLABEL="40">
+          <fptr FILEID="file_00487"/>
+          <fptr FILEID="file_00488"/>
+          <fptr FILEID="file_00489"/>
+          <fptr FILEID="file_00490"/>
+          <fptr FILEID="file_00491"/>
+          <fptr FILEID="file_00492"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00048" ORDER="48" ORDERLABEL="41">
+          <fptr FILEID="file_00493"/>
+          <fptr FILEID="file_00494"/>
+          <fptr FILEID="file_00495"/>
+          <fptr FILEID="file_00496"/>
+          <fptr FILEID="file_00497"/>
+          <fptr FILEID="file_00498"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00049" ORDER="49" ORDERLABEL="42">
+          <fptr FILEID="file_00499"/>
+          <fptr FILEID="file_00500"/>
+          <fptr FILEID="file_00501"/>
+          <fptr FILEID="file_00502"/>
+          <fptr FILEID="file_00503"/>
+          <fptr FILEID="file_00504"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00050" ORDER="50" ORDERLABEL="43">
+          <fptr FILEID="file_00505"/>
+          <fptr FILEID="file_00506"/>
+          <fptr FILEID="file_00507"/>
+          <fptr FILEID="file_00508"/>
+          <fptr FILEID="file_00509"/>
+          <fptr FILEID="file_00510"/>
+        </div>
+      </div>
+      <div TYPE="manifestation" ID="mn_00002" ORDER="2" LABEL="pdf">
+        <div TYPE="fileSet" ID="fs_00051" ORDER="1">
+          <fptr FILEID="file_00511"/>
+          <fptr FILEID="file_00512"/>
+          <fptr FILEID="file_00513"/>
+          <fptr FILEID="file_00514"/>
+          <fptr FILEID="file_00515"/>
+        </div>
+      </div>
+      <div TYPE="manifestation" ID="mn_00004" ORDER="4" LABEL="wacz">
+        <div TYPE="fileSet" ID="fs_00059" ORDER="1">
+          <fptr FILEID="file_00516"/>
+        </div>
+        <div TYPE="fileSet" ID="fs_00060" ORDER="2">
+          <fptr FILEID="file_00517"/>
+        </div>
+      </div>
+      <div TYPE="medium" ID="med_00001">
+        <fptr FILEID="file_00213"/>
+      </div>
+      <div TYPE="square" ID="sq_00001">
+        <fptr FILEID="file_00214"/>
+      </div>
+      <div TYPE="thumbnail" ID="th_00001">
+        <fptr FILEID="file_00212"/>
+      </div>
+    </div>
+  </structMap>
+</mets>
+

@@ -437,6 +437,9 @@ class ResourceObject:
         # See if the pdf dict has value already
         if not getattr(self, 'pdf_dict', None):
             self.pdf_dict = {}
+        # Create wacz_dict if needed
+        if not getattr(self, 'wacz_dict', None):
+            self.wacz_dict = {}
         manifest_view_type = ''
         for fileSet in manifest:
             # Get the fileSet order number
@@ -486,6 +489,13 @@ class ResourceObject:
                 # No single representative pdf exists, so empty the pdf dict
                 self.pdf_dict = {}
                 multiple_pdfs = True
+            if fileSet_data['wacz'] and not self.wacz_dict:
+                # Set the wacz info to the first one we find
+                self.wacz_dict = {
+                    'manifestation': manifest_num,
+                    'fileSet': fileSet_num,
+                    'filename': fileSet_data['wacz'],
+                }
         self.manifestation_view_types[manifest_num] = manifest_view_type
         self.manifestation_labels[manifest_num] = manifest.get("LABEL", None)
         return manifestation_dict
@@ -520,6 +530,7 @@ class ResourceObject:
         fileSet_view_type = ''
         zoom = False
         pdf = None
+        wacz = None
         for ptr_file in file_group:
             file_dict = {}
             ignore_ptr_field = [
@@ -556,6 +567,10 @@ class ResourceObject:
                 if 'pdf' in file_dict.get('MIMETYPE', '') and\
                         'pdf' in file_dict.get('flocat', ''):
                     pdf = os.path.basename(file_dict['flocat'])
+                # Determine if this is a wacz fileSet
+                elif 'zip' in file_dict.get('MIMETYPE', '') and\
+                        file_dict.get('flocat', '').endswith('.wacz'):
+                    wacz = os.path.basename(file_dict['flocat'])
                 # If the fileSet doesn't have a view type
                 # (return as a regular file)
                 if fileSet_view_type == '':
@@ -575,6 +590,7 @@ class ResourceObject:
             'fileSet_view_type': fileSet_view_type,
             'zoom': zoom,
             'pdf': pdf,
+            'wacz': wacz,
         }
         return fileSet_dict
 

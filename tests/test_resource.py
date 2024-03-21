@@ -254,3 +254,36 @@ class TestResourceObject:
             b'<?xml version="1.0" encoding="UTF-8"?><mets></mets>'
         )))
         assert ro.acp_modification_date is None
+
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    def testResourceObjectWaczDict(self, mocked_fileSet_file):
+        """Verifies the resource object for an item containing a WACZ populates wacz_dict."""
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+        # Use the test METs file containing a WACZ reference to make the resource object.
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metadc2280433.mets.xml'.format(current_directory)
+
+        ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                     staticFileLocations=[],
+                                     mimetypeIconsPath='', use=USE)
+        assert ro.wacz_dict == {'fileSet': 2,
+                                'filename': 'submission_3270_ARIAS-THESIS-2023.wacz',
+                                'manifestation': 4}
+
+    @patch.object(resource.ResourceObject, 'get_fileSet_file')
+    def testResourceObjectNoWaczData(self, mocked_fileSet_file):
+        """Verifies item with no WACZ has empty wacz_dict."""
+        mocked_fileSet_file.return_value = {'file_mimetype': '',
+                                            'file_name': '',
+                                            'files_system': ''}
+
+        # Use a METs file without a WACZ to make the resource object.
+        current_directory = os.path.dirname(os.path.abspath(__file__))
+        mets_path = '{0}/data/metapth12434.mets.xml'.format(current_directory)
+
+        ro = resource.ResourceObject(identifier=mets_path, metadataLocations=[],
+                                     staticFileLocations=[],
+                                     mimetypeIconsPath='', use=USE)
+        assert ro.wacz_dict == {}
